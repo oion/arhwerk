@@ -1,6 +1,19 @@
 <template>
-  <div class="home">
-    <h1>Home</h1>
-    <p>Welcome to the home page</p>
-  </div>
+  <AppHero id="hero" />
+
+  <AppSection id="proiecte">
+    <AppProjects />
+  </AppSection>
+
+  <AppSection id="despre">
+    <AppAbout />
+  </AppSection>
+
+  <AppSection id="echipa">
+    <AppTeam />
+  </AppSection>
+
+  <AppSection id="servicii">
+    <AppServices />
+  </AppSection>
 </template>

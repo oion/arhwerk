@@ -1,5 +1,5 @@
 <template>
   <footer>
-    <p>Footer</p>
+    <section id="contact">[Sectiune Contact]</section>
   </footer>
 </template>
