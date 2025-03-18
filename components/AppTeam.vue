@@ -1,28 +1,32 @@
 <template>
-  <aside class="md:w-80 flex-shrink-0">
-    <div class="sticky top-20 flex gap-4">
+  <SectionBase>
+    <template #aside>
       <h2 class="text-lg font-bold">Echipa</h2>
-    </div>
-  </aside>
+    </template>
 
-  <div class="flex flex-col lg:flex-row gap-4">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div v-for="member in team" :key="member.id" class="flex flex-col gap-2">
-        <NuxtImg
+    <div class="flex flex-col lg:flex-row gap-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-10">
+        <div
+          v-for="member in team"
           :key="member.id"
-          :src="member.image"
-          :alt="member.name"
-          fit="contain"
-          format="webp"
-          width="200"
-          height="100"
-          class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700"
-        />
-        <h3 class="font-base font-bold">{{ member.name }}</h3>
-        <p>{{ member.role }}</p>
+          class="flex flex-col gap-2"
+        >
+          <NuxtImg
+            :key="member.id"
+            :src="member.image"
+            :alt="member.name"
+            fit="contain"
+            format="webp"
+            width="200"
+            height="100"
+            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700"
+          />
+          <h3 class="font-base font-bold">{{ member.name }}</h3>
+          <p class="text-xs font-light">{{ member.role }}</p>
+        </div>
       </div>
     </div>
-  </div>
+  </SectionBase>
 </template>
 
 <script setup lang="ts">

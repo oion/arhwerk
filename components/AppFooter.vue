@@ -1,5 +1,3 @@
 <template>
-  <footer>
-    <section id="contact">[Sectiune Contact]</section>
-  </footer>
+  <footer>&copy; 2025 - Arhwerk. Toate drepturile rezervate.</footer>
 </template>

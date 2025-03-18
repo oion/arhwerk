@@ -1,15 +1,15 @@
 <template>
-  <aside class="md:w-80 flex-shrink-0">
-    <div class="sticky top-20 flex flex-col gap-4">
-      <h2 class="text-lg font-bold">Proiecte</h2>
+  <SectionBase>
+    <template #aside>
+      <h2 class="text-heading-lg">Proiecte</h2>
 
       <nav>
         <ul>
           <li
             v-for="type in allTypes"
             :class="[
-              isSelected(type) ? 'text-slate-950' : 'text-slate-300',
-              'hover:text-slate-950 hover:cursor-pointer transition',
+              isSelected(type) ? 'text-primary' : 'text-primary-light',
+              'hover:text-primary-dark hover:cursor-pointer transition',
             ]"
             @click="selectedType = type"
           >
@@ -17,18 +17,18 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </aside>
+    </template>
 
-  <div class="">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      <AppProjectsCard
-        v-for="project in filteredProjects"
-        :key="project.title"
-        :project
-      />
+    <div class="">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <ProjectsCard
+          v-for="project in filteredProjects"
+          :key="project.title"
+          :project
+        />
+      </div>
     </div>
-  </div>
+  </SectionBase>
 </template>
 
 <script setup lang="ts">

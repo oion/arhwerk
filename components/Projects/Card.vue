@@ -1,16 +1,18 @@
 <template>
   <div class="flex flex-col wrap gap-4">
-    <picture class="overflow-hidden">
+    <picture class="overflow-hidden w-full">
       <NuxtImg
         :src="project.image.src"
-        alt="Project 1"
+        :alt="project.title"
+        fit="cover"
+        format="webp"
         width="400"
         height="600"
-        class="hover:scale-110 transition duration-700"
+        class="w-full h-auto object-cover hover:scale-110 transition duration-700"
       />
     </picture>
     <div class="flex flex-col gap-3">
-      <h3 class="text-base font-bold text-slate-700">
+      <h3 class="text-base font-bold text-primary">
         {{ project.title }}
       </h3>
       <p class="text-xs">

@@ -1,19 +1,13 @@
 <template>
   <AppHero id="hero" />
 
-  <AppSection id="proiecte">
-    <AppProjects />
-  </AppSection>
+  <ProjectsList id="proiecte" />
 
-  <AppSection id="despre">
-    <AppAbout />
-  </AppSection>
+  <AppAbout id="despre" />
 
-  <AppSection id="echipa">
-    <AppTeam />
-  </AppSection>
+  <AppTeam id="echipa" />
 
-  <AppSection id="servicii">
-    <AppServices />
-  </AppSection>
+  <AppServices id="servicii" />
+
+  <AppContact id="contact" />
 </template>

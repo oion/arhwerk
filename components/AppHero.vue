@@ -1,3 +1,3 @@
 <template>
-  <AppSlider />
+  <SliderBase />
 </template>

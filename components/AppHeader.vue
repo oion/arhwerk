@@ -8,12 +8,14 @@
       </NuxtLink>
     </h1>
 
-    <nav>
-      <ul class="flex space-x-4">
+    <nav class="hidden md:block">
+      <ul class="flex space-x-8">
         <li v-for="navItem in navItems">
-          <NuxtLink :to="`#${navItem.anchor}`" class="text-slate-400">{{
-            navItem.name
-          }}</NuxtLink>
+          <NuxtLink
+            :to="`#${navItem.anchor}`"
+            class="text-nav-link text-primary"
+            >{{ navItem.name }}</NuxtLink
+          >
         </li>
       </ul>
     </nav>

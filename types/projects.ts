@@ -1,10 +1,7 @@
 export interface Project {
   id: string;
   gallery?: ProjectImage[];
-  image: {
-    src: string;
-    alt: string;
-  };
+  image: ProjectImage;
   info: string;
   title: string;
   type?: string;
