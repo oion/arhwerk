@@ -3,8 +3,8 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  ssr: true,
   modules: [
-    "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxt/fonts",
     "@nuxt/image",
@@ -25,20 +25,12 @@ export default defineNuxtConfig({
           opacity: 0,
           y: 50,
         },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 800,
-            ease: "easeInOut",
-          },
-        },
         visibleOnce: {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 800,
-            ease: "easeInOut",
+            duration: 500,
+            ease: "easeOutQuad",
           },
         },
       },
