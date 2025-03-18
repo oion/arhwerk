@@ -1,3 +1,3 @@
-# My First Page
+# Arhwerk Studio
 
 Here is some content.

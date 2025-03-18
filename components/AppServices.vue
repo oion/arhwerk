@@ -8,7 +8,7 @@
       <div
         class="flex flex-col lg:flex-row lg:gap-40 lg:justify-between font-light"
       >
-        <div class="max-w-sm">
+        <div class="max-w-sm" v-motion-appear>
           <h3 class="subtitle">Consultanță și concept</h3>
           <ul class="list-disc pl-4 mb-10 text-sm">
             <li>Consultanță inițială și studii de fezabilitate</li>
@@ -45,7 +45,7 @@
           </ul>
         </div>
 
-        <div class="max-w-sm">
+        <div class="max-w-sm" v-motion-appear :delay="200">
           <h3 class="subtitle">Tehnologie și analiză avansată</h3>
           <ul class="list-disc pl-4 mb-10 text-sm">
             <li>Scanare laser și modelare 3D (BIM)</li>

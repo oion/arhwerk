@@ -20,8 +20,5 @@ useSeoMeta({
 
   <AppServices id="servicii" />
 
-  <ContentRenderer v-if="home" :value="home" />
-  <div v-else>Home not found</div>
-
   <AppContact id="contact" />
 </template>

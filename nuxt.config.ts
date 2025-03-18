@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/fonts",
     "@nuxt/image",
+    "@vueuse/motion/nuxt",
   ],
   css: ["~/assets/css/app.css"],
   tailwindcss: {
@@ -16,5 +17,31 @@ export default defineNuxtConfig({
   fonts: {},
   image: {
     quality: 80,
+  },
+  motion: {
+    directives: {
+      appear: {
+        initial: {
+          opacity: 0,
+          y: 50,
+        },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 800,
+            ease: "easeInOut",
+          },
+        },
+        visibleOnce: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 800,
+            ease: "easeInOut",
+          },
+        },
+      },
+    },
   },
 });

@@ -22,9 +22,11 @@
     <div class="">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <ProjectsCard
-          v-for="project in filteredProjects"
+          v-for="(project, index) in filteredProjects"
           :key="project.title"
           :project
+          v-motion-appear
+          :delay="100 * index"
         />
       </div>
     </div>
