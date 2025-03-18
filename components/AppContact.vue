@@ -11,7 +11,7 @@
         <h3 class="pb-8">Trimite-ne un mesaj</h3>
         <ContactForm class="max-w-80" />
       </div>
-      <div class="flex-1 bg-black text-white p-4 py-24 lg:p-24 flex items-end">
+      <div class="flex-1 bg-black text-white p-4 py-24 lg:p-8 flex items-end">
         <ContactInfo />
       </div>
     </div>

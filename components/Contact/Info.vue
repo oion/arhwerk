@@ -59,6 +59,10 @@
         </svg>
       </a>
     </p>
+
+    <p class="text-xs font-thin text-primary-light">
+      &copy; 2025 - Toate drepturile rezervate
+    </p>
   </div>
 </template>
 

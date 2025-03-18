@@ -21,6 +21,7 @@
 
     <div
       class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-10"
+      ref="projects"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"
@@ -34,6 +35,10 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps<{
+  id: string;
+}>();
+
 import type { Project } from "~/types/projects";
 
 import projectsData from "~/content/projects";
@@ -41,6 +46,8 @@ import projectsData from "~/content/projects";
 const projects: Project[] = projectsData;
 
 const selectedType = ref<string>("Toate");
+
+const projectsRef = useTemplateRef("projects");
 
 const types = computed(() => {
   return projects.reduce((acc, project) => {
@@ -66,4 +73,18 @@ const filteredProjects: ComputedRef<Project[]> = computed(() => {
 const isSelected = (type: string) => {
   return type === selectedType.value;
 };
+
+watch(
+  selectedType,
+  () => {
+    const el = document.getElementById(props.id);
+    if (el) {
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  },
+  { immediate: false }
+);
 </script>
