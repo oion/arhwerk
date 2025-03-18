@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between items-center p-4 h-16 fixed bg-white w-full z-50"
+    class="flex justify-between items-center p-4 h-16 fixed bg-neutral w-full z-50"
   >
     <h1>
       <NuxtLink to="/">

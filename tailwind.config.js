@@ -18,8 +18,13 @@ export default {
         current: 'currentColor',
         'white': '#fff',
         'black': '#000',
+        'neutral': {
+          light: 'rgb(244, 244, 244)',
+          DEFAULT: 'rgb(237, 237, 237)',
+          dark: '#e8e8e8'
+        },
         'primary': {
-          light: '#ddd',
+          light: '#aaa',
           DEFAULT: '#333',
           dark: '#444'
         }
