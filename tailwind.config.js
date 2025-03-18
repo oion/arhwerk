@@ -19,7 +19,7 @@ export default {
         'white': '#fff',
         'black': '#000',
         'primary': {
-          light: '#aaa',
+          light: '#ddd',
           DEFAULT: '#333',
           dark: '#444'
         }

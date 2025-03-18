@@ -8,6 +8,8 @@
       </div>
     </aside>
 
-    <slot />
+    <div class="flex-1">
+      <slot />
+    </div>
   </section>
 </template>
