@@ -49,9 +49,9 @@ interface Slide {
 
 const slides = [
   {
-    url: "images/samples/sample-landscape.webp",
-    alt: "Casa Pădurii - Vedere panoramică din grădină",
-    title: "Armonie în natură",
+    url: "images/projects/venetia/venetia-3.jpg",
+    alt: "Casa Boierului Comaniciu",
+    title: "Casa Boierului Comaniciu",
   },
   {
     url: "/images/samples/sample-landscape-2.jpg",

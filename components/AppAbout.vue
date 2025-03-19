@@ -18,7 +18,7 @@
       <div v-motion-appear class="grid grid-cols-2 gap-4" :delay="200">
         <NuxtImg
           v-motion-appear
-          src="images/samples/sample-landscape.webp"
+          src="/images/about/about-3.jpg"
           alt=""
           width="800"
           height="400"
@@ -26,7 +26,7 @@
         />
         <NuxtImg
           v-motion-appear
-          src="images/samples/sample-landscape.webp"
+          src="/images/about/about-1.jpg"
           alt=""
           width="400"
           height="400"
@@ -35,7 +35,7 @@
         />
         <NuxtImg
           v-motion-appear
-          src="images/samples/sample-landscape.webp"
+          src="/images/about/about-2.jpg"
           alt=""
           width="400"
           height="400"
