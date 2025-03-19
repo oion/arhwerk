@@ -3,13 +3,20 @@ export interface ProjectImage {
   description?: string;
   src: string;
 }
+
+export type ProjectType =
+  | "Rezidențial"
+  | "Comercial"
+  | "Interior"
+  | "Restaurare"
+  | string;
 export interface Project {
   id: string;
   gallery?: ProjectImage[];
   image: ProjectImage;
   info: string;
   title: string;
-  type?: string;
+  type?: ProjectType[];
 }
 
 export type Projects = Project[];

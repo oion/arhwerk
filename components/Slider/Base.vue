@@ -25,7 +25,7 @@
         :class="['w-10 h-1 hover:bg-white/50 transition', activeClasses(index)]"
         @click="active = index"
       >
-        <span>{{ index }}</span>
+        <span class="hidden">{{ index }}</span>
       </button>
     </div>
 

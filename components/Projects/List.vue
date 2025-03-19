@@ -35,32 +35,34 @@
 </template>
 
 <script setup lang="ts">
-import type { Project } from "~/types/projects";
+import type { Project, ProjectType } from "~/types/projects";
 
 import projectsData from "~/content/projects";
 
 const projects: Project[] = projectsData;
 
-const selectedType = ref<string>("Toate");
+const selectedType = ref<ProjectType | "Toate">("Toate");
 
 const types = computed(() => {
   return projects.reduce((acc, project) => {
-    if (project.type && !acc.includes(project.type)) {
-      acc.push(project.type);
+    if (project.type) {
+      project.type.forEach((type) => {
+        acc.add(type);
+      });
     }
     return acc;
-  }, [] as string[]);
+  }, new Set<ProjectType>());
 });
 
 const allTypes = computed(() => {
   return ["Toate", ...types.value];
 });
 
-const filteredProjects: ComputedRef<Project[]> = computed(() => {
+const filteredProjects = computed(() => {
   if (selectedType.value === "Toate") return projects;
 
   return projects.filter((project) => {
-    return project.type === selectedType.value;
+    return project.type?.includes(selectedType.value);
   });
 });
 
