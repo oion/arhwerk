@@ -1,36 +1,34 @@
 export default [
   {
     id: "a7c91b3e-f2d4-4e8b-9f5a-8d3c6b2e1d4a",
-    slug: "biserica-ortodoxa-sf-ierarh-nicolae",
-    title: "BISERICA ORTODOXĂ «SF. IERARH NICOLAE»",
-    info: "Brașov, Jud. Brașov, 2023-2024",
-    type: ["Rezidential", "Restaurare"],
+    slug: "casa-boierului-comaniciu",
+    title: "Casa Boierului Comaniciu",
+    meta: {
+      function: "Spațiu expozițional și locuință",
+      year:  "2020-2023",
+      location: "Veneția de Jos, Brașov"
+    },
+    type: ["Restaurare"],
+    status: "Finalizat",
+    description: `Proiectul a inclus restaurarea casei Comănici, monument istoric din 2019, și extinderea cu un nou corp pe locul fostei șuri. Clădirea, afectată de tasări, umiditate și zidărie defectuoasă, a fost consolidată prin refacerea tencuielilor, zidăriei, pardoselilor și șarpantei. Analizele au datat elementele de lemn în jurul anului 1830.`,
     image: {
-      src: "/images/samples/sample-landscape.jpg",
+      src: "/images/projects/venetia/venetia-1.jpg",
     },
     gallery: [
       {
-        src: "/images/samples/sample-landscape.jpg",
+        src: "/images/projects/venetia/venetia-1.jpg",
         alt: "Sample landscape",
       },
       {
-        src: "/images/samples/sample-landscape-2.jpg",
+        src: "/images/projects/venetia/venetia-2.jpg",
         alt: "Sample landscape",
       },
       {
-        src: "/images/samples/sample-landscape-3.jpg",
-        alt: "Sample landscape",
-      },
-      {
-        src: "/images/samples/sample-landscape-2.jpg",
-        alt: "Sample landscape",
-      },
-      {
-        src: "/images/samples/sample-landscape-3.jpg",
+        src: "/images/projects/venetia/venetia-3.jpg",
         alt: "Sample landscape",
       },
     ],
-    status: "In Executie",
+   
   },
   {
     id: "b8d92c4f-e3a5-5f9c-0e6b-9e4d7c3f2e5b",

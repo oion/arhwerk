@@ -9,16 +9,27 @@ defineProps<Props>();
 </script>
 
 <template>
-  <div class="flex w-full">
-    <aside class="md:w-80 flex-shrink-0">
-      <div class="flex flex-col gap-4 p-8">
-        <h1 class="text-heading-lg">{{ project.title }}</h1>
-        <p>{{ project.info }}</p>
-      </div>
-    </aside>
+  <aside class="md:w-80 flex-shrink-0">
+    <div class="flex flex-col gap-4">
+      <h1 class="text-heading-lg">{{ project.title }}</h1>
 
-    <div class="flex-1">
-      <ProjectGallery v-if="project.gallery" :images="project.gallery" />
+      <p v-if="project.meta?.location">
+        <strong>Locatie</strong><br />
+        {{ project.meta.location }}
+      </p>
+      <p v-if="project.meta?.function">
+        <strong>Funcțiune</strong> <br />
+        {{ project.meta.function }}
+      </p>
+      <p v-if="project.meta?.year">
+        <strong>An</strong><br />
+        {{ project.meta.year }}
+      </p>
+      <p>{{ project.description }}</p>
     </div>
+  </aside>
+
+  <div class="flex-1">
+    <ProjectGallery v-if="project.gallery" :images="project.gallery" />
   </div>
 </template>

@@ -4,6 +4,12 @@ export interface ProjectImage {
   src: string;
 }
 
+export interface ProjectMeta {
+  function?: string;
+  location?: string;
+  year?: string;
+}
+
 export type ProjectType =
   | "Rezidențial"
   | "Comercial"
@@ -18,6 +24,8 @@ export interface Project {
   slug: string;
   title: string;
   type?: ProjectType[];
+  meta?: ProjectMeta;
+  description?: string;
   status: ProjectStatus;
   gallery?: ProjectImage[];
   image: ProjectImage;

@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen w-full relative">
+  <section class="min-h-screen w-full relative">
     <div
       v-for="(slide, index) in slides"
       :key="index"

@@ -17,8 +17,8 @@
         {{ project.title }}
       </h3>
       <p class="text-xs flex flex-col gap-1">
-        <span>{{ project.info }}</span>
-        <span>({{ project.status }})</span>
+        <span>{{ project.meta?.location }}</span>
+        <span>{{ project.meta?.year }} ({{ project.status }})</span>
       </p>
     </div>
   </NuxtLink>
