@@ -1,10 +1,10 @@
 <template>
   <form class="flex flex-col gap-8">
-    <ContactFormInput label="Name" v-model="form.fullname" />
+    <ContactFormInput v-model="form.fullname" label="Name" />
 
-    <ContactFormInput label="Email" v-model="form.email" />
+    <ContactFormInput v-model="form.email" label="Email" />
 
-    <ContactFormInput label="Mesaj" v-model="form.message" type="textarea" />
+    <ContactFormInput v-model="form.message" label="Mesaj" type="textarea" />
 
     <button type="submit" class="font-bold py-4 text-left">Trimite</button>
   </form>

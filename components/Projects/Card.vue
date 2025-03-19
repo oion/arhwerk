@@ -1,9 +1,5 @@
 <template>
-  <NuxtLink
-    :to="`/project/${project.id}`"
-    class="flex flex-col wrap gap-4"
-    @click.prevent.stop
-  >
+  <NuxtLink :to="`/project/${project.id}`" class="flex flex-col wrap gap-4">
     <picture class="overflow-hidden w-full">
       <NuxtImg
         :src="project.image.src"
@@ -20,9 +16,8 @@
       <h3 class="text-base font-bold text-primary">
         {{ project.title }}
       </h3>
-      <p class="text-xs">
-        <span>{{ project.info }}</span
-        ><br />
+      <p class="text-xs flex flex-col gap-1">
+        <span>{{ project.info }}</span>
         <span>{{ project.type }} </span>
       </p>
     </div>
@@ -36,6 +31,4 @@ import type { Project } from "~/types/projects";
 defineProps<{
   project: Project;
 }>();
-
-const showModal = computed(() => true);
 </script>

@@ -9,9 +9,9 @@
         <div
           v-for="(member, index) in team"
           :key="member.id"
-          class="flex flex-col gap-2"
           v-motion-appear
           :delay="100 * index"
+          class="flex flex-col gap-2"
         >
           <NuxtImg
             :key="member.id"
@@ -24,6 +24,7 @@
             class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700"
           />
           <h3 class="font-base font-bold">{{ member.name }}</h3>
+
           <p class="text-xs font-light">{{ member.role }}</p>
         </div>
       </div>

@@ -12,7 +12,7 @@ const props = defineProps({
 
 const model = defineModel<string>({ required: true });
 
-const emit = defineEmits(["update:modelValue"]);
+const isBlurred = ref(false);
 
 const labelClasses = computed(() => {
   return [
@@ -27,15 +27,13 @@ const component = computed<string>(() => {
 });
 
 const isFilled = computed(() => model.value.length > 0);
-
-const isBlurred = ref(false);
 </script>
 
 <template>
   <div class="flex flex-col gap-8 relative">
     <label
-      for="name"
       ref="my-label"
+      for="name"
       class="absolute transition-all left-0"
       :class="labelClasses"
       >{{ label }}</label
@@ -43,8 +41,8 @@ const isBlurred = ref(false);
 
     <component
       :is="component"
-      type="text"
       id="name"
+      type="text"
       class="border-0 border-b border-black py-2 p-0 bg-transparent placeholder-gray-900"
       :value="model"
       @input="model = $event.target.value"

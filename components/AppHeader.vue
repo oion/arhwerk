@@ -10,12 +10,10 @@
 
     <nav class="hidden md:block">
       <ul class="flex space-x-8">
-        <li v-for="navItem in navItems">
-          <NuxtLink
-            :to="`#${navItem.anchor}`"
-            class="text-nav-link text-primary"
-            >{{ navItem.name }}</NuxtLink
-          >
+        <li v-for="navItem in navItems" :key="navItem.url">
+          <NuxtLink :to="`${navItem.url}`" class="text-nav-link text-primary">{{
+            navItem.name
+          }}</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -24,10 +22,10 @@
 
 <script setup lang="ts">
 const navItems = [
-  { name: "Proiecte", anchor: "proiecte" },
-  { name: "Despre", anchor: "despre" },
-  { name: "Servicii", anchor: "servicii" },
-  { name: "Echipa", anchor: "echipa" },
-  { name: "Contact", anchor: "contact" },
+  { name: "Proiecte", url: "/#proiecte" },
+  { name: "Despre", url: "/#despre" },
+  { name: "Servicii", url: "/#servicii" },
+  { name: "Echipa", url: "/#echipa" },
+  { name: "Contact", url: "/#contact" },
 ];
 </script>

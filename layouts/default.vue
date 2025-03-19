@@ -2,8 +2,6 @@
   <div>
     <AppHeader />
 
-    <main>
-      <slot />
-    </main>
+    <slot />
   </div>
 </template>

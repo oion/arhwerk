@@ -2,6 +2,7 @@
   <section class="h-screen w-full relative">
     <div
       v-for="(slide, index) in slides"
+      :key="index"
       class="w-full h-full flex-shrink-0 absolute transition-opacity duration-1000"
       :class="index === active ? 'opacity-100' : 'opacity-0'"
     >
@@ -23,7 +24,9 @@
         :key="index"
         :class="['w-10 h-1 hover:bg-white/50 transition', activeClasses(index)]"
         @click="active = index"
-      ></button>
+      >
+        <span>{{ index }}</span>
+      </button>
     </div>
 
     <div class="absolute bottom-16 right-16">
@@ -60,13 +63,9 @@ const slides = [
     alt: "Ansamblul Rezidențial Verde - Spațiu interior comun",
     title: "Spații pentru viață",
   },
-];
+] as Slide[];
 
 const active = ref<number>(0);
-
-const activeSlide = computed<Slide>(() => {
-  return slides[active.value];
-});
 
 const activeClasses = (index: number) => {
   return index === active.value ? "bg-white" : "bg-neutral-300/50";

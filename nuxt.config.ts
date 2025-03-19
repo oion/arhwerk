@@ -10,6 +10,17 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@vueuse/motion/nuxt",
   ],
+
+  app: {
+    head: {
+      title: "Arhwerk", // default fallback title
+      htmlAttrs: {
+        lang: "ro",
+      },
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
+
   css: ["~/assets/css/app.css"],
   tailwindcss: {
     editorSupport: true,

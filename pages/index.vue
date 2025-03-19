@@ -1,15 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Arhwerk",
+});
+</script>
 
 <template>
-  <AppHero id="hero" />
+  <main>
+    <AppHero id="hero" />
 
-  <ProjectsList id="proiecte" />
+    <ProjectsList id="proiecte" />
 
-  <AppAbout id="despre" />
+    <AppAbout id="despre" />
 
-  <AppTeam id="echipa" />
+    <AppTeam id="echipa" />
 
-  <AppServices id="servicii" />
+    <AppServices id="servicii" />
 
-  <AppContact id="contact" />
+    <AppContact id="contact" />
+  </main>
 </template>

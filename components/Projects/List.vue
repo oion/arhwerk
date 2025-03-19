@@ -7,6 +7,7 @@
         <ul class="flex flex-col gap-4 mt-8">
           <li
             v-for="type in allTypes"
+            :key="type"
             :class="[
               isSelected(type) ? 'text-primary' : 'text-primary-light',
               'hover:text-primary-dark hover:cursor-pointer transition',
@@ -20,25 +21,20 @@
     </template>
 
     <div
-      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
-      ref="projects"
+      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"
         :key="project.title"
-        :project
         v-motion-appear
         :delay="100 * index"
+        :project
       />
     </div>
   </SectionBase>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
-  id: string;
-}>();
-
 import type { Project } from "~/types/projects";
 
 import projectsData from "~/content/projects";
@@ -46,8 +42,6 @@ import projectsData from "~/content/projects";
 const projects: Project[] = projectsData;
 
 const selectedType = ref<string>("Toate");
-
-const projectsRef = useTemplateRef("projects");
 
 const types = computed(() => {
   return projects.reduce((acc, project) => {
@@ -77,7 +71,7 @@ const isSelected = (type: string) => {
 watch(
   selectedType,
   () => {
-    const el = document.getElementById(props.id);
+    const el = document.getElementById("proiecte");
     if (el) {
       el.scrollIntoView({
         behavior: "smooth",
