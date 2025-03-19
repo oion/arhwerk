@@ -27,6 +27,18 @@ export default [
         src: "/images/projects/venetia/venetia-3.jpg",
         alt: "Sample landscape",
       },
+      {
+        src: "/images/projects/venetia/venetia-4.jpg",
+        alt: "Sample landscape",
+      },
+      {
+        src: "/images/projects/venetia/venetia-5.jpg",
+        alt: "Sample landscape",
+      },
+      {
+        src: "/images/projects/venetia/venetia-6.jpg",
+        alt: "Sample landscape",
+      },
     ],
    
   },
