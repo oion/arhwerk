@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/project/${project.id}`" class="flex flex-col wrap gap-4">
+  <NuxtLink :to="`/project/${project.slug}`" class="flex flex-col wrap gap-4">
     <picture class="overflow-hidden w-full">
       <NuxtImg
         :src="project.image.src"
@@ -18,7 +18,7 @@
       </h3>
       <p class="text-xs flex flex-col gap-1">
         <span>{{ project.info }}</span>
-        <span>{{ project.type }} </span>
+        <span>({{ project.status }})</span>
       </p>
     </div>
   </NuxtLink>
@@ -30,5 +30,6 @@ import type { Project } from "~/types/projects";
 
 defineProps<{
   project: Project;
+  index: number;
 }>();
 </script>

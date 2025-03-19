@@ -10,13 +10,18 @@ export type ProjectType =
   | "Interior"
   | "Restaurare"
   | string;
+
+export type ProjectStatus = "Finalizat" | "In Executie" | string;
+
 export interface Project {
   id: string;
-  gallery?: ProjectImage[];
-  image: ProjectImage;
-  info: string;
+  slug: string;
   title: string;
   type?: ProjectType[];
+  status: ProjectStatus;
+  gallery?: ProjectImage[];
+  image: ProjectImage;
+  info?: string;
 }
 
 export type Projects = Project[];

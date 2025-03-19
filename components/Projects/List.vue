@@ -29,6 +29,7 @@
         v-motion-appear
         :delay="100 * index"
         :project
+        :index
       />
     </div>
   </SectionBase>
