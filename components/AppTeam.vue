@@ -19,8 +19,8 @@
             :alt="member.name"
             fit="contain"
             format="webp"
-            width="200"
-            height="100"
+            width="400"
+            height="400"
             class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700"
           />
           <h3 class="font-base font-bold">{{ member.name }}</h3>
@@ -44,50 +44,50 @@ const team = [
   {
     id: "1",
     name: "Arh. Horațiu Vasilescu",
-    image: "https://mighty.tools/mockmind-api/content/human/1.jpg",
+    image: "/images/team/horatiu-1.jpg",
     role: "Arhitect",
   },
   {
     id: "2",
     name: "Arh. Silvia Creoșteanu",
-    image: "https://mighty.tools/mockmind-api/content/human/2.jpg",
+    image: "/images/team/silvia-1.jpg",
     role: "Arhitect",
   },
   {
     id: "3",
     name: "Arh. Mara Catargiu",
-    image: "https://mighty.tools/mockmind-api/content/human/3.jpg",
+    image: "/images/team/mara-1.jpg",
     role: "Arhitect",
+  },
+  {
+    id: "8",
+    name: "Otto",
+    image: "/images/team/otto-1.jpg",
+    role: "Caine mare",
   },
   {
     id: "4",
     name: "Arh. Raluca Olaru",
-    image: "https://mighty.tools/mockmind-api/content/human/4.jpg",
+    image: "/images/team/raluca-1.jpg",
     role: "Arhitect",
   },
   {
     id: "5",
     name: "Arh. Ana Mărgăritescu",
-    image: "https://mighty.tools/mockmind-api/content/human/5.jpg",
+    image: "/images/team/ana-1.jpg",
     role: "Arhitect",
   },
   {
     id: "6",
     name: "Arh. Victor Gogiu",
-    image: "https://mighty.tools/mockmind-api/content/human/6.jpg",
+    image: "/images/team/victor-1.jpg",
     role: "Intern",
   },
   {
     id: "7",
     name: "Freddy",
-    image: "https://mighty.tools/mockmind-api/content/human/7.jpg",
+    image: "/images/team/freddy-1.jpg",
     role: "Caine mediu",
-  },
-  {
-    id: "8",
-    name: "Otto",
-    image: "https://mighty.tools/mockmind-api/content/human/8.jpg",
-    role: "Caine mare",
   },
 ] as const as TeamMember[];
 </script>
