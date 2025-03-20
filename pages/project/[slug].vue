@@ -19,6 +19,6 @@ const project = computed(() => {
       <ProjectDetails v-if="project" :project />
     </section>
 
-    <AppContact id="contact" />
+    <SectionContact id="contact" />
   </main>
 </template>

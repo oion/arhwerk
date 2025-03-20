@@ -2,20 +2,32 @@
 useHead({
   title: "Arhwerk",
 });
+
+useSeoMeta({
+  description: "[description]",
+  ogTitle: "[og:title]",
+  ogDescription: "[og:description]",
+  ogImage: "[og:image]",
+  ogUrl: "[og:url]",
+  twitterTitle: "[twitter:title]",
+  twitterDescription: "[twitter:description]",
+  twitterImage: "[twitter:image]",
+  twitterCard: "summary",
+});
 </script>
 
 <template>
   <main>
-    <AppHero id="hero" />
+    <SectionHero id="hero" />
 
     <ProjectsList id="proiecte" />
 
-    <AppAbout id="despre" />
+    <SectionAbout id="despre" />
 
-    <AppTeam id="echipa" />
+    <SectionTeam id="echipa" />
 
-    <AppServices id="servicii" />
+    <SectionServices id="servicii" />
 
-    <AppContact id="contact" />
+    <SectionContact id="contact" />
   </main>
 </template>

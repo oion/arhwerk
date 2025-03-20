@@ -45,6 +45,7 @@ const team = [
     id: "1",
     name: "Arh. Horațiu Vasilescu",
     image: "/images/team/horatiu-1.jpg",
+    video: "/",
     role: "Arhitect",
   },
   {
