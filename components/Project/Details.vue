@@ -18,7 +18,7 @@ defineProps<Props>();
         {{ project.meta.location }}
       </p>
       <p v-if="project.meta?.function">
-        <strong>Funcțiune</strong> <br />
+        <strong>Funcțiune</strong><br />
         {{ project.meta.function }}
       </p>
       <p v-if="project.meta?.year">

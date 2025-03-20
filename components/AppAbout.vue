@@ -31,7 +31,7 @@
           width="400"
           height="400"
           class="w-full h-auto object-cover"
-          :delay="100"
+          :delay="200"
         />
         <NuxtImg
           v-motion-appear
@@ -40,7 +40,7 @@
           width="400"
           height="400"
           class="w-full h-auto object-cover"
-          :delay="200"
+          :delay="400"
         />
       </div>
     </div>

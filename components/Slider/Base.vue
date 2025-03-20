@@ -22,6 +22,7 @@
       <button
         v-for="(_, index) in slides"
         :key="index"
+        :aria-label="`${index}`"
         :class="['w-10 h-1 hover:bg-white/50 transition', activeClasses(index)]"
         @click="active = index"
       >
