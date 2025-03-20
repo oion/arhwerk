@@ -9,6 +9,7 @@
       <NuxtImg
         :src="slide.url"
         :alt="slide.alt"
+        format="webp"
         width="1920"
         height="1080"
         class="w-full h-full object-cover object-center"

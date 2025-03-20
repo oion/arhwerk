@@ -10,11 +10,10 @@ defineProps<Props>();
 
 <template>
   <aside class="md:w-80 flex-shrink-0">
-    <div class="flex flex-col gap-4">
+    <div class="space-y-4">
       <h1 class="text-heading-lg">{{ project.title }}</h1>
 
       <p v-if="project.meta?.location">
-        <strong>Locatie</strong><br />
         {{ project.meta.location }}
       </p>
       <p v-if="project.meta?.function">

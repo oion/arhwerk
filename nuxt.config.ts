@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
   fonts: {},
   image: {
-    quality: 80,
+    quality: 75,
   },
   motion: {
     directives: {

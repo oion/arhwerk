@@ -20,6 +20,7 @@
           v-motion-appear
           src="/images/about/about-3.jpg"
           alt=""
+          format="webp"
           width="800"
           height="400"
           class="w-full h-auto object-cover col-span-2"
@@ -28,6 +29,7 @@
           v-motion-appear
           src="/images/about/about-1.jpg"
           alt=""
+          format="webp"
           width="400"
           height="400"
           class="w-full h-auto object-cover"
@@ -37,6 +39,7 @@
           v-motion-appear
           src="/images/about/about-2.jpg"
           alt=""
+          format="webp"
           width="400"
           height="400"
           class="w-full h-auto object-cover"

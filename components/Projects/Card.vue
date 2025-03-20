@@ -16,6 +16,7 @@
       <h3 class="text-sm font-bold text-primary">
         {{ project.title }}
       </h3>
+
       <p class="text-xs flex flex-col gap-1">
         <span>{{ project.meta?.location }}</span>
         <span>{{ project.meta?.year }} ({{ project.status }})</span>
