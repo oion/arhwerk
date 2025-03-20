@@ -9,6 +9,10 @@ const slug = useRoute().params.slug as string;
 const project = computed(() => {
   return projects.value.find((project) => project.slug === slug);
 });
+
+useSeoMeta({
+  description: project.value?.title,
+});
 </script>
 
 <template>
