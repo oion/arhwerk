@@ -4,13 +4,13 @@
       <h2 class="text-heading-lg">Proiecte</h2>
 
       <nav>
-        <ul class="flex flex-col gap-4 mt-8">
+        <ul class="mt-8 flex flex-col gap-4">
           <li
             v-for="type in allTypes"
             :key="type"
             :class="[
               isSelected(type) ? 'text-primary' : 'text-primary-light',
-              'hover:text-primary-dark hover:cursor-pointer transition',
+              'transition hover:cursor-pointer hover:text-primary-dark',
             ]"
             @click="selectedType = type"
           >
@@ -21,7 +21,7 @@
     </template>
 
     <div
-      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20"
+      class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-20"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"

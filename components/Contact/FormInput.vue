@@ -30,11 +30,11 @@ const isFilled = computed(() => model.value.length > 0);
 </script>
 
 <template>
-  <div class="flex flex-col gap-8 relative">
+  <div class="relative flex flex-col gap-8">
     <label
       ref="my-label"
       for="name"
-      class="absolute transition-all left-0"
+      class="absolute left-0 transition-all"
       :class="labelClasses"
       >{{ label }}</label
     >
@@ -43,7 +43,7 @@ const isFilled = computed(() => model.value.length > 0);
       :is="component"
       id="name"
       type="text"
-      class="border-0 border-b border-black py-2 p-0 bg-transparent placeholder-gray-900"
+      class="border-0 border-b border-black bg-transparent p-0 py-2 placeholder:text-gray-900"
       :value="model"
       @input="model = $event.target.value"
       @focus="isBlurred = true"

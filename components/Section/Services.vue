@@ -4,15 +4,15 @@
       <h2 class="text-heading-lg">Servicii</h2>
     </template>
 
-    <div class="flex flex-col lg:flex-row gap-4">
+    <div class="flex flex-col gap-4 lg:flex-row">
       <div
-        class="flex flex-col lg:flex-row lg:gap-40 lg:justify-between font-light"
+        class="flex flex-col font-light lg:flex-row lg:justify-between lg:gap-40"
       >
         <div v-motion-appear class="max-w-sm">
           <div v-for="service in firstColumnServices" :key="service.name">
-            <h3 class="font-bold text-sm mb-4">{{ service.name }}</h3>
+            <h3 class="mb-4 text-sm font-bold">{{ service.name }}</h3>
             <ul
-              class="list-none pl-0 mb-10 text-sm text-primary-light space-y-2"
+              class="mb-10 list-none space-y-2 pl-0 text-sm text-primary-light"
             >
               <li v-for="item in service.items" :key="item">{{ item }}</li>
             </ul>
@@ -21,9 +21,9 @@
 
         <div v-motion-appear :delay="200" class="max-w-sm">
           <div v-for="service in secondColumnServices" :key="service.name">
-            <h3 class="font-bold text-sm mb-4">{{ service.name }}</h3>
+            <h3 class="mb-4 text-sm font-bold">{{ service.name }}</h3>
             <ul
-              class="list-none pl-0 mb-10 text-sm text-primary-light space-y-2"
+              class="mb-10 list-none space-y-2 pl-0 text-sm text-primary-light"
             >
               <li v-for="item in service.items" :key="item">{{ item }}</li>
             </ul>

@@ -1,18 +1,18 @@
 <template>
   <header
     ref="header"
-    class="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300"
+    class="fixed inset-x-0 top-0 z-50 bg-white transition-all duration-300"
     :class="[{ '-translate-y-full': isHidden && isScrolled }]"
   >
-    <div class="flex justify-between items-center gap-8 py-0 px-8 mx-auto">
-      <h1 class="bg-white flex items-center justify-start overflow-hidden">
+    <div class="mx-auto flex items-center justify-between gap-8 px-8 py-0">
+      <h1 class="flex items-center justify-start overflow-hidden bg-white">
         <NuxtLink to="/" aria-label="Pagina principală" class="block p-6">
           <IconsLogo class="h-4" :is-hidden="isHidden" />
         </NuxtLink>
       </h1>
 
-      <nav class="md:block ml-auto h-auto">
-        <ul class="hidden md:flex space-x-8 transition-all duration-300">
+      <nav class="ml-auto h-auto md:block">
+        <ul class="hidden space-x-8 transition-all duration-300 md:flex">
           <li v-for="navItem in navItems" :key="navItem.url">
             <NuxtLink :to="`${navItem.url}`" class="uline transition-colors">{{
               navItem.name

@@ -123,7 +123,7 @@ const animateLetters = () => {
 
 watch(
   () => props.isHidden,
-  async (newValue, oldValue) => {
+  async () => {
     animateLetters();
   },
   { immediate: true }

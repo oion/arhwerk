@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex h-screen items-center justify-center flex-col">
+  <div class="flex h-screen flex-col items-center justify-center">
     <h1 class="text-8xl">Eroare: {{ error?.statusCode }}</h1>
     <NuxtLink to="/">Inapoi</NuxtLink>
   </div>

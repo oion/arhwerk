@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
     "@vueuse/nuxt",
     "@nuxtjs/mdc",
+    "@nuxt/eslint",
   ],
 
   app: {
@@ -33,13 +34,24 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/app.css"],
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   tailwindcss: {
     editorSupport: true,
   },
+
   fonts: {},
+
   image: {
     quality: 75,
   },
+
   motion: {
     directives: {
       appear: {
@@ -58,6 +70,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   mdc: {
     headings: {
       anchorLinks: {

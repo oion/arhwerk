@@ -18,7 +18,7 @@ useSeoMeta({
 <template>
   <main>
     <section
-      class="flex flex-col md:flex-row gap-4 px-4 py-32 scroll-m-32 max-w-screen-xl mx-auto"
+      class="mx-auto flex max-w-screen-xl scroll-m-32 flex-col gap-4 px-4 py-32 md:flex-row"
     >
       <ProjectDetails v-if="project" :project />
     </section>

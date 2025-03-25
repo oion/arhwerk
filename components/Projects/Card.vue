@@ -1,6 +1,6 @@
 <template>
-  <NuxtLink :to="`/project/${project.slug}`" class="flex flex-col wrap gap-4">
-    <div class="overflow-hidden w-full">
+  <NuxtLink :to="`/project/${project.slug}`" class="wrap flex flex-col gap-4">
+    <div class="w-full overflow-hidden">
       <NuxtImg
         :src="project.image.src"
         :alt="project.title"
@@ -8,7 +8,7 @@
         format="webp"
         width="400"
         height="600"
-        class="w-full h-auto object-cover hover:scale-110 transition duration-700"
+        class="h-auto w-full object-cover transition duration-700 hover:scale-110"
       />
     </div>
 
@@ -17,7 +17,7 @@
         {{ project.title }}
       </h3>
 
-      <p class="text-xs flex flex-col gap-1">
+      <p class="flex flex-col gap-1 text-xs">
         <span>{{ project.meta?.location }}</span>
         <span>{{ project.meta?.year }} ({{ project.status }})</span>
       </p>

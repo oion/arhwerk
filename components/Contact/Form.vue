@@ -6,7 +6,7 @@
 
     <ContactFormInput v-model="form.message" label="Mesaj" type="textarea" />
 
-    <button type="submit" class="font-bold py-4 text-left">Trimite</button>
+    <button type="submit" class="py-4 text-left font-bold">Trimite</button>
   </form>
 </template>
 

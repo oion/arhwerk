@@ -1,9 +1,9 @@
 <template>
-  <section class="min-h-screen w-full relative">
+  <section class="relative min-h-screen w-full">
     <div
       v-for="(slide, index) in slides"
       :key="index"
-      class="w-full h-full flex-shrink-0 absolute transition-opacity duration-1000"
+      class="absolute size-full shrink-0 transition-opacity duration-1000"
       :class="index === active ? 'opacity-100' : 'opacity-0'"
     >
       <NuxtImg
@@ -12,9 +12,9 @@
         format="webp"
         width="1920"
         height="1080"
-        class="w-full h-full object-cover object-center"
+        class="size-full object-cover object-center"
       />
-      <h2 class="absolute bottom-24 left-16 text-white font-light text-xs">
+      <h2 class="absolute bottom-24 left-16 text-xs font-light text-white">
         {{ slide.alt }}
       </h2>
     </div>
@@ -24,7 +24,7 @@
         v-for="(_, index) in slides"
         :key="index"
         :aria-label="`${index}`"
-        :class="['w-10 h-1 hover:bg-white/50 transition', activeClasses(index)]"
+        :class="['h-1 w-10 transition hover:bg-white/50', activeClasses(index)]"
         @click="active = index"
       >
         <span class="hidden">{{ index }}</span>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="absolute bottom-16 right-16">
-      <svg viewBox="0 0 32 32" class="w-8 h-8 text-white animate-bounce">
+      <svg viewBox="0 0 32 32" class="size-8 animate-bounce text-white">
         <path
           fill="currentColor"
           d="M26.29 20.29 18 28.59V0h-2v28.59l-8.29-8.3-1.42 1.42 10 10a1 1 0 0 0 1.41 0l10-10z"

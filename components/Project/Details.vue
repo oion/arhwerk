@@ -9,7 +9,7 @@ defineProps<Props>();
 </script>
 
 <template>
-  <aside class="md:w-80 flex-shrink-0">
+  <aside class="shrink-0 md:w-80">
     <div class="space-y-4 pr-8">
       <h1 class="text-heading-lg">{{ project.title }}</h1>
 
@@ -40,7 +40,10 @@ defineProps<Props>();
       <div v-if="project.meta?.colaborators">
         <strong>Colaboratori</strong>
         <ul>
-          <li v-for="colaborator in project.meta.colaborators">
+          <li
+            v-for="colaborator in project.meta.colaborators"
+            :key="colaborator"
+          >
             {{ colaborator }}
           </li>
         </ul>
