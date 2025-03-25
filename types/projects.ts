@@ -8,6 +8,10 @@ export interface ProjectMeta {
   function?: string;
   location?: string;
   year?: string;
+  technical_data?: {
+    sd?: string;
+  };
+  colaborators?: string[];
 }
 
 export type ProjectType =

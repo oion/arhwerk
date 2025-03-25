@@ -9,6 +9,8 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/image",
     "@vueuse/motion/nuxt",
+    "@vueuse/nuxt",
+    "@nuxtjs/mdc",
   ],
 
   app: {
@@ -55,5 +57,15 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  mdc: {
+    headings: {
+      anchorLinks: {
+        h1: false,
+        h2: false,
+        // Enable/Disable heading anchor links. { h1: true, h2: false }
+      },
+    },
+    highlight: false,
   },
 });

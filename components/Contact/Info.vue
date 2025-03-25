@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col gap-8">
     <p>
-      Ne gasiti la adresa:
+      <IconsLogo class="h-4 text-white" />
+    </p>
+    <p>
       <a
         href="https://maps.app.goo.gl/amM3oNeszfjgSahR9"
         target="_blank"

@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="`/project/${project.slug}`" class="flex flex-col wrap gap-4">
-    <picture class="overflow-hidden w-full">
+    <div class="overflow-hidden w-full">
       <NuxtImg
         :src="project.image.src"
         :alt="project.title"
@@ -10,7 +10,7 @@
         height="600"
         class="w-full h-auto object-cover hover:scale-110 transition duration-700"
       />
-    </picture>
+    </div>
 
     <div class="flex flex-col gap-3">
       <h3 class="text-sm font-bold text-primary">

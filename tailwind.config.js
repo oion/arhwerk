@@ -6,7 +6,10 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.ts",
     "./app.vue",
+    "./error.vue",
   ],
+
+  safelist: ["markdown-content"],
 
   theme: {
     extend: {
@@ -19,8 +22,8 @@ export default {
         white: "#fff",
         black: "#000",
         neutral: {
-          light: "rgb(244, 244, 244)",
-          DEFAULT: "rgb(237, 237, 237)",
+          light: "#f4f4f4",
+          DEFAULT: "#ededed",
           dark: "#e8e8e8",
         },
         primary: {

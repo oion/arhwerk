@@ -1,5 +1,14 @@
-import { createConfigForNuxt } from '@nuxt/eslint-config'
+import withNuxt from "./.nuxt/eslint.config.mjs";
 
-export default createConfigForNuxt({
-  // options here
-})
+export default withNuxt({
+  rules: {
+    "vue/html-self-closing": [
+      "error",
+      {
+        html: {
+          void: "any",
+        },
+      },
+    ],
+  },
+});
