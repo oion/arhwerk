@@ -1,7 +1,7 @@
 <template>
   <header
     ref="header"
-    class="fixed inset-x-0 top-0 z-50 bg-white transition-all duration-300"
+    class="fixed inset-x-0 top-0 z-30 bg-white transition-all duration-300"
     :class="[{ '-translate-y-full': isHidden && isScrolled }]"
   >
     <div class="mx-auto flex items-center justify-between gap-8 px-8 py-0">
