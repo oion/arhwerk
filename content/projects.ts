@@ -415,4 +415,93 @@ export default [
     },
     gallery: [],
   },
+  {
+    id: "17",
+    title: "Biserica Evanghelică Hălchiu",
+    slug: "biserica-evanghelica-halchiu",
+    meta: {
+      id: "Bv-II-m-B-11709",
+      function: "Lăcaș de cult",
+      year: "",
+      location: "sat Hălchiu, jud. Brașov",
+      colaborators: ["Arh. M. Iliescu"],
+      technical_data: {
+        sd: "",
+      },
+    },
+    type: ["Reparații fațade"],
+    status: "In Desfășurare", // Assuming the status is ongoing
+    description: `Proiectul vizează reparațiile fațadelor Bisericii Evanghelice din Hălchiu, incluzând curățarea și restaurarea elementelor de piatră și tencuială.`,
+    image: {
+      src: "/images/projects/biserica-evanghelica-halchiu/biserica-evanghelica-halchiu-1.jpg", // Placeholder image path
+    },
+    gallery: [],
+  },
+  {
+    id: "18",
+    title: "Biserica «Adormirea Maicii Domnului» - Satulung",
+    slug: "biserica-adormirea-maicii-domnului-satulung",
+    meta: {
+      id: "Bv-II-a-B-11806",
+      function: "Lăcaș de cult",
+      year: "",
+      location: "Săcele, jud. Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "", // No specific data provided
+      },
+    },
+    type: ["Reabilitare fațade", "Învelitoare"],
+    status: "In Desfășurare", // Assuming the status is ongoing
+    description: `Proiectul vizează reabilitarea fațadelor și a învelitorii Bisericii «Adormirea Maicii Domnului» din Satulung.`,
+    image: {
+      src: "/images/projects/adormirea-maicii-domnului-satulung/adormirea-maicii-domnului-satulung-1.jpg", // Placeholder image path
+    },
+    gallery: [],
+  },
+  {
+    id: "19",
+    title: "Biserica «Nașterea Maicii Domnului» Zărnești",
+    slug: "biserica-nasterea-maicii-domnului-zarnesti",
+    meta: {
+      id: "Bv-II-m-A-11852",
+      function: "Lăcaș de cult",
+      year: "",
+      location: "Zărnești, jud. Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "", // No specific data provided
+      },
+    },
+    type: ["Reparații fațade", "Învelitoare"],
+    status: "In Desfășurare", // Assuming the status is ongoing
+    description: `Proiectul vizează reparațiile fațadelor și a învelitorii Bisericii «Nașterea Maicii Domnului» din Zărnești.`,
+    image: {
+      src: "/images/projects/nasterea-maicii-domnului-zarnesti/nasterea-maicii-domnului-zarnesti-1.jpg", // Placeholder image path
+    },
+    gallery: [],
+  },
+  {
+    id: "20",
+    title: "Lungă nr.215",
+    slug: "lunga-215",
+    meta: {
+      id: "",
+      function: "Comert si locuire",
+      year: "2020-2025",
+      location: "Brașov, județul Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "1954 mp",
+        investment_value: "1.565.000 euro",
+      },
+    },
+    type: ["Construcție nouă"],
+    status: "În desfășurare", // Presupunând că starea este în curs de desfășurare
+    description: `Proiectul vizează construcția de locuințe și spații comerciale în zona protejată a centrului istoric din Brașov.`,
+    image: {
+      src: "/images/projects/215-lunga/215-lunga-1.jpg", // Cale de imagine placeholder
+    },
+    gallery: [],
+  },
 ] as Project[];
