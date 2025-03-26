@@ -42,5 +42,5 @@ const { project } = defineProps<{
 }>();
 
 // add <br /> before string nr.
-const formatTitle = computed(() => project.title.replace(/(nr.)/g, "<br />$1"));
+const formatTitle = computed(() => project.title.replace(/(nr.)/g, "<br />#"));
 </script>

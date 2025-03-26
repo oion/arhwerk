@@ -114,7 +114,7 @@ export default [
   },
   {
     id: "4",
-    title: "Constantin Brâncoveanu nr. 42",
+    title: "Constantin Brâncoveanu nr.42",
     slug: "constantin-brancoveanu-nr-42",
     meta: {
       id: "BV-II-m-B-11381 Casă",
@@ -131,7 +131,7 @@ export default [
     },
     type: ["Restaurare"],
     status: "In Desfășurare",
-    description: `Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate la Constantin Brâncoveanu nr. 42.`,
+    description: `Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate la Constantin Brâncoveanu nr.42.`,
     image: {
       src: "/images/projects/brancoveanu-42/brancoveanu-42-1.jpg",
     },
@@ -140,7 +140,7 @@ export default [
   },
   {
     id: "5",
-    title: "Castelului nr. 53",
+    title: "Castelului nr.53",
     slug: "castelului-nr-53",
     meta: {
       id: "BV-II-m-B-11353 “Casă”",
@@ -189,7 +189,7 @@ export default [
   },
   {
     id: "7",
-    title: "Mureșenilor nr. 9",
+    title: "Mureșenilor nr.9",
     slug: "muresenilor-nr-9",
     meta: {
       id: "BV-II-m-A-11467 “Casa Schobeln”",
@@ -203,7 +203,7 @@ export default [
     },
     type: ["Restaurare", "Design Interior"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor nr. 9.`,
+    description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor nr.9.`,
     image: {
       src: "/images/projects/muresenilor-9/muresenilor-9-1.jpg", // Placeholder image path
     },
@@ -212,7 +212,7 @@ export default [
   },
   {
     id: "8",
-    title: "Postăvarului nr. 66",
+    title: "Postăvarului nr.66",
     slug: "postavarului-nr-66",
     meta: {
       id: "BV-II-m-B-11529 “Casă”",
@@ -238,7 +238,7 @@ export default [
   },
   {
     id: "9",
-    title: "Michael Weiss nr. 10",
+    title: "Michael Weiss nr.10",
     slug: "michael-weiss-nr-10",
     meta: {
       id: "BV-II-m-B-11594 “Casă”",
@@ -255,7 +255,7 @@ export default [
     },
     type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Michael Weiss nr. 10.`,
+    description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Michael Weiss nr.10.`,
     image: {
       src: "/images/projects/michael-weiss-10/michael-weiss-10-1.jpg", // Placeholder image path
     },
@@ -264,7 +264,7 @@ export default [
   },
   {
     id: "10",
-    title: "Viscri nr. 166",
+    title: "Viscri nr.166",
     slug: "viscri-nr-166",
     meta: {
       id: "Bv-II-s-A-11841",
@@ -292,7 +292,7 @@ export default [
   },
   {
     id: "11",
-    title: "Alma VII nr. 106",
+    title: "Alma VII nr.106",
     slug: "alma-vii-nr-106",
     meta: {
       id: "",
@@ -315,7 +315,7 @@ export default [
   },
   {
     id: "12",
-    title: "Alma VII nr. 77",
+    title: "Alma VII nr.77",
     slug: "alma-vii-nr-77",
     meta: {
       id: "",
@@ -338,7 +338,7 @@ export default [
   },
   {
     id: "13",
-    title: "Piața Unirii nr. 16",
+    title: "Piața Unirii nr.16",
     slug: "piata-unirii-nr-16",
     meta: {
       id: "BV-II-m-B-11529",
@@ -352,7 +352,7 @@ export default [
     },
     type: ["Restaurare", "Extindere"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața Unirii nr. 16.`,
+    description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața Unirii nr.16.`,
     image: {
       src: "/images/projects/piata-unirii-16/piata-unirii-16-1.jpg", // Placeholder image path
     },
@@ -361,7 +361,7 @@ export default [
   },
   {
     id: "14",
-    title: "Str. Ștefan Ludwig Roth nr. 3",
+    title: "Str. Ștefan Ludwig Roth nr.3",
     slug: "stefan-ludwig-roth-nr-3",
     meta: {
       id: "BV-II-m-B-11551",
@@ -378,7 +378,7 @@ export default [
     },
     type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan Ludwig Roth nr. 3, incluzând revizuirea tencuielilor, învelitorii și a elementelor decorative.`,
+    description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan Ludwig Roth nr.3, incluzând revizuirea tencuielilor, învelitorii și a elementelor decorative.`,
     image: {
       src: "/images/projects/stefan-ludwig-roth-3/stefan-ludwig-roth-3-1.jpg", // Placeholder image path
     },
@@ -387,7 +387,7 @@ export default [
   },
   {
     id: "15",
-    title: "Str. Republicii nr. 34",
+    title: "Str. Republicii nr.34",
     slug: "str-republicii-nr-34",
     meta: {
       id: "Bv-II-s-A-11295",
@@ -401,7 +401,7 @@ export default [
     },
     type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru locuința și spațiul comercial situat la Str. Republicii nr. 34.`,
+    description: `Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru locuința și spațiul comercial situat la Str. Republicii nr.34.`,
     image: {
       src: "/images/projects/str-republicii-34/str-republicii-34-1.jpg", // Placeholder image path
     },
@@ -410,7 +410,7 @@ export default [
   },
   {
     id: "16",
-    title: "Str. Castelului nr. 96",
+    title: "Str. Castelului nr.96",
     slug: "str-castelului-nr-96",
     meta: {
       id: "Bv-II-s-A-11295",
@@ -424,7 +424,7 @@ export default [
     },
     type: ["Restaurare", "Extindere"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează restaurarea și extinderea locuinței situate la Str. Castelului nr. 96.`,
+    description: `Proiectul vizează restaurarea și extinderea locuinței situate la Str. Castelului nr.96.`,
     image: {
       src: "/images/projects/str-castelului-96/str-castelului-96-1.jpg", // Placeholder image path
     },
@@ -532,7 +532,7 @@ export default [
       id: "",
       function: "Admi",
       year: "2024-2025",
-      location: "Tudor Vladimirescu nr. 263, Bod, județul Brașov",
+      location: "Tudor Vladimirescu nr.263, Bod, județul Brașov",
       colaborators: [],
       technical_data: {
         sd: "1.516 mp",
@@ -580,7 +580,7 @@ export default [
       id: "",
       function: "Comercial / Rezidential (unifamilial)",
       year: "2021-2024",
-      location: "Aurel Vlaicu nr. 99, Brașov, județul Brașov",
+      location: "Aurel Vlaicu nr.99, Brașov, județul Brașov",
       colaborators: [],
       technical_data: {
         sd: "285 mp",
