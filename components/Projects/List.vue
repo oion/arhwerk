@@ -43,7 +43,7 @@ const projects: Project[] = projectsData;
 
 const selectedType = ref<ProjectType | "Toate">("Toate");
 
-const types = computed(() => {
+const _computedTypes = computed(() => {
   return projects.reduce((acc, project) => {
     if (project.type) {
       project.type.forEach((type) => {
@@ -54,6 +54,13 @@ const types = computed(() => {
   }, new Set<ProjectType>());
 });
 
+const types = ref<ProjectType[]>([
+  "Restaurare",
+  "Design interior",
+  "Construcție nouă",
+  "Extindere",
+]);
+
 const allTypes = computed(() => {
   return ["Toate", ...types.value];
 });
@@ -62,7 +69,9 @@ const filteredProjects = computed(() => {
   if (selectedType.value === "Toate") return projects;
 
   return projects.filter((project) => {
-    return project.type?.includes(selectedType.value);
+    return (
+      project.type?.includes(selectedType.value) && project.hidden !== true
+    );
   });
 });
 

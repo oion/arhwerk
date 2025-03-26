@@ -7,7 +7,7 @@ export default [
     slug: "casa-boierului-comaniciu",
     meta: {
       id: "BV-II-m-B-21165 “Casa Comăniciu”",
-      function: "Spațiu expozițional și locuință",
+      function: "Cultural-educativa",
       year: "2020-2023",
       location: "Veneția de Jos, Brașov",
       colaborators: [
@@ -52,6 +52,7 @@ export default [
         alt: "Sample landscape",
       },
     ],
+    hidden: false,
   },
   {
     id: "2",
@@ -80,6 +81,7 @@ export default [
       src: "/images/projects/brancoveanu-8/brancoveanu-8-1.jpg",
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "3",
@@ -108,6 +110,7 @@ export default [
       src: "/images/projects/ghimbav/ghimbav-1.jpg",
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "4",
@@ -115,7 +118,7 @@ export default [
     slug: "constantin-brancoveanu-nr-42",
     meta: {
       id: "BV-II-m-B-11381 Casă",
-      function: "Locuință",
+      function: "Rezindetial (Unifamilial)",
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -126,13 +129,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Consolidare", "Amenajare", "Extindere"],
+    type: ["Restaurare"],
     status: "In Desfășurare",
     description: `Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate la Constantin Brâncoveanu nr. 42.`,
     image: {
       src: "/images/projects/brancoveanu-42/brancoveanu-42-1.jpg",
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "5",
@@ -140,7 +144,7 @@ export default [
     slug: "castelului-nr-53",
     meta: {
       id: "BV-II-m-B-11353 “Casă”",
-      function: "Locuință",
+      function: "Locuință (unifamiliala)",
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: ["Arh. Marina Iliescu - specialist MC"],
@@ -148,13 +152,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare", "Amenajare"],
+    type: ["Restaurare"],
     status: "In Desfășurare",
-    description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Castelului nr. 53.`,
+    description: ``,
     image: {
       src: "/images/projects/castelului-53/castelului-53-1.jpg",
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "6",
@@ -173,13 +178,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare", "Amenajare"],
+    type: ["Restaurare"],
     status: "In Desfășurare",
-    description: `Proiectul vizează reabilitarea și amenajarea restaurantului situat în Casa Negustorilor.`,
+    description: ``,
     image: {
       src: "/images/projects/casa-negustorilor/casa-negustorilor-1.jpg",
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "7",
@@ -195,13 +201,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare", "Amenajare"],
+    type: ["Restaurare", "Design Interior"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor nr. 9.`,
     image: {
       src: "/images/projects/muresenilor-9/muresenilor-9-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "8",
@@ -209,7 +216,7 @@ export default [
     slug: "postavarului-nr-66",
     meta: {
       id: "BV-II-m-B-11529 “Casă”",
-      function: "Cazare",
+      function: "",
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -220,13 +227,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare anvelopă"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
-    description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Postăvarului nr. 66.`,
+    description: ``,
     image: {
       src: "/images/projects/postavarului-66/postavarului-66-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "9",
@@ -234,7 +242,7 @@ export default [
     slug: "michael-weiss-nr-10",
     meta: {
       id: "BV-II-m-B-11594 “Casă”",
-      function: "Locuință",
+      function: "",
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -245,13 +253,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare anvelopă"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Michael Weiss nr. 10.`,
     image: {
       src: "/images/projects/michael-weiss-10/michael-weiss-10-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "10",
@@ -259,7 +268,7 @@ export default [
     slug: "viscri-nr-166",
     meta: {
       id: "Bv-II-s-A-11841",
-      function: "Locuință",
+      function: "Locuință (unifamilialǎ)",
       year: "",
       location: "Viscri, comuna Bunești, jud. Brașov",
       colaborators: [
@@ -272,13 +281,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Restaurare", "Extindere"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează restaurarea și extinderea locuinței situate în Situl rural Viscri.`,
     image: {
       src: "/images/projects/viscri-166/viscri-166-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "11",
@@ -301,6 +311,7 @@ export default [
       src: "/images/projects/alma-vii-106/alma-vii-106-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "12",
@@ -323,6 +334,7 @@ export default [
       src: "/images/projects/alma-vii-77/alma-vii-77-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "13",
@@ -330,7 +342,7 @@ export default [
     slug: "piata-unirii-nr-16",
     meta: {
       id: "BV-II-m-B-11529",
-      function: "Cazare",
+      function: "Comercial, Locuinta unifamiliala",
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [],
@@ -338,13 +350,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare", "Amenajare"],
+    type: ["Restaurare", "Extindere"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața Unirii nr. 16.`,
     image: {
       src: "/images/projects/piata-unirii-16/piata-unirii-16-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "14",
@@ -352,7 +365,7 @@ export default [
     slug: "stefan-ludwig-roth-nr-3",
     meta: {
       id: "BV-II-m-B-11551",
-      function: "Locuință",
+      function: "",
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -363,13 +376,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare anvelopă"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan Ludwig Roth nr. 3, incluzând revizuirea tencuielilor, învelitorii și a elementelor decorative.`,
     image: {
       src: "/images/projects/stefan-ludwig-roth-3/stefan-ludwig-roth-3-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: true,
   },
   {
     id: "15",
@@ -385,13 +399,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reabilitare fațadă", "Reparații învelitoare"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru locuința și spațiul comercial situat la Str. Republicii nr. 34.`,
     image: {
       src: "/images/projects/str-republicii-34/str-republicii-34-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "16",
@@ -414,6 +429,7 @@ export default [
       src: "/images/projects/str-castelului-96/str-castelului-96-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "17",
@@ -429,13 +445,14 @@ export default [
         sd: "",
       },
     },
-    type: ["Reparații fațade"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    type: ["Restaurare"],
+    status: "In Desfășurare",
     description: `Proiectul vizează reparațiile fațadelor Bisericii Evanghelice din Hălchiu, incluzând curățarea și restaurarea elementelor de piatră și tencuială.`,
     image: {
       src: "/images/projects/biserica-evanghelica-halchiu/biserica-evanghelica-halchiu-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: true,
   },
   {
     id: "18",
@@ -451,13 +468,14 @@ export default [
         sd: "", // No specific data provided
       },
     },
-    type: ["Reabilitare fațade", "Învelitoare"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea fațadelor și a învelitorii Bisericii «Adormirea Maicii Domnului» din Satulung.`,
     image: {
       src: "/images/projects/adormirea-maicii-domnului-satulung/adormirea-maicii-domnului-satulung-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: true,
   },
   {
     id: "19",
@@ -473,13 +491,14 @@ export default [
         sd: "", // No specific data provided
       },
     },
-    type: ["Reparații fațade", "Învelitoare"],
+    type: ["Restaurare"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reparațiile fațadelor și a învelitorii Bisericii «Nașterea Maicii Domnului» din Zărnești.`,
     image: {
       src: "/images/projects/nasterea-maicii-domnului-zarnesti/nasterea-maicii-domnului-zarnesti-1.jpg", // Placeholder image path
     },
     gallery: [],
+    hidden: true,
   },
   {
     id: "20",
@@ -487,7 +506,7 @@ export default [
     slug: "lunga-215",
     meta: {
       id: "",
-      function: "Comert si locuire",
+      function: "Comert, Rezidențial (Colectiv)",
       year: "2020-2025",
       location: "Brașov, județul Brașov",
       colaborators: [],
@@ -496,36 +515,38 @@ export default [
         investment_value: "1.565.000 euro",
       },
     },
-    type: ["Construcție nouă"],
+    type: ["Extindere"],
     status: "În desfășurare", // Presupunând că starea este în curs de desfășurare
     description: `Proiectul vizează construcția de locuințe și spații comerciale în zona protejată a centrului istoric din Brașov.`,
     image: {
       src: "/images/projects/lunga-215/lunga-215-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "21",
-    title: "Bod cu Ltură Cultural Centre",
-    slug: "bod-cultural-centre",
+    title: "Centrul Cultural Bod",
+    slug: "centru-cultural-bod",
     meta: {
       id: "",
-      function: "Centrul cultural și birouri primărie",
+      function: "Admi",
       year: "2024-2025",
-      location: "Tudor Vladimirescu no. 263, Bod, județul Brașov",
+      location: "Tudor Vladimirescu nr. 263, Bod, județul Brașov",
       colaborators: [],
       technical_data: {
         sd: "1.516 mp",
         investment_value: "1.410.000 euro",
       },
     },
-    type: ["Restaurare", "Reabilitare Interioara"],
+    type: ["Restaurare"],
     status: "Planificare SF",
     description: `Proiectul vizează restaurarea și reabilitarea interioară a centrului cultural și birourilor primăriei din Bod.`,
     image: {
       src: "/images/projects/bod-cultural-centre/bod-cultural-centre-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "22",
@@ -542,36 +563,38 @@ export default [
         investment_value: "200.000 euro",
       },
     },
-    type: ["Restaurare", "Reabilitare", "Extindere", "Reparații generale"],
+    type: ["Restaurare"],
     status: "Casă finalizată / anexe în construcție",
     description: `Proiectul vizează restaurarea, reabilitarea, extinderea și reparațiile generale ale locuinței din Alma Vii 106.`,
     image: {
       src: "/images/projects/alma-vii-106/alma-vii-106-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "23",
-    title: "Town House",
-    slug: "town-house",
+    title: "Vlaicu nr.99",
+    slug: "vlaicu-99",
     meta: {
       id: "",
-      function: "Centru de înfrumusețare și locuință",
+      function: "Comercial / Rezidential (unifamilial)",
       year: "2021-2024",
-      location: "Aurel Vlaicu no. 99, Brașov, județul Brașov",
+      location: "Aurel Vlaicu nr. 99, Brașov, județul Brașov",
       colaborators: [],
       technical_data: {
         sd: "285 mp",
         investment_value: "300.000 euro",
       },
     },
-    type: ["Remodelare", "Extindere"],
+    type: ["Extindere"],
     status: "Finalizat",
-    description: `Proiectul vizează remodelarea și extinderea centrului de înfrumusețare și locuinței situate la Aurel Vlaicu no. 99, Brașov.`,
+    description: ``,
     image: {
-      src: "/images/projects/town-house/town-house-1.jpg", // Cale de imagine placeholder
+      src: "/images/projects/vlaicu-99/vlaicu-99-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "24",
@@ -595,10 +618,11 @@ export default [
       src: "/images/projects/st-nicholas-church/st-nicholas-church-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
+    hidden: false,
   },
   {
     id: "25",
-    title: "Neagoe Basarab nr.20",
+    title: "NB20",
     slug: "neagoe-basarab-20",
     meta: {
       id: "",
@@ -618,5 +642,6 @@ export default [
       src: "/images/projects/neagoe-basarab-20/neagoe-basarab-20-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
+    hidden: false,
   },
 ] as const as Project[];

@@ -4,9 +4,27 @@ export interface ProjectImage {
   src: string;
 }
 
+export type ProjectFunction =
+  | "Rezidențial (Unifamilial)"
+  | "Rezidențial (Colectiv)"
+  | "Lacaş de cult"
+  | "Comerciala"
+  | "Administativa"
+  | "Cultural-educativa"
+  | string;
+
+export type ProjectType =
+  | "Construcție nouă"
+  | "Design interior"
+  | "Restaurare"
+  | "Extindere"
+  | string;
+
+export type ProjectStatus = "Finalizat" | "In Executie" | string;
+
 export interface ProjectMeta {
   id?: string;
-  function?: string;
+  function?: ProjectFunction;
   location?: string;
   year?: string;
   technical_data?: {
@@ -15,15 +33,6 @@ export interface ProjectMeta {
   };
   colaborators?: string[];
 }
-
-export type ProjectType =
-  | "Rezidențial"
-  | "Comercial"
-  | "Interior"
-  | "Restaurare"
-  | string;
-
-export type ProjectStatus = "Finalizat" | "In Executie" | string;
 
 export interface Project {
   id: string;
@@ -36,7 +45,7 @@ export interface Project {
   gallery?: ProjectImage[];
   image: ProjectImage;
   info?: string;
-  is_hidden?: boolean;
+  hidden?: boolean;
 }
 
 export type Projects = Project[];

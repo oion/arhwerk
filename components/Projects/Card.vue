@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/project/${project.slug}`" class="flex flex-col gap-4">
     <div
-      class="relative w-full overflow-hidden bg-white hover:bg-black transition-all aspect-square"
+      class="group relative aspect-square w-full overflow-hidden bg-white transition-all after:absolute after:-right-4 after:-bottom-4 after:block after:size-4 after:rounded-xl after:bg-black after:transition-all after:duration-500 after:content-[''] hover:after:scale-[5000%] hover:after:bg-black"
     >
       <!-- <NuxtImg
         v-if="project.image"
@@ -14,11 +14,9 @@
         class="h-auto w-full object-cover transition duration-700 hover:scale-110 invert mix-blend-luminosity"
       /> -->
       <h3
-        class="p-4 leading-[1.0em] absolute inset-0 flex items-end break-word text-3xl font-black text-black transition-all hover:leading-[1.2em] hover:text-white duration-500"
-      >
-        . <br />
-        {{ project.title }}
-      </h3>
+        class="p-4 absolute flex flex-col justify-end inset-0 z-10 items-endp-4 text-3xl font-black leading-[1.0em] text-black transition-all duration-500 group-hover:leading-[1.2em] group-hover:text-white delay-200"
+        v-html="formatTitle"
+      />
     </div>
 
     <div class="flex flex-col gap-3">
@@ -38,8 +36,11 @@
 import { NuxtLink } from "#components";
 import type { Project } from "~/types/projects";
 
-defineProps<{
+const { project } = defineProps<{
   project: Project;
   index: number;
 }>();
+
+// add <br /> before string nr.
+const formatTitle = computed(() => project.title.replace(/(nr.)/g, "<br />$1"));
 </script>
