@@ -30,12 +30,9 @@ defineProps<Props>();
         {{ project.meta.technical_data.sd }}
       </p>
 
-      <MDC
-        v-if="project.description"
-        :value="project.description"
-        tag="article"
-        class="description"
-      />
+      <div v-if="project.description">
+        {{ project.description }}
+      </div>
 
       <div v-if="project.meta?.colaborators">
         <strong>Colaboratori</strong>

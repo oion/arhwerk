@@ -5,6 +5,7 @@ export interface ProjectImage {
 }
 
 export interface ProjectMeta {
+  id?: string;
   function?: string;
   location?: string;
   year?: string;

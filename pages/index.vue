@@ -6,7 +6,7 @@ useHead({
 
 <template>
   <main>
-    <SectionHero id="hero" />
+    <!-- <SectionHero id="hero"  /> -->
 
     <ProjectsList id="proiecte" />
 

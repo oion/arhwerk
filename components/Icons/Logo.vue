@@ -1,6 +1,6 @@
 <template>
   <svg viewBox="0 0 150 20" xmlns="http://www.w3.org/2000/svg">
-    <g ref="el" class="letters" fill="currentColor" fill-rule="evenodd">
+    <g ref="el" fill="currentColor" fill-rule="evenodd">
       <g data-letter="A">
         <path
           d="m9.78843.0860265c.45367.2129335.64917.7541285.43677 1.2087935l-8.49646 18.18148c-.21247.4546-.752487.6506-1.206162.4377-.4536742-.213-.649209-.7542-.4367387-1.2088l8.4964307-18.181482c.21247-.454664.75249-.650625 1.20616-.4376915z"

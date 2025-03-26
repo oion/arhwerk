@@ -43,7 +43,7 @@ const isFilled = computed(() => model.value.length > 0);
       :is="component"
       id="name"
       type="text"
-      class="border-0 border-b border-black bg-transparent p-0 py-2 placeholder:text-gray-900"
+      class="border-0 border-b border-primary bg-transparent p-0 py-2 placeholder:text-gray-900 focus:border-primary-dark focus:outline-none"
       :value="model"
       @input="model = $event.target.value"
       @focus="isBlurred = true"

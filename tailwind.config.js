@@ -27,7 +27,7 @@ export default {
           dark: "#e8e8e8",
         },
         primary: {
-          light: "#aaa",
+          light: "#999",
           DEFAULT: "#333",
           dark: "#444",
         },

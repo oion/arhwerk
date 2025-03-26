@@ -19,7 +19,7 @@
     </p>
 
     <p class="flex gap-4">
-      <a href="#">
+      <a href="https://www.facebook.com/arhwerk" target="_blank">
         <svg
           width="32"
           height="32"
@@ -46,7 +46,7 @@
         </svg>
       </a>
 
-      <a href="#">
+      <a href="https://www.instagram.com/arhwerk" target="_blank">
         <svg
           width="32"
           height="32"
@@ -62,6 +62,11 @@
       </a>
     </p>
 
+    <p>
+      <a href="/pdfs/ARHWERK-presentation-20250326.pdf" target="_blank"
+        >Prezentare (PDF)</a
+      >
+    </p>
     <p class="text-xs font-thin text-primary-light">
       &copy; 2025 - Toate drepturile rezervate
     </p>
