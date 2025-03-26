@@ -34,7 +34,9 @@ defineProps<Props>();
         {{ project.description }}
       </div>
 
-      <div v-if="project.meta?.colaborators">
+      <div
+        v-if="project.meta?.colaborators && project.meta.colaborators.length"
+      >
         <strong>Colaboratori</strong>
         <ul>
           <li

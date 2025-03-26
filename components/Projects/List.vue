@@ -21,13 +21,12 @@
     </template>
 
     <div
-      class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-20"
+      class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-20"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"
         :key="project.title"
         v-motion-appear
-        :delay="100 * index"
         :project
         :index
       />

@@ -14,8 +14,9 @@
         class="h-auto w-full object-cover transition duration-700 hover:scale-110 invert mix-blend-luminosity"
       /> -->
       <h3
-        class="p-4 leading-[0.75em] absolute inset-0 flex items-end break-word text-3xl font-black text-black transition-all hover:leading-[1em] hover:text-white"
+        class="p-4 leading-[1.0em] absolute inset-0 flex items-end break-word text-3xl font-black text-black transition-all hover:leading-[1.2em] hover:text-white duration-500"
       >
+        . <br />
         {{ project.title }}
       </h3>
     </div>

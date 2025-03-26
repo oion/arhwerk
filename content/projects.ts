@@ -500,8 +500,123 @@ export default [
     status: "În desfășurare", // Presupunând că starea este în curs de desfășurare
     description: `Proiectul vizează construcția de locuințe și spații comerciale în zona protejată a centrului istoric din Brașov.`,
     image: {
-      src: "/images/projects/215-lunga/215-lunga-1.jpg", // Cale de imagine placeholder
+      src: "/images/projects/lunga-215/lunga-215-1.jpg", // Cale de imagine placeholder
     },
     gallery: [],
   },
-] as Project[];
+  {
+    id: "21",
+    title: "Bod cu Ltură Cultural Centre",
+    slug: "bod-cultural-centre",
+    meta: {
+      id: "",
+      function: "Centrul cultural și birouri primărie",
+      year: "2024-2025",
+      location: "Tudor Vladimirescu no. 263, Bod, județul Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "1.516 mp",
+        investment_value: "1.410.000 euro",
+      },
+    },
+    type: ["Restaurare", "Reabilitare Interioara"],
+    status: "Planificare SF",
+    description: `Proiectul vizează restaurarea și reabilitarea interioară a centrului cultural și birourilor primăriei din Bod.`,
+    image: {
+      src: "/images/projects/bod-cultural-centre/bod-cultural-centre-1.jpg", // Cale de imagine placeholder
+    },
+    gallery: [],
+  },
+  {
+    id: "22",
+    title: "Alma Vii 106",
+    slug: "alma-vii-106",
+    meta: {
+      id: "",
+      function: "Cazare",
+      year: "2023-2024",
+      location: "Alma Vii, județul Sibiu",
+      colaborators: [],
+      technical_data: {
+        sd: "558 mp",
+        investment_value: "200.000 euro",
+      },
+    },
+    type: ["Restaurare", "Reabilitare", "Extindere", "Reparații generale"],
+    status: "Casă finalizată / anexe în construcție",
+    description: `Proiectul vizează restaurarea, reabilitarea, extinderea și reparațiile generale ale locuinței din Alma Vii 106.`,
+    image: {
+      src: "/images/projects/alma-vii-106/alma-vii-106-1.jpg", // Cale de imagine placeholder
+    },
+    gallery: [],
+  },
+  {
+    id: "23",
+    title: "Town House",
+    slug: "town-house",
+    meta: {
+      id: "",
+      function: "Centru de înfrumusețare și locuință",
+      year: "2021-2024",
+      location: "Aurel Vlaicu no. 99, Brașov, județul Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "285 mp",
+        investment_value: "300.000 euro",
+      },
+    },
+    type: ["Remodelare", "Extindere"],
+    status: "Finalizat",
+    description: `Proiectul vizează remodelarea și extinderea centrului de înfrumusețare și locuinței situate la Aurel Vlaicu no. 99, Brașov.`,
+    image: {
+      src: "/images/projects/town-house/town-house-1.jpg", // Cale de imagine placeholder
+    },
+    gallery: [],
+  },
+  {
+    id: "24",
+    title: "St. Nicholas Church",
+    slug: "st-nicholas-church",
+    meta: {
+      id: "BV-II-m-A-11816",
+      function: "Lăcaș de cult",
+      year: "2023-2025",
+      location: "Sânpetru, județul Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "210 mp",
+        investment_value: "780.000 euro",
+      },
+    },
+    type: ["Restaurare"],
+    status: "Autorizație de construire obținută",
+    description: `Proiectul vizează restaurarea bisericii St. Nicholas și construcția unui baptisteriu în Sânpetru.`,
+    image: {
+      src: "/images/projects/st-nicholas-church/st-nicholas-church-1.jpg", // Cale de imagine placeholder
+    },
+    gallery: [],
+  },
+  {
+    id: "25",
+    title: "Neagoe Basarab nr.20",
+    slug: "neagoe-basarab-20",
+    meta: {
+      id: "",
+      function: "Locuință",
+      year: "2021-2024",
+      location: "Brașov, județul Brașov",
+      colaborators: [],
+      technical_data: {
+        sd: "1145 mp",
+        investment_value: "1.500.000 euro",
+      },
+    },
+    type: ["Construcție nouă"],
+    status: "Finalizat",
+    description: `Proiectul vizează construcția de locuințe în zona protejată din Brașov.`,
+    image: {
+      src: "/images/projects/neagoe-basarab-20/neagoe-basarab-20-1.jpg", // Cale de imagine placeholder
+    },
+    gallery: [],
+  },
+] as const as Project[];

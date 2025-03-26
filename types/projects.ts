@@ -11,6 +11,7 @@ export interface ProjectMeta {
   year?: string;
   technical_data?: {
     sd?: string;
+    investment_value?: string;
   };
   colaborators?: string[];
 }
@@ -35,6 +36,7 @@ export interface Project {
   gallery?: ProjectImage[];
   image: ProjectImage;
   info?: string;
+  is_hidden?: boolean;
 }
 
 export type Projects = Project[];
