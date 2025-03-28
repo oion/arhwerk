@@ -107,7 +107,7 @@ export default [
     status: "In Desfășurare",
     description: `Construcția trilobată, definitivată între 1780-1805 și completată ulterior cu contraforturi, este o realizare modestă ca dimensiuni și execuție, vizibilă după decopertările din 2013-2017. Exteriorul are o elevație simplă, cornișă de tencuială, acoperiș în două ape cu țiglă ceramică și turn clopotniță cu coif octogonal. Nișele superioare, cândva pictate, au fost repictate recent. Intervențiile propuse vizează corectarea deficiențelor și asigurarea funcționării corespunzătoare a bisericii.`,
     image: {
-      src: "/images/projects/ghimbav/ghimbav-1.jpg",
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -182,7 +182,7 @@ export default [
     status: "In Desfășurare",
     description: ``,
     image: {
-      src: "/images/projects/casa-negustorilor/casa-negustorilor-1.jpg",
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -202,10 +202,10 @@ export default [
       },
     },
     type: ["Restaurare", "Design interior"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor nr.9.`,
     image: {
-      src: "/images/projects/muresenilor-9/muresenilor-9-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -228,10 +228,10 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: ``,
     image: {
-      src: "/images/projects/postavarului-66/postavarului-66-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -254,10 +254,10 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Michael Weiss nr.10.`,
     image: {
-      src: "/images/projects/michael-weiss-10/michael-weiss-10-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -282,17 +282,17 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează restaurarea și extinderea locuinței situate în Situl rural Viscri.`,
     image: {
-      src: "/images/projects/viscri-166/viscri-166-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
   },
   {
     id: "11",
-    title: "Alma VII nr.106",
+    title: "Alma Vii nr.106",
     slug: "alma-vii-nr-106",
     meta: {
       id: "",
@@ -305,17 +305,17 @@ export default [
       },
     },
     type: [],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: ``,
     image: {
-      src: "/images/projects/alma-vii-106/alma-vii-106-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
   },
   {
     id: "12",
-    title: "Alma VII nr.77",
+    title: "Alma Vii nr.77",
     slug: "alma-vii-nr-77",
     meta: {
       id: "",
@@ -328,10 +328,10 @@ export default [
       },
     },
     type: [],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează detalii care nu sunt specificate în prezent.`,
     image: {
-      src: "/images/projects/alma-vii-77/alma-vii-77-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -351,10 +351,10 @@ export default [
       },
     },
     type: ["Restaurare", "Extindere"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața Unirii nr.16.`,
     image: {
-      src: "/images/projects/piata-unirii-16/piata-unirii-16-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -377,10 +377,10 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan Ludwig Roth nr.3, incluzând revizuirea tencuielilor, învelitorii și a elementelor decorative.`,
     image: {
-      src: "/images/projects/stefan-ludwig-roth-3/stefan-ludwig-roth-3-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: true,
@@ -400,10 +400,10 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru locuința și spațiul comercial situat la Str. Republicii nr.34.`,
     image: {
-      src: "/images/projects/str-republicii-34/str-republicii-34-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -423,10 +423,10 @@ export default [
       },
     },
     type: ["Restaurare", "Extindere"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează restaurarea și extinderea locuinței situate la Str. Castelului nr.96.`,
     image: {
-      src: "/images/projects/str-castelului-96/str-castelului-96-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -449,7 +449,7 @@ export default [
     status: "In Desfășurare",
     description: `Proiectul vizează reparațiile fațadelor Bisericii Evanghelice din Hălchiu, incluzând curățarea și restaurarea elementelor de piatră și tencuială.`,
     image: {
-      src: "/images/projects/biserica-evanghelica-halchiu/biserica-evanghelica-halchiu-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: true,
@@ -469,10 +469,10 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reabilitarea fațadelor și a învelitorii Bisericii «Adormirea Maicii Domnului» din Satulung.`,
     image: {
-      src: "/images/projects/adormirea-maicii-domnului-satulung/adormirea-maicii-domnului-satulung-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: true,
@@ -492,10 +492,10 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare", // Assuming the status is ongoing
+    status: "In Desfășurare",
     description: `Proiectul vizează reparațiile fațadelor și a învelitorii Bisericii «Nașterea Maicii Domnului» din Zărnești.`,
     image: {
-      src: "/images/projects/nasterea-maicii-domnului-zarnesti/nasterea-maicii-domnului-zarnesti-1.jpg", // Placeholder image path
+      src: "",
     },
     gallery: [],
     hidden: true,
@@ -508,7 +508,7 @@ export default [
       id: "",
       function: "Comert, Rezidențial (Colectiv)",
       year: "2020-2025",
-      location: "Brașov, județul Brașov",
+      location: "Brașov, jud. Brașov",
       colaborators: [],
       technical_data: {
         sd: "1954 mp",
@@ -516,10 +516,10 @@ export default [
       },
     },
     type: ["Extindere"],
-    status: "În desfășurare", // Presupunând că starea este în curs de desfășurare
+    status: "În desfășurare",
     description: `Proiectul vizează construcția de locuințe și spații comerciale în zona protejată a centrului istoric din Brașov.`,
     image: {
-      src: "/images/projects/lunga-215/lunga-215-1.jpg", // Cale de imagine placeholder
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -532,7 +532,7 @@ export default [
       id: "",
       function: "Admi",
       year: "2024-2025",
-      location: "Tudor Vladimirescu nr.263, Bod, județul Brașov",
+      location: "Tudor Vladimirescu nr.263, Bod, jud. Brașov",
       colaborators: [],
       technical_data: {
         sd: "1.516 mp",
@@ -543,7 +543,7 @@ export default [
     status: "Planificare SF",
     description: `Proiectul vizează restaurarea și reabilitarea interioară a centrului cultural și birourilor primăriei din Bod.`,
     image: {
-      src: "/images/projects/bod-cultural-centre/bod-cultural-centre-1.jpg", // Cale de imagine placeholder
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -556,7 +556,7 @@ export default [
       id: "",
       function: "Cazare",
       year: "2023-2024",
-      location: "Alma Vii, județul Sibiu",
+      location: "Alma Vii, jud. Sibiu",
       colaborators: [],
       technical_data: {
         sd: "558 mp",
@@ -567,7 +567,7 @@ export default [
     status: "Casă finalizată / anexe în construcție",
     description: `Proiectul vizează restaurarea, reabilitarea, extinderea și reparațiile generale ale locuinței din Alma Vii 106.`,
     image: {
-      src: "/images/projects/alma-vii-106/alma-vii-106-1.jpg", // Cale de imagine placeholder
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -580,7 +580,7 @@ export default [
       id: "",
       function: "Comercial / Rezidential (unifamilial)",
       year: "2021-2024",
-      location: "Aurel Vlaicu nr.99, Brașov, județul Brașov",
+      location: "Aurel Vlaicu nr.99, Brașov, jud. Brașov",
       colaborators: [],
       technical_data: {
         sd: "285 mp",
@@ -591,20 +591,20 @@ export default [
     status: "Finalizat",
     description: ``,
     image: {
-      src: "/images/projects/vlaicu-99/vlaicu-99-1.jpg", // Cale de imagine placeholder
+      src: "",
     },
     gallery: [],
     hidden: false,
   },
   {
     id: "24",
-    title: "St. Nicholas Church",
-    slug: "st-nicholas-church",
+    title: "Biserica Sf. Nicolae",
+    slug: "biserica-sf-nicolae",
     meta: {
       id: "BV-II-m-A-11816",
       function: "Lăcaș de cult",
       year: "2023-2025",
-      location: "Sânpetru, județul Brașov",
+      location: "Sânpetru, jud. Brașov",
       colaborators: [],
       technical_data: {
         sd: "210 mp",
@@ -613,9 +613,9 @@ export default [
     },
     type: ["Restaurare"],
     status: "Autorizație de construire obținută",
-    description: `Proiectul vizează restaurarea bisericii St. Nicholas și construcția unui baptisteriu în Sânpetru.`,
+    description: `Proiectul vizează restaurarea bisericii Sf. Nicolae și construcția unui baptisteriu în Sânpetru.`,
     image: {
-      src: "/images/projects/st-nicholas-church/st-nicholas-church-1.jpg", // Cale de imagine placeholder
+      src: "",
     },
     gallery: [],
     hidden: false,
@@ -623,12 +623,12 @@ export default [
   {
     id: "25",
     title: "NB20",
-    slug: "neagoe-basarab-20",
+    slug: "nb20",
     meta: {
       id: "",
       function: "Locuință",
       year: "2021-2024",
-      location: "Brașov, județul Brașov",
+      location: "Brașov, jud. Brașov",
       colaborators: [],
       technical_data: {
         sd: "1145 mp",
@@ -639,7 +639,7 @@ export default [
     status: "Finalizat",
     description: `Proiectul vizează construcția de locuințe în zona protejată din Brașov.`,
     image: {
-      src: "/images/projects/neagoe-basarab-20/neagoe-basarab-20-1.jpg", // Cale de imagine placeholder
+      src: "/images/projects/nb20/nb20-1.jpg",
     },
     gallery: [],
     hidden: false,

@@ -6,7 +6,7 @@
   >
     <div class="mx-auto flex items-center justify-between gap-8 px-8 py-0">
       <h1 class="flex items-center justify-start overflow-hidden bg-white">
-        <NuxtLink to="/" aria-label="Pagina principală" class="block p-6">
+        <NuxtLink to="/" aria-label="Pagina principală" class="block py-6">
           <IconsLogo class="h-4" :is-hidden="isHidden" />
         </NuxtLink>
       </h1>

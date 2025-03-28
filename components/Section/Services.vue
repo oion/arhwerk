@@ -11,9 +11,7 @@
         <div v-motion-appear class="max-w-sm">
           <div v-for="service in firstColumnServices" :key="service.name">
             <h3 class="mb-4 text-sm font-bold">{{ service.name }}</h3>
-            <ul
-              class="mb-10 list-none space-y-2 pl-0 text-sm text-primary-light"
-            >
+            <ul class="mb-10 list-none space-y-2 pl-0 text-sm text-primary">
               <li v-for="item in service.items" :key="item">{{ item }}</li>
             </ul>
           </div>
@@ -22,9 +20,7 @@
         <div v-motion-appear :delay="200" class="max-w-sm">
           <div v-for="service in secondColumnServices" :key="service.name">
             <h3 class="mb-4 text-sm font-bold">{{ service.name }}</h3>
-            <ul
-              class="mb-10 list-none space-y-2 pl-0 text-sm text-primary-light"
-            >
+            <ul class="mb-10 list-none space-y-2 pl-0 text-sm text-primary">
               <li v-for="item in service.items" :key="item">{{ item }}</li>
             </ul>
           </div>

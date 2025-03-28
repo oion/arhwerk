@@ -11,7 +11,7 @@ defineProps<Props>();
 <template>
   <aside class="shrink-0 md:w-80">
     <div class="space-y-4 pr-8">
-      <h1 class="text-heading-lg">{{ project.title }}</h1>
+      <h1 class="text-4xl font-bold">{{ project.title }}</h1>
 
       <p v-if="project.meta?.location">
         {{ project.meta.location }}

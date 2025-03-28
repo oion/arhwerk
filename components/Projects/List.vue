@@ -9,9 +9,7 @@
             v-for="type in allTypes"
             :key="type"
             :class="[
-              isSelected(type)
-                ? 'font-bold text-primary'
-                : 'text-primary-light',
+              isSelected(type) ? 'font-bold text-primary' : 'text-primary/50',
               'transition hover:cursor-pointer hover:text-primary-dark',
             ]"
             @click="selectedType = type"
