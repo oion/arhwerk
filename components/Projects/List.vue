@@ -9,7 +9,9 @@
             v-for="type in allTypes"
             :key="type"
             :class="[
-              isSelected(type) ? 'text-primary' : 'text-primary-light',
+              isSelected(type)
+                ? 'font-bold text-primary'
+                : 'text-primary-light',
               'transition hover:cursor-pointer hover:text-primary-dark',
             ]"
             @click="selectedType = type"
@@ -21,7 +23,7 @@
     </template>
 
     <div
-      class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-20"
+      class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-10"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"
@@ -33,18 +35,17 @@
     </div>
   </SectionBase>
 </template>
+x
 
 <script setup lang="ts">
 import type { Project, ProjectType } from "~/types/projects";
 
 import projectsData from "~/content/projects";
 
-const projects: Project[] = projectsData;
-
-const selectedType = ref<ProjectType | "Toate">("Toate");
+const selectedType = ref<ProjectType>("Toate");
 
 const _computedTypes = computed(() => {
-  return projects.reduce((acc, project) => {
+  return projects.value.reduce((acc, project) => {
     if (project.type) {
       project.type.forEach((type) => {
         acc.add(type);
@@ -54,24 +55,23 @@ const _computedTypes = computed(() => {
   }, new Set<ProjectType>());
 });
 
-const types = ref<ProjectType[]>([
+const projects = computed<Project[]>(() =>
+  projectsData.filter((project) => project.hidden !== true)
+);
+
+const allTypes = ref<ProjectType[]>([
+  "Toate",
   "Restaurare",
   "Design interior",
   "Construcție nouă",
   "Extindere",
 ]);
 
-const allTypes = computed(() => {
-  return ["Toate", ...types.value];
-});
-
 const filteredProjects = computed(() => {
-  if (selectedType.value === "Toate") return projects;
+  if (selectedType.value === "Toate") return projects.value;
 
-  return projects.filter((project) => {
-    return (
-      project.type?.includes(selectedType.value) && project.hidden !== true
-    );
+  return projects.value.filter((project) => {
+    return project.type?.includes(selectedType.value);
   });
 });
 

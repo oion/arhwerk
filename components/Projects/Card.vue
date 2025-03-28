@@ -1,9 +1,12 @@
 <template>
-  <NuxtLink :to="`/project/${project.slug}`" class="flex flex-col gap-4">
+  <NuxtLink
+    :to="`/project/${project.slug}`"
+    class="group/item flex flex-col gap-4"
+  >
     <div
-      class="group relative aspect-square w-full overflow-hidden bg-white transition-all after:absolute after:-right-4 after:-bottom-4 after:block after:size-4 after:rounded-xl after:bg-black after:transition-all after:duration-500 after:content-[''] hover:after:scale-[5000%] hover:after:bg-black"
+      class="relative aspect-square w-full overflow-hidden bg-white transition-all after:absolute after:-bottom-4 after:-right-4 after:block after:size-4 after:rounded-xl after:bg-black after:transition-all after:duration-500 after:content-[''] group-hover/item:after:scale-[5000%] group-hover/item:after:bg-black/90"
     >
-      <!-- <NuxtImg
+      <NuxtImg
         v-if="project.image"
         :src="project.image.src"
         :alt="project.title"
@@ -11,12 +14,13 @@
         format="webp"
         width="400"
         height="400"
-        class="h-auto w-full object-cover transition duration-700 hover:scale-110 invert mix-blend-luminosity"
-      /> -->
+        class="h-auto w-full object-cover mix-blend-luminosity saturate-0 transition duration-700 hover:scale-110"
+      />
       <h3
-        class="p-4 absolute flex flex-col justify-end inset-0 z-10 items-endp-4 text-3xl font-black leading-[1.0em] text-black transition-all duration-500 group-hover:leading-[1.2em] group-hover:text-white delay-200"
+        class="absolute inset-0 z-10 flex flex-col justify-end p-4 text-3xl font-black leading-[1.0em] text-black transition-all delay-200 duration-500 group-hover/item:leading-[1.2em] group-hover/item:text-white"
         v-html="formatTitle"
       />
+      <div></div>
     </div>
 
     <div class="flex flex-col gap-3">
@@ -41,6 +45,5 @@ const { project } = defineProps<{
   index: number;
 }>();
 
-// add <br /> before string nr.
 const formatTitle = computed(() => project.title.replace(/(nr.)/g, "<br />#"));
 </script>

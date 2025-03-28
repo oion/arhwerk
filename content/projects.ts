@@ -7,7 +7,7 @@ export default [
     slug: "casa-boierului-comaniciu",
     meta: {
       id: "BV-II-m-B-21165 “Casa Comăniciu”",
-      function: "Cultural-educativa",
+      function: ["Cultural-educativa", "Rezidențial (Unifamilial)"],
       year: "2020-2023",
       location: "Veneția de Jos, Brașov",
       colaborators: [
@@ -60,7 +60,7 @@ export default [
     slug: "constantin-brancoveanu-nr-8",
     meta: {
       id: "BV-II-m-B-11369 “Casă”",
-      function: "Spații de cazare",
+      function: ["Comerciala"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -89,7 +89,7 @@ export default [
     slug: "biserica-sf-treime-ghimbav",
     meta: {
       id: "BV-II-m-B-11701 “Biserica Sf. Treime”",
-      function: "Lăcaș de cult",
+      function: ["Lacaş de cult"],
       year: "",
       location: "Ghimbav, jud. Brașov",
       colaborators: [
@@ -118,7 +118,7 @@ export default [
     slug: "constantin-brancoveanu-nr-42",
     meta: {
       id: "BV-II-m-B-11381 Casă",
-      function: "Rezindetial (Unifamilial)",
+      function: ["Rezidențial (Unifamilial)"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -144,7 +144,7 @@ export default [
     slug: "castelului-nr-53",
     meta: {
       id: "BV-II-m-B-11353 “Casă”",
-      function: "Locuință (unifamiliala)",
+      function: ["Rezidențial (Unifamilial)"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: ["Arh. Marina Iliescu - specialist MC"],
@@ -201,7 +201,7 @@ export default [
         sd: "",
       },
     },
-    type: ["Restaurare", "Design Interior"],
+    type: ["Restaurare", "Design interior"],
     status: "In Desfășurare", // Assuming the status is ongoing
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor nr.9.`,
     image: {

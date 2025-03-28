@@ -18,7 +18,13 @@ defineProps<Props>();
       </p>
       <p v-if="project.meta?.function">
         <strong>Funcțiune</strong><br />
-        {{ project.meta.function }}
+
+        <template
+          v-for="projectFunction in project.meta.function"
+          :key="projectFunction"
+        >
+          {{ projectFunction }}<br />
+        </template>
       </p>
       <p v-if="project.meta?.year">
         <strong>An</strong><br />

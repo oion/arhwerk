@@ -10,21 +10,23 @@ export type ProjectFunction =
   | "Lacaş de cult"
   | "Comerciala"
   | "Administativa"
-  | "Cultural-educativa"
-  | string;
+  | "Cultural-educativa";
 
-export type ProjectType =
-  | "Construcție nouă"
-  | "Design interior"
-  | "Restaurare"
-  | "Extindere"
-  | string;
+export const projectTypes = [
+  "Toate",
+  "Construcție nouă",
+  "Design interior",
+  "Restaurare",
+  "Extindere",
+] as const;
+
+export type ProjectType = (typeof projectTypes)[number];
 
 export type ProjectStatus = "Finalizat" | "In Executie" | string;
 
 export interface ProjectMeta {
   id?: string;
-  function?: ProjectFunction;
+  function?: ProjectFunction[];
   location?: string;
   year?: string;
   technical_data?: {
