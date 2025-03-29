@@ -17,6 +17,33 @@
         class="h-auto w-full object-cover opacity-50 saturate-0 transition-all duration-700 group-hover/item:scale-110"
       />
       <div class="absolute inset-0 z-10 flex flex-col justify-end gap-4 p-4">
+        <div class="absolute top-0 left-0">
+          <Icon
+            v-if="project.type?.includes('Construcție nouă')"
+            class="size-8 text-white"
+            name="gg:border-all"
+            title="Construcție nouă"
+          />
+          <Icon
+            v-if="project.type?.includes('Extindere')"
+            class="size-8 text-white"
+            name="gg:border-left"
+            title="Extindere"
+          />
+          <Icon
+            v-if="project.type?.includes('Restaurare')"
+            class="size-8 text-white"
+            name="gg:border-bottom"
+            title="Restaurare"
+          />
+          <Icon
+            v-if="project.type?.includes('Design interior')"
+            class="size-8 text-white"
+            name="gg:border-top"
+            title="Design interior"
+          />
+        </div>
+
         <h3
           class="text-3xl font-black leading-[1.0em] text-white transition-all duration-500 group-hover/item:leading-[1.5em] group-hover/item:text-white"
           v-html="formatTitle"

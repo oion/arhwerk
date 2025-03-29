@@ -167,7 +167,7 @@ export default [
     slug: "casa-negustorilor",
     meta: {
       id: "BV-II-m-A-11573 “Casa Negustorilor (Kaufhaus)”",
-      function: "Restaurant",
+      function: ["Restaurant"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -193,7 +193,7 @@ export default [
     slug: "muresenilor-nr-9",
     meta: {
       id: "BV-II-m-A-11467 “Casa Schobeln”",
-      function: "Cazare",
+      function: ["Cazare"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: ["Arh. Marina Iliescu - specialist MC"],
@@ -216,7 +216,7 @@ export default [
     slug: "postavarului-nr-66",
     meta: {
       id: "BV-II-m-B-11529 “Casă”",
-      function: "",
+      function: [],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -242,7 +242,7 @@ export default [
     slug: "michael-weiss-nr-10",
     meta: {
       id: "BV-II-m-B-11594 “Casă”",
-      function: "",
+      function: [],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -268,7 +268,7 @@ export default [
     slug: "viscri-nr-166",
     meta: {
       id: "Bv-II-s-A-11841",
-      function: "Locuință (unifamilialǎ)",
+      function: ["Locuință (unifamilialǎ)"],
       year: "",
       location: "Viscri, comuna Bunești, jud. Brașov",
       colaborators: [
@@ -296,7 +296,7 @@ export default [
     slug: "alma-vii-nr-106",
     meta: {
       id: "",
-      function: "",
+      function: [],
       year: "",
       location: "Alma Vii, jud. Sibiu",
       colaborators: [],
@@ -319,7 +319,7 @@ export default [
     slug: "alma-vii-nr-77",
     meta: {
       id: "",
-      function: "",
+      function: [],
       year: "",
       location: "Alma Vii, jud. Sibiu",
       colaborators: [],
@@ -342,7 +342,7 @@ export default [
     slug: "piata-unirii-nr-16",
     meta: {
       id: "BV-II-m-B-11529",
-      function: "Comercial, Locuinta unifamiliala",
+      function: ["Comercial", "Locuinta unifamiliala"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [],
@@ -365,7 +365,7 @@ export default [
     slug: "stefan-ludwig-roth-nr-3",
     meta: {
       id: "BV-II-m-B-11551",
-      function: "",
+      function: [],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [
@@ -391,7 +391,7 @@ export default [
     slug: "str-republicii-nr-34",
     meta: {
       id: "Bv-II-s-A-11295",
-      function: "Locuință și spațiu comercial",
+      function: ["Locuință", "Comercial"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [],
@@ -414,7 +414,7 @@ export default [
     slug: "str-castelului-nr-96",
     meta: {
       id: "Bv-II-s-A-11295",
-      function: "Locuință",
+      function: ["Locuință"],
       year: "",
       location: "Brașov, jud. Brașov",
       colaborators: [],
@@ -437,7 +437,7 @@ export default [
     slug: "biserica-evanghelica-halchiu",
     meta: {
       id: "Bv-II-m-B-11709",
-      function: "Lăcaș de cult",
+      function: ["Lăcaș de cult"],
       year: "",
       location: "sat Hălchiu, jud. Brașov",
       colaborators: ["Arh. M. Iliescu"],
@@ -460,7 +460,7 @@ export default [
     slug: "biserica-adormirea-maicii-domnului-satulung",
     meta: {
       id: "Bv-II-a-B-11806",
-      function: "Lăcaș de cult",
+      function: ["Lăcaș de cult"],
       year: "",
       location: "Săcele, jud. Brașov",
       colaborators: [],
@@ -626,7 +626,7 @@ export default [
     slug: "nb20",
     meta: {
       id: "",
-      function: "Locuință",
+      function: ["Locuință"],
       year: "2021-2024",
       location: "Brașov, jud. Brașov",
       colaborators: [],
