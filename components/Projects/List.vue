@@ -54,7 +54,7 @@ const _computedTypes = computed(() => {
 });
 
 const projects = computed<Project[]>(() =>
-  projectsData.filter((project) => project.hidden !== true)
+  projectsData.filter((project) => !project.hidden)
 );
 
 const allTypes = ref<ProjectType[]>([
