@@ -19,6 +19,25 @@
           "placeholder": ""
         }
       },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {
+            "width": 1600,
+            "height": 1600
+          },
+          "thumbnails": []
+        }
+      },
+      "status": {
+        "type": "Select",
+        "config": {
+          "label": "status",
+          "placeholder": "",
+          "options": ["In construcție", "Finalizat"]
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
