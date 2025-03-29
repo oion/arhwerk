@@ -31,16 +31,21 @@
         :index
       />
     </div>
+    <pre class="text-xs overflow-auto">{{ projectsDB }}</pre>
   </SectionBase>
 </template>
 x
 
 <script setup lang="ts">
+import * as prismic from "@prismicio/client";
 import type { Project, ProjectType } from "~/types/projects";
 
 import projectsData from "~/content/projects";
 
 const selectedType = ref<ProjectType>("Toate");
+
+const client = prismic.createClient("arhwerk");
+const projectsDB = await client.getAllByType("project");
 
 const _computedTypes = computed(() => {
   return projects.value.reduce((acc, project) => {

@@ -1,9 +1,11 @@
+import { apiEndpoint, repositoryName } from "./slicemachine.config.json";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   ssr: true,
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/fonts",
@@ -13,6 +15,7 @@ export default defineNuxtConfig({
     "@nuxtjs/mdc",
     "@nuxt/eslint",
     "@nuxt/icon",
+    "@nuxtjs/prismic"
   ],
 
   app: {
@@ -82,4 +85,8 @@ export default defineNuxtConfig({
     },
     highlight: false,
   },
+
+  prismic: {
+    endpoint: apiEndpoint || repositoryName
+  }
 });
