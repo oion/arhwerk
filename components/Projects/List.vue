@@ -31,7 +31,7 @@
         :index
       />
     </div>
-    <pre class="text-xs overflow-auto">{{ projectsDB }}</pre>
+    <pre class="text-xs overflow-auto w-96">{{ projectsDB }}</pre>
   </SectionBase>
 </template>
 x
