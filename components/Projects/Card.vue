@@ -17,7 +17,7 @@
         class="h-auto w-full object-cover opacity-50 saturate-0 transition-all duration-700 group-hover/item:scale-110"
       />
       <div class="absolute inset-0 z-10 flex flex-col justify-end gap-4 p-4">
-        <div class="absolute top-0 left-0">
+        <div class="absolute left-0 top-0">
           <Icon
             v-if="project.type?.includes('Construcție nouă')"
             class="size-8 text-white"
