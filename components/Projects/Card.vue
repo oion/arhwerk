@@ -52,7 +52,7 @@
           class="flex h-0 flex-col overflow-hidden text-xs transition-all delay-200 duration-500 group-hover/item:h-8 group-hover/item:text-white"
         >
           <span>{{ project.meta?.location }}</span>
-          <!-- <span>{{ project.meta?.year }} ({{ project.status }})</span> -->
+          <!-- <span>{{ project.meta?.year }} ({{ project.stage }})</span> -->
         </p>
       </div>
     </div>
@@ -64,7 +64,7 @@
 
       <p class="flex flex-col gap-1 text-xs">
         <span>{{ project.meta?.location }}</span>
-        <span>{{ project.meta?.year }} ({{ project.status }})</span>
+        <span>{{ project.meta?.year }} ({{ project.stage }})</span>
       </p>
     </div> -->
   </NuxtLink>

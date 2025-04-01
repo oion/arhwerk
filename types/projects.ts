@@ -22,7 +22,7 @@ export const projectTypes = [
 
 export type ProjectType = (typeof projectTypes)[number];
 
-export type ProjectStatus = "Finalizat" | "In Executie" | string;
+export type ProjectStage = "Finalizat" | "In Executie" | string;
 
 export interface ProjectMeta {
   id?: string;
@@ -43,7 +43,7 @@ export interface Project {
   type?: ProjectType[];
   meta?: ProjectMeta;
   description?: string;
-  status: ProjectStatus;
+  stage: ProjectStage;
   gallery?: ProjectImage[];
   image: ProjectImage;
   info?: string;
