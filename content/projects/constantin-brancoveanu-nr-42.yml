@@ -1,0 +1,23 @@
+gallery: []
+description: Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate
+  la Constantin Brâncoveanu nr.42.
+title: Constantin Brâncoveanu nr.42
+image:
+  src: /images/projects/brancoveanu-42/brancoveanu-42-1.jpg
+id: '4'
+meta:
+  function:
+  - Rezidențial (Unifamilial)
+  colaborators:
+  - Arh. Alexandra Stoica - specialist MC
+  - Arh. Silvia Creoșteanu
+  location: Brașov, jud. Brașov
+  year: ''
+  technical_data:
+    sd: ''
+  id: BV-II-m-B-11381 Casă
+hidden: false
+type:
+- Restaurare
+slug: constantin-brancoveanu-nr-42
+stage: In Desfășurare

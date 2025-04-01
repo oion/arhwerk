@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@nuxtjs/mdc",
     "@nuxt/eslint",
     "@nuxt/icon",
+    "@nuxt/content",
   ],
 
   app: {

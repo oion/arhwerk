@@ -1,0 +1,42 @@
+gallery:
+  - src: /images/projects/venetia/venetia-1.jpg
+    alt: Sample landscape
+  - src: /images/projects/venetia/venetia-2.jpg
+    alt: Sample landscape
+  - src: /images/projects/venetia/venetia-3.jpg
+    alt: Sample landscape
+  - src: /images/projects/venetia/venetia-4.jpg
+    alt: Sample landscape
+  - src: /images/projects/venetia/venetia-5.jpg
+    alt: Sample landscape
+  - src: /images/projects/venetia/venetia-6.jpg
+    alt: Sample landscape
+description:
+  Proiectul a inclus restaurarea casei Comănici, monument istoric din 2019,
+  și extinderea cu un nou corp pe locul fostei șuri. Clădirea, afectată de tasări,
+  umiditate și zidărie defectuoasă, a fost consolidată prin refacerea tencuielilor,
+  zidăriei, pardoselilor și șarpantei. Analizele au datat elementele de lemn în jurul
+  anului 1830.
+title: Casa Boierului Comaniciu
+image:
+  src: /images/projects/venetia/venetia-1.jpg
+id: "1"
+meta:
+  function:
+    - Cultural-educativa
+    - Rezidențial (Unifamilial)
+  colaborators:
+    - Arh. M. Iliescu - specialist MC
+    - Arh. Raluca Maria Olaru
+    - Ing. Bodor Csaba - expert MC
+    - rest. Ioana Cristina Munteanu-Zărnescu - expert MC
+  location: Veneția de Jos, Brașov
+  year: 2020-2023
+  technical_data:
+    sd: 250 mp
+  id: BV-II-m-B-21165 “Casa Comăniciu”
+hidden: false
+type:
+  - Restaurare
+slug: casa-boierului-comaniciu
+stage: Finalizat

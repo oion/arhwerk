@@ -1,0 +1,23 @@
+gallery: []
+description: Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața
+  Unirii nr.16.
+title: Piața Unirii nr.16
+image:
+  src: ''
+id: '13'
+meta:
+  function:
+  - Comercial
+  - Locuinta unifamiliala
+  colaborators: []
+  location: Brașov, jud. Brașov
+  year: ''
+  technical_data:
+    sd: ''
+  id: BV-II-m-B-11529
+hidden: false
+type:
+- Restaurare
+- Extindere
+slug: piata-unirii-nr-16
+stage: In Desfășurare

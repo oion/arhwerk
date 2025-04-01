@@ -17,7 +17,7 @@ export default [
         "rest. Ioana Cristina Munteanu-Zărnescu - expert MC",
       ],
       technical_data: {
-        cd: "250 mp",
+        sd: "250 mp",
       },
     },
     type: ["Restaurare"],

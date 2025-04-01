@@ -1,0 +1,20 @@
+gallery: []
+description: ''
+title: Vlaicu nr.99
+image:
+  src: ''
+id: '23'
+meta:
+  function: Comercial / Rezidential (unifamilial)
+  colaborators: []
+  location: Aurel Vlaicu nr.99, Brașov, jud. Brașov
+  year: 2021-2024
+  technical_data:
+    investment_value: 300.000 euro
+    sd: 285 mp
+  id: ''
+hidden: false
+type:
+- Extindere
+slug: vlaicu-99
+stage: Finalizat

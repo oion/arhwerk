@@ -36,25 +36,16 @@
 x
 
 <script setup lang="ts">
-import type { Project, ProjectType } from "~/types/projects";
+import type { ProjectType } from "~/types/projects";
 
-import projectsData from "~/content/projects";
+const { data: projectsData } = await useAsyncData("projects", () => {
+  return queryCollection("projects").all();
+});
 
 const selectedType = ref<ProjectType>("Toate");
 
-const _computedTypes = computed(() => {
-  return projects.value.reduce((acc, project) => {
-    if (project.type) {
-      project.type.forEach((type) => {
-        acc.add(type);
-      });
-    }
-    return acc;
-  }, new Set<ProjectType>());
-});
-
-const projects = computed<Project[]>(() =>
-  projectsData.filter((project) => !project.hidden)
+const projects = computed(
+  () => projectsData.value?.filter((project) => !project.hidden) || []
 );
 
 const allTypes = ref<ProjectType[]>([

@@ -1,0 +1,22 @@
+gallery: []
+description: Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru
+  locuința și spațiul comercial situat la Str. Republicii nr.34.
+title: Str. Republicii nr.34
+image:
+  src: ''
+id: '15'
+meta:
+  function:
+  - Locuință
+  - Comercial
+  colaborators: []
+  location: Brașov, jud. Brașov
+  year: ''
+  technical_data:
+    sd: ''
+  id: Bv-II-s-A-11295
+hidden: false
+type:
+- Restaurare
+slug: str-republicii-nr-34
+stage: In Desfășurare

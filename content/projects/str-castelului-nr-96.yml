@@ -1,0 +1,22 @@
+gallery: []
+description: Proiectul vizează restaurarea și extinderea locuinței situate la Str.
+  Castelului nr.96.
+title: Str. Castelului nr.96
+image:
+  src: ''
+id: '16'
+meta:
+  function:
+  - Locuință
+  colaborators: []
+  location: Brașov, jud. Brașov
+  year: ''
+  technical_data:
+    sd: ''
+  id: Bv-II-s-A-11295
+hidden: false
+type:
+- Restaurare
+- Extindere
+slug: str-castelului-nr-96
+stage: In Desfășurare

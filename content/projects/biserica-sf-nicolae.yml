@@ -1,0 +1,21 @@
+gallery: []
+description: Proiectul vizează restaurarea bisericii Sf. Nicolae și construcția unui
+  baptisteriu în Sânpetru.
+title: Biserica Sf. Nicolae
+image:
+  src: ''
+id: '24'
+meta:
+  function: Lăcaș de cult
+  colaborators: []
+  location: Sânpetru, jud. Brașov
+  year: 2023-2025
+  technical_data:
+    investment_value: 780.000 euro
+    sd: 210 mp
+  id: BV-II-m-A-11816
+hidden: false
+type:
+- Restaurare
+slug: biserica-sf-nicolae
+stage: Autorizație de construire obținută

@@ -1,0 +1,21 @@
+gallery: []
+description: Proiectul vizează restaurarea și reabilitarea interioară a centrului
+  cultural și birourilor primăriei din Bod.
+title: Centrul Cultural Bod
+image:
+  src: ''
+id: '21'
+meta:
+  function: Admi
+  colaborators: []
+  location: Tudor Vladimirescu nr.263, Bod, jud. Brașov
+  year: 2024-2025
+  technical_data:
+    investment_value: 1.410.000 euro
+    sd: 1.516 mp
+  id: ''
+hidden: false
+type:
+- Restaurare
+slug: centru-cultural-bod
+stage: Planificare SF
