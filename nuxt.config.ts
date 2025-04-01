@@ -1,10 +1,9 @@
-import { apiEndpoint, repositoryName } from "./slicemachine.config.json";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  ssr: true,
+  ssr: false,
 
   modules: [
     "@nuxtjs/tailwindcss",
@@ -15,7 +14,8 @@ export default defineNuxtConfig({
     "@nuxtjs/mdc",
     "@nuxt/eslint",
     "@nuxt/icon",
-    "@nuxtjs/prismic"
+    // "nuxt-graphql-client",
+    "nuxt-graphql-request",
   ],
 
   app: {
@@ -53,6 +53,7 @@ export default defineNuxtConfig({
   fonts: {},
 
   image: {
+    domains: ["localhost:8000"],
     quality: 75,
   },
 
@@ -86,7 +87,52 @@ export default defineNuxtConfig({
     highlight: false,
   },
 
-  prismic: {
-    endpoint: apiEndpoint || repositoryName
-  }
+  build: {
+    transpile: ["nuxt-graphql-request"],
+  },
+
+  graphql: {
+    /**
+     * An Object of your GraphQL clients
+     */
+    clients: {
+      default: {
+        /**
+         * The client endpoint url
+         */
+        endpoint: "http://127.0.0.1:8000/graphql",
+        /**
+         * Per-client options overrides
+         * See: https://github.com/prisma-labs/graphql-request#passing-more-options-to-fetch
+         */
+        options: {},
+      },
+    },
+
+    /**
+     * Options
+     * See: https://github.com/prisma-labs/graphql-request#passing-more-options-to-fetch
+     */
+    options: {
+      method: "get", // Default to `POST`
+    },
+
+    /**
+     * Optional
+     * default: false (this includes graphql-tag for node_modules folder)
+     */
+    includeNodeModules: true,
+  },
+
+  vite: {
+    server: {
+      proxy: {
+        "/api": {
+          target: "http://127.0.0.1:8000/api",
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, ""),
+        },
+      },
+    },
+  },
 });

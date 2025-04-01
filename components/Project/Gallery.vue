@@ -31,8 +31,8 @@ const closeModal = () => {
         class="overflow-hidden"
       >
         <NuxtImg
-          :src="image.src"
-          :alt="image.alt"
+          :src="image.permalink"
+          alt=""
           fit="cover"
           format="webp"
           width="400"
@@ -45,8 +45,8 @@ const closeModal = () => {
     <AppModal :is-open="isModalOpen" @close="closeModal">
       <NuxtImg
         v-if="selectedImage"
-        :src="selectedImage.src"
-        :alt="selectedImage.alt"
+        :src="selectedImage.permalink"
+        alt=""
         width="1600"
         height="1200"
         format="webp"

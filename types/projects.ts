@@ -1,7 +1,11 @@
 export interface ProjectImage {
+  id: string;
+  size: string;
   alt?: string;
   description?: string;
-  src: string;
+  src?: string;
+  permalink?: string;
+  url: string;
 }
 
 export type ProjectFunction =
@@ -22,7 +26,7 @@ export const projectTypes = [
 
 export type ProjectType = (typeof projectTypes)[number];
 
-export type ProjectStatus = "Finalizat" | "In Executie" | string;
+export type ProjectStage = "Finalizat" | "In Executie" | string;
 
 export interface ProjectMeta {
   id?: string;
@@ -41,13 +45,13 @@ export interface Project {
   slug: string;
   title: string;
   type?: ProjectType[];
+  is_hidden?: boolean;
   meta?: ProjectMeta;
   description?: string;
-  status: ProjectStatus;
+  stage?: ProjectStage;
   gallery?: ProjectImage[];
   image: ProjectImage;
   info?: string;
-  hidden?: boolean;
 }
 
 export type Projects = Project[];

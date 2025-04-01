@@ -1,3 +1,51 @@
+<script setup lang="ts">
+import type { Project, ProjectType } from "~/types/projects";
+
+const { data: projectsData } = await useFetch<Project[]>(
+  "/api/collections/projects/entries",
+  {
+    server: false,
+  }
+);
+const projects = computed<Project[]>(() => projectsData.value?.data || []);
+
+const selectedType = ref<ProjectType>("Toate");
+
+const allTypes = ref<ProjectType[]>([
+  "Toate",
+  "Restaurare",
+  "Design interior",
+  "Construcție nouă",
+  "Extindere",
+]);
+
+const filteredProjects = computed(() => {
+  if (selectedType.value === "Toate") return projects.value;
+
+  return projects.value?.filter((project) => {
+    return project.type?.includes(selectedType.value);
+  });
+});
+
+const isSelected = (type: string) => {
+  return type === selectedType.value;
+};
+
+watch(
+  selectedType,
+  () => {
+    const el = document.getElementById("proiecte");
+    if (el) {
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  },
+  { immediate: false }
+);
+</script>
+
 <template>
   <SectionBase>
     <template #aside>
@@ -21,78 +69,16 @@
     </template>
 
     <div
+      v-if="filteredProjects"
       class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-10"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"
-        :key="project.title"
+        :key="index"
         v-motion-appear
         :project
         :index
       />
     </div>
-    <pre class="w-96 overflow-auto text-xs">{{ projectsDB }}</pre>
   </SectionBase>
 </template>
-x
-
-<script setup lang="ts">
-import * as prismic from "@prismicio/client";
-import type { Project, ProjectType } from "~/types/projects";
-
-import projectsData from "~/content/projects";
-
-const selectedType = ref<ProjectType>("Toate");
-
-const client = prismic.createClient("arhwerk");
-const projectsDB = await client.getAllByType("project");
-
-const _computedTypes = computed(() => {
-  return projects.value.reduce((acc, project) => {
-    if (project.type) {
-      project.type.forEach((type) => {
-        acc.add(type);
-      });
-    }
-    return acc;
-  }, new Set<ProjectType>());
-});
-
-const projects = computed<Project[]>(() =>
-  projectsData.filter((project) => project.hidden !== true)
-);
-
-const allTypes = ref<ProjectType[]>([
-  "Toate",
-  "Restaurare",
-  "Design interior",
-  "Construcție nouă",
-  "Extindere",
-]);
-
-const filteredProjects = computed(() => {
-  if (selectedType.value === "Toate") return projects.value;
-
-  return projects.value.filter((project) => {
-    return project.type?.includes(selectedType.value);
-  });
-});
-
-const isSelected = (type: string) => {
-  return type === selectedType.value;
-};
-
-watch(
-  selectedType,
-  () => {
-    const el = document.getElementById("proiecte");
-    if (el) {
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  },
-  { immediate: false }
-);
-</script>

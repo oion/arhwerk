@@ -1,0 +1,74 @@
+query projects($limit: Int = 10) {
+  entries(collection: "projects", limit: $limit) {
+    data {
+      id
+      slug
+      title
+      ... on Entry_Projects_Project {
+        is_hidden
+        image {
+          id
+          size
+          url
+        }
+      }
+    }
+  }
+}
+query project {
+  entry(slug: "home", collection: "pages") {
+    id
+    ... on Entry_Pages_Page {
+      id
+      content
+    }
+  }
+}
+query projectBySlug($slug: String!) {
+  entry(slug: $slug, collection: "projects") {
+    id
+    slug
+    title
+    ... on Entry_Projects_Project {
+      id
+      gallery {
+        id
+        permalink
+        url
+      }
+      image {
+        id
+        permalink
+        url
+      }
+      is_hidden
+      title
+      type {
+        label
+        value
+      }
+    }
+  }
+}
+
+# query Character {
+#   character(id: 1) {
+#     id
+#     name
+#     status
+#   }
+# }
+
+# query Characters {
+#   characters {
+#     results {
+#       name
+#       origin {
+#         name
+#       }
+#     }
+#     info {
+#       next
+#     }
+#   }
+# }

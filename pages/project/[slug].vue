@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import type { Project } from "~/types/projects";
-import projectsData from "~/content/projects";
-
-const projects = ref<Project[]>(projectsData);
 
 const slug = useRoute().params.slug as string;
 
-const project = computed(() => {
-  return projects.value.find((project) => project.slug === slug);
-});
+const { data: projectData } = await useFetch<{ data: Project[] }>(
+  `/api/collections/projects/entries/?filter[slug:contains]=${slug}`,
+  {
+    server: false,
+  }
+);
+const project = computed<Project>(() => projectData.value?.data[0] || []);
 
 useSeoMeta({
   description: project.value?.title,

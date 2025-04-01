@@ -21,7 +21,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "Finalizat",
+    stage: "Finalizat",
     description: `Proiectul a inclus restaurarea casei Comănici, monument istoric din 2019, și extinderea cu un nou corp pe locul fostei șuri. Clădirea, afectată de tasări, umiditate și zidărie defectuoasă, a fost consolidată prin refacerea tencuielilor, zidăriei, pardoselilor și șarpantei. Analizele au datat elementele de lemn în jurul anului 1830.`,
     image: {
       src: "/images/projects/venetia/venetia-1.jpg",
@@ -75,7 +75,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Clădirea în U, datată 1800, cu fațadă neoclasică modificată în sec. XIX și galerie adăugată în 1900, va fi restaurată prin decopertarea tencuielilor deteriorate, verificarea și înlocuirea planșeelor din lemn unde e necesar, refacerea pardoselii la subsol, redeschiderea aerisirilor, refacerea pavajului în gang și curte, restaurarea cornișelor, brâielor, ancadramentelor și galeriei din lemn, precum și revizuirea acoperișului.`,
     image: {
       src: "/images/projects/brancoveanu-8/brancoveanu-8-1.jpg",
@@ -104,7 +104,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Construcția trilobată, definitivată între 1780-1805 și completată ulterior cu contraforturi, este o realizare modestă ca dimensiuni și execuție, vizibilă după decopertările din 2013-2017. Exteriorul are o elevație simplă, cornișă de tencuială, acoperiș în două ape cu țiglă ceramică și turn clopotniță cu coif octogonal. Nișele superioare, cândva pictate, au fost repictate recent. Intervențiile propuse vizează corectarea deficiențelor și asigurarea funcționării corespunzătoare a bisericii.`,
     image: {
       src: "",
@@ -130,7 +130,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate la Constantin Brâncoveanu nr.42.`,
     image: {
       src: "/images/projects/brancoveanu-42/brancoveanu-42-1.jpg",
@@ -153,7 +153,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: ``,
     image: {
       src: "/images/projects/castelului-53/castelului-53-1.jpg",
@@ -179,7 +179,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: ``,
     image: {
       src: "",
@@ -202,7 +202,7 @@ export default [
       },
     },
     type: ["Restaurare", "Design interior"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor nr.9.`,
     image: {
       src: "",
@@ -228,7 +228,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: ``,
     image: {
       src: "",
@@ -254,7 +254,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Michael Weiss nr.10.`,
     image: {
       src: "",
@@ -282,7 +282,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează restaurarea și extinderea locuinței situate în Situl rural Viscri.`,
     image: {
       src: "",
@@ -305,7 +305,7 @@ export default [
       },
     },
     type: [],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: ``,
     image: {
       src: "",
@@ -328,7 +328,7 @@ export default [
       },
     },
     type: [],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează detalii care nu sunt specificate în prezent.`,
     image: {
       src: "",
@@ -351,7 +351,7 @@ export default [
       },
     },
     type: ["Restaurare", "Extindere"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața Unirii nr.16.`,
     image: {
       src: "",
@@ -377,7 +377,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan Ludwig Roth nr.3, incluzând revizuirea tencuielilor, învelitorii și a elementelor decorative.`,
     image: {
       src: "",
@@ -400,7 +400,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru locuința și spațiul comercial situat la Str. Republicii nr.34.`,
     image: {
       src: "",
@@ -423,7 +423,7 @@ export default [
       },
     },
     type: ["Restaurare", "Extindere"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează restaurarea și extinderea locuinței situate la Str. Castelului nr.96.`,
     image: {
       src: "",
@@ -446,7 +446,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reparațiile fațadelor Bisericii Evanghelice din Hălchiu, incluzând curățarea și restaurarea elementelor de piatră și tencuială.`,
     image: {
       src: "",
@@ -469,7 +469,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reabilitarea fațadelor și a învelitorii Bisericii «Adormirea Maicii Domnului» din Satulung.`,
     image: {
       src: "",
@@ -492,7 +492,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "In Desfășurare",
+    stage: "In Desfășurare",
     description: `Proiectul vizează reparațiile fațadelor și a învelitorii Bisericii «Nașterea Maicii Domnului» din Zărnești.`,
     image: {
       src: "",
@@ -516,7 +516,7 @@ export default [
       },
     },
     type: ["Extindere"],
-    status: "În desfășurare",
+    stage: "În desfășurare",
     description: `Proiectul vizează construcția de locuințe și spații comerciale în zona protejată a centrului istoric din Brașov.`,
     image: {
       src: "",
@@ -540,7 +540,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "Planificare SF",
+    stage: "Planificare SF",
     description: `Proiectul vizează restaurarea și reabilitarea interioară a centrului cultural și birourilor primăriei din Bod.`,
     image: {
       src: "",
@@ -564,7 +564,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "Casă finalizată / anexe în construcție",
+    stage: "Casă finalizată / anexe în construcție",
     description: `Proiectul vizează restaurarea, reabilitarea, extinderea și reparațiile generale ale locuinței din Alma Vii 106.`,
     image: {
       src: "",
@@ -588,7 +588,7 @@ export default [
       },
     },
     type: ["Extindere"],
-    status: "Finalizat",
+    stage: "Finalizat",
     description: ``,
     image: {
       src: "",
@@ -612,7 +612,7 @@ export default [
       },
     },
     type: ["Restaurare"],
-    status: "Autorizație de construire obținută",
+    stage: "Autorizație de construire obținută",
     description: `Proiectul vizează restaurarea bisericii Sf. Nicolae și construcția unui baptisteriu în Sânpetru.`,
     image: {
       src: "",
@@ -636,7 +636,7 @@ export default [
       },
     },
     type: ["Construcție nouă"],
-    status: "Finalizat",
+    stage: "Finalizat",
     description: `Proiectul vizează construcția de locuințe în zona protejată din Brașov.`,
     image: {
       src: "/images/projects/nb20/nb20-1.jpg",
