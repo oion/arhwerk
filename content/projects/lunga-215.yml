@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează construcția de locuințe și spații comerciale în zona
-  protejată a centrului istoric din Brașov.
-title: Lungă nr.215
-image:
-  src: ''
-id: '20'
-meta:
+info:
   function: Comert, Rezidențial (Colectiv)
   colaborators: []
   location: Brașov, jud. Brașov
@@ -14,6 +7,13 @@ meta:
     investment_value: 1.565.000 euro
     sd: 1954 mp
   id: ''
+gallery: []
+description: Proiectul vizează construcția de locuințe și spații comerciale în zona
+  protejată a centrului istoric din Brașov.
+title: Lungă nr.215
+image:
+  src: ''
+id: '20'
 hidden: false
 type:
 - Extindere

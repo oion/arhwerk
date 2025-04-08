@@ -1,10 +1,4 @@
-gallery: []
-description: ''
-title: Alma Vii nr.106
-image:
-  src: ''
-id: '11'
-meta:
+info:
   function: []
   colaborators: []
   location: Alma Vii, jud. Sibiu
@@ -12,6 +6,12 @@ meta:
   technical_data:
     sd: ''
   id: ''
+gallery: []
+description: ''
+title: Alma Vii nr.106
+image:
+  src: ''
+id: '11'
 hidden: false
 type: []
 slug: alma-vii-nr-106

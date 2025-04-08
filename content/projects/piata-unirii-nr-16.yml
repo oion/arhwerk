@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața
-  Unirii nr.16.
-title: Piața Unirii nr.16
-image:
-  src: ''
-id: '13'
-meta:
+info:
   function:
   - Comercial
   - Locuinta unifamiliala
@@ -15,6 +8,13 @@ meta:
   technical_data:
     sd: ''
   id: BV-II-m-B-11529
+gallery: []
+description: Proiectul vizează reabilitarea și amenajarea locuinței situate la Piața
+  Unirii nr.16.
+title: Piața Unirii nr.16
+image:
+  src: ''
+id: '13'
 hidden: false
 type:
 - Restaurare

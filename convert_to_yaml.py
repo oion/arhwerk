@@ -6,11 +6,11 @@ import os
 import codecs
 
 # Load the JSON data
-with open('projects.json', 'r') as json_file:
+with open('./data/projects.json', 'r') as json_file:
     projects = json.load(json_file)
 
 # Create output directory if it doesn't exist
-output_dir = 'content/projects/yml_files'
+output_dir = './content/projects'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 

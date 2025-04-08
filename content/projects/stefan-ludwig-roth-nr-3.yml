@@ -1,12 +1,4 @@
-gallery: []
-description: Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan
-  Ludwig Roth nr.3, incluzând revizuirea tencuielilor, învelitorii și a elementelor
-  decorative.
-title: Str. Ștefan Ludwig Roth nr.3
-image:
-  src: ''
-id: '14'
-meta:
+info:
   function: []
   colaborators:
   - Arh. Marina Iliescu - specialist MC
@@ -16,6 +8,14 @@ meta:
   technical_data:
     sd: ''
   id: BV-II-m-B-11551
+gallery: []
+description: Proiectul vizează reabilitarea anvelopei locuinței situate la Str. Ștefan
+  Ludwig Roth nr.3, incluzând revizuirea tencuielilor, învelitorii și a elementelor
+  decorative.
+title: Str. Ștefan Ludwig Roth nr.3
+image:
+  src: ''
+id: '14'
 hidden: true
 type:
 - Restaurare

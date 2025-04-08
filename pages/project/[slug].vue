@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Project } from "~/types/projects";
-import projectsData from "~/content/projects";
+import projectsData from "~/data/projects";
 
 const projects = ref<Project[]>(projectsData);
 

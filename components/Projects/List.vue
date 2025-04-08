@@ -21,7 +21,7 @@
     </template>
 
     <div
-      class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-10"
+      class="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10"
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"

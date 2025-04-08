@@ -1,10 +1,4 @@
-gallery: []
-description: Proiectul vizează construcția de locuințe în zona protejată din Brașov.
-title: NB20
-image:
-  src: /images/projects/nb20/nb20-1.jpg
-id: '25'
-meta:
+info:
   function:
   - Locuință
   colaborators: []
@@ -14,6 +8,12 @@ meta:
     investment_value: 1.500.000 euro
     sd: 1145 mp
   id: ''
+gallery: []
+description: Proiectul vizează construcția de locuințe în zona protejată din Brașov.
+title: NB20
+image:
+  src: /images/projects/nb20/nb20-1.jpg
+id: '25'
 hidden: false
 type:
 - Construcție nouă

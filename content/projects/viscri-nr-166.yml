@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează restaurarea și extinderea locuinței situate în Situl
-  rural Viscri.
-title: Viscri nr.166
-image:
-  src: ''
-id: '10'
-meta:
+info:
   function:
   - Locuință (unifamilialǎ)
   colaborators:
@@ -18,6 +11,13 @@ meta:
   technical_data:
     sd: ''
   id: Bv-II-s-A-11841
+gallery: []
+description: Proiectul vizează restaurarea și extinderea locuinței situate în Situl
+  rural Viscri.
+title: Viscri nr.166
+image:
+  src: ''
+id: '10'
 hidden: false
 type:
 - Restaurare

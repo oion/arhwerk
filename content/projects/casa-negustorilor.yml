@@ -1,10 +1,4 @@
-gallery: []
-description: ''
-title: Casa Negustorilor
-image:
-  src: ''
-id: '6'
-meta:
+info:
   function:
   - Restaurant
   colaborators:
@@ -15,6 +9,12 @@ meta:
   technical_data:
     sd: ''
   id: BV-II-m-A-11573 “Casa Negustorilor (Kaufhaus)”
+gallery: []
+description: ''
+title: Casa Negustorilor
+image:
+  src: ''
+id: '6'
 hidden: false
 type:
 - Restaurare

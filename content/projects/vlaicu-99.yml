@@ -1,10 +1,4 @@
-gallery: []
-description: ''
-title: Vlaicu nr.99
-image:
-  src: ''
-id: '23'
-meta:
+info:
   function: Comercial / Rezidential (unifamilial)
   colaborators: []
   location: Aurel Vlaicu nr.99, Brașov, jud. Brașov
@@ -13,6 +7,12 @@ meta:
     investment_value: 300.000 euro
     sd: 285 mp
   id: ''
+gallery: []
+description: ''
+title: Vlaicu nr.99
+image:
+  src: ''
+id: '23'
 hidden: false
 type:
 - Extindere

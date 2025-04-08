@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează reabilitarea anvelopei locuinței situate la Michael
-  Weiss nr.10.
-title: Michael Weiss nr.10
-image:
-  src: ''
-id: '9'
-meta:
+info:
   function: []
   colaborators:
   - Arh. Marina Iliescu - specialist MC
@@ -15,6 +8,13 @@ meta:
   technical_data:
     sd: ''
   id: BV-II-m-B-11594 “Casă”
+gallery: []
+description: Proiectul vizează reabilitarea anvelopei locuinței situate la Michael
+  Weiss nr.10.
+title: Michael Weiss nr.10
+image:
+  src: ''
+id: '9'
 hidden: false
 type:
 - Restaurare

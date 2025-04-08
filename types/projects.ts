@@ -10,7 +10,8 @@ export type ProjectFunction =
   | "Lacaş de cult"
   | "Comerciala"
   | "Administativa"
-  | "Cultural-educativa";
+  | "Cultural-educativa"
+  | string;
 
 export const projectTypes = [
   "Toate",
@@ -20,11 +21,11 @@ export const projectTypes = [
   "Extindere",
 ] as const;
 
-export type ProjectType = (typeof projectTypes)[number];
+export type ProjectType = (typeof projectTypes)[number] | string;
 
 export type ProjectStage = "Finalizat" | "In Executie" | string;
 
-export interface ProjectMeta {
+export interface ProjectInfo {
   id?: string;
   function?: ProjectFunction[];
   location?: string;
@@ -41,12 +42,11 @@ export interface Project {
   slug: string;
   title: string;
   type?: ProjectType[];
-  meta?: ProjectMeta;
+  info?: ProjectInfo;
   description?: string;
   stage: ProjectStage;
   gallery?: ProjectImage[];
   image: ProjectImage;
-  info?: string;
   hidden?: boolean;
 }
 

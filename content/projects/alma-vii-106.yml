@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează restaurarea, reabilitarea, extinderea și reparațiile
-  generale ale locuinței din Alma Vii 106.
-title: Alma Vii 106
-image:
-  src: ''
-id: '22'
-meta:
+info:
   function: Cazare
   colaborators: []
   location: Alma Vii, jud. Sibiu
@@ -14,6 +7,13 @@ meta:
     investment_value: 200.000 euro
     sd: 558 mp
   id: ''
+gallery: []
+description: Proiectul vizează restaurarea, reabilitarea, extinderea și reparațiile
+  generale ale locuinței din Alma Vii 106.
+title: Alma Vii 106
+image:
+  src: ''
+id: '22'
 hidden: false
 type:
 - Restaurare

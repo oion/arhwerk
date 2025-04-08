@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează reparațiile fațadelor și a învelitorii Bisericii «Nașterea
-  Maicii Domnului» din Zărnești.
-title: Biserica «Nașterea Maicii Domnului» Zărnești
-image:
-  src: ''
-id: '19'
-meta:
+info:
   function:
   - Lăcaș de cult
   colaborators: []
@@ -14,6 +7,13 @@ meta:
   technical_data:
     sd: ''
   id: Bv-II-m-A-11852
+gallery: []
+description: Proiectul vizează reparațiile fațadelor și a învelitorii Bisericii «Nașterea
+  Maicii Domnului» din Zărnești.
+title: Biserica «Nașterea Maicii Domnului» Zărnești
+image:
+  src: ''
+id: '19'
 hidden: true
 type:
 - Restaurare

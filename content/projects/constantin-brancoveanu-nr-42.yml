@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate
-  la Constantin Brâncoveanu nr.42.
-title: Constantin Brâncoveanu nr.42
-image:
-  src: /images/projects/brancoveanu-42/brancoveanu-42-1.jpg
-id: '4'
-meta:
+info:
   function:
   - Rezidențial (Unifamilial)
   colaborators:
@@ -16,6 +9,13 @@ meta:
   technical_data:
     sd: ''
   id: BV-II-m-B-11381 Casă
+gallery: []
+description: Proiectul vizează consolidarea, amenajarea și extinderea locuinței situate
+  la Constantin Brâncoveanu nr.42.
+title: Constantin Brâncoveanu nr.42
+image:
+  src: /images/projects/brancoveanu-42/brancoveanu-42-1.jpg
+id: '4'
 hidden: false
 type:
 - Restaurare

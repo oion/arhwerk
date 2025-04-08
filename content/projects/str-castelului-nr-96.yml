@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează restaurarea și extinderea locuinței situate la Str.
-  Castelului nr.96.
-title: Str. Castelului nr.96
-image:
-  src: ''
-id: '16'
-meta:
+info:
   function:
   - Locuință
   colaborators: []
@@ -14,6 +7,13 @@ meta:
   technical_data:
     sd: ''
   id: Bv-II-s-A-11295
+gallery: []
+description: Proiectul vizează restaurarea și extinderea locuinței situate la Str.
+  Castelului nr.96.
+title: Str. Castelului nr.96
+image:
+  src: ''
+id: '16'
 hidden: false
 type:
 - Restaurare

@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează reabilitarea fațadelor și a învelitorii Bisericii «Adormirea
-  Maicii Domnului» din Satulung.
-title: Biserica «Adormirea Maicii Domnului» - Satulung
-image:
-  src: ''
-id: '18'
-meta:
+info:
   function:
   - Lăcaș de cult
   colaborators: []
@@ -14,6 +7,13 @@ meta:
   technical_data:
     sd: ''
   id: Bv-II-a-B-11806
+gallery: []
+description: Proiectul vizează reabilitarea fațadelor și a învelitorii Bisericii «Adormirea
+  Maicii Domnului» din Satulung.
+title: Biserica «Adormirea Maicii Domnului» - Satulung
+image:
+  src: ''
+id: '18'
 hidden: true
 type:
 - Restaurare

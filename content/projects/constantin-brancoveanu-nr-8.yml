@@ -1,15 +1,4 @@
-gallery: []
-description: Clădirea în U, datată 1800, cu fațadă neoclasică modificată în sec. XIX
-  și galerie adăugată în 1900, va fi restaurată prin decopertarea tencuielilor deteriorate,
-  verificarea și înlocuirea planșeelor din lemn unde e necesar, refacerea pardoselii
-  la subsol, redeschiderea aerisirilor, refacerea pavajului în gang și curte, restaurarea
-  cornișelor, brâielor, ancadramentelor și galeriei din lemn, precum și revizuirea
-  acoperișului.
-title: Constantin Brâncoveanu nr.8
-image:
-  src: /images/projects/brancoveanu-8/brancoveanu-8-1.jpg
-id: '2'
-meta:
+info:
   function:
   - Comerciala
   colaborators:
@@ -23,6 +12,17 @@ meta:
   technical_data:
     sd: 1388 mp
   id: BV-II-m-B-11369 “Casă”
+gallery: []
+description: Clădirea în U, datată 1800, cu fațadă neoclasică modificată în sec. XIX
+  și galerie adăugată în 1900, va fi restaurată prin decopertarea tencuielilor deteriorate,
+  verificarea și înlocuirea planșeelor din lemn unde e necesar, refacerea pardoselii
+  la subsol, redeschiderea aerisirilor, refacerea pavajului în gang și curte, restaurarea
+  cornișelor, brâielor, ancadramentelor și galeriei din lemn, precum și revizuirea
+  acoperișului.
+title: Constantin Brâncoveanu nr.8
+image:
+  src: /images/projects/brancoveanu-8/brancoveanu-8-1.jpg
+id: '2'
 hidden: false
 type:
 - Restaurare

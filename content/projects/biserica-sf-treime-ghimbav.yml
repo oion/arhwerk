@@ -1,15 +1,4 @@
-gallery: []
-description: Construcția trilobată, definitivată între 1780-1805 și completată ulterior
-  cu contraforturi, este o realizare modestă ca dimensiuni și execuție, vizibilă după
-  decopertările din 2013-2017. Exteriorul are o elevație simplă, cornișă de tencuială,
-  acoperiș în două ape cu țiglă ceramică și turn clopotniță cu coif octogonal. Nișele
-  superioare, cândva pictate, au fost repictate recent. Intervențiile propuse vizează
-  corectarea deficiențelor și asigurarea funcționării corespunzătoare a bisericii.
-title: Biserica «Sf. Treime» Ghimbav
-image:
-  src: ''
-id: '3'
-meta:
+info:
   function:
   - Lacaş de cult
   colaborators:
@@ -23,6 +12,17 @@ meta:
   technical_data:
     sd: 170 mp
   id: BV-II-m-B-11701 “Biserica Sf. Treime”
+gallery: []
+description: Construcția trilobată, definitivată între 1780-1805 și completată ulterior
+  cu contraforturi, este o realizare modestă ca dimensiuni și execuție, vizibilă după
+  decopertările din 2013-2017. Exteriorul are o elevație simplă, cornișă de tencuială,
+  acoperiș în două ape cu țiglă ceramică și turn clopotniță cu coif octogonal. Nișele
+  superioare, cândva pictate, au fost repictate recent. Intervențiile propuse vizează
+  corectarea deficiențelor și asigurarea funcționării corespunzătoare a bisericii.
+title: Biserica «Sf. Treime» Ghimbav
+image:
+  src: ''
+id: '3'
 hidden: false
 type:
 - Restaurare

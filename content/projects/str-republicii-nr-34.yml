@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru
-  locuința și spațiul comercial situat la Str. Republicii nr.34.
-title: Str. Republicii nr.34
-image:
-  src: ''
-id: '15'
-meta:
+info:
   function:
   - Locuință
   - Comercial
@@ -15,6 +8,13 @@ meta:
   technical_data:
     sd: ''
   id: Bv-II-s-A-11295
+gallery: []
+description: Proiectul vizează reabilitarea fațadei și reparațiile învelitorii pentru
+  locuința și spațiul comercial situat la Str. Republicii nr.34.
+title: Str. Republicii nr.34
+image:
+  src: ''
+id: '15'
 hidden: false
 type:
 - Restaurare

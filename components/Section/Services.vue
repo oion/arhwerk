@@ -31,10 +31,8 @@
 </template>
 
 <script setup lang="ts">
-import { services } from "~/content/services";
+import { services } from "~/data/services";
 
 const firstColumnServices = services.slice(0, 4);
 const secondColumnServices = services.slice(4);
 </script>
-
-<style></style>

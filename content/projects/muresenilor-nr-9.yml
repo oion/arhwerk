@@ -1,11 +1,4 @@
-gallery: []
-description: Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor
-  nr.9.
-title: Mureșenilor nr.9
-image:
-  src: ''
-id: '7'
-meta:
+info:
   function:
   - Cazare
   colaborators:
@@ -15,6 +8,13 @@ meta:
   technical_data:
     sd: ''
   id: BV-II-m-A-11467 “Casa Schobeln”
+gallery: []
+description: Proiectul vizează reabilitarea și amenajarea locuinței situate la Mureșenilor
+  nr.9.
+title: Mureșenilor nr.9
+image:
+  src: ''
+id: '7'
 hidden: false
 type:
 - Restaurare

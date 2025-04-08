@@ -3,6 +3,7 @@
     :to="`/project/${project.slug}`"
     class="group/item flex flex-col gap-4"
   >
+    <pre>{{ project.info }}</pre>
     <div
       class="relative aspect-square w-full overflow-hidden bg-primary-dark transition-all after:absolute after:-bottom-4 after:-right-4 after:block after:size-4 after:rounded-xl after:bg-black after:transition-all after:duration-500 after:content-[''] group-hover/item:after:scale-[10000%] group-hover/item:after:bg-black/90"
     >
@@ -51,7 +52,7 @@
         <p
           class="flex h-0 flex-col overflow-hidden text-xs transition-all delay-200 duration-500 group-hover/item:h-8 group-hover/item:text-white"
         >
-          <span>{{ project.meta?.location }}</span>
+          <span>{{ project.info?.location }}</span>
           <!-- <span>{{ project.meta?.year }} ({{ project.stage }})</span> -->
         </p>
       </div>
