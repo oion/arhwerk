@@ -5,6 +5,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
 
+  runtimeConfig: {
+    app: {
+      contentful: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
+      },
+    },
+  },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/fonts",
