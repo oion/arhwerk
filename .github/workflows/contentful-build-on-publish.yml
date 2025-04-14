@@ -20,16 +20,11 @@ jobs:
       # Pick your own package manager and build script
       - run: npm install
         # - run: npx nuxt build --preset github_pages
-        # - run: NUXT_APP_BASE_URL=/arhwerk/ npx nuxt build --preset github_pages
-        env:
-          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ secrets.CONTENTFUL_ENVIRONMENT }}
       - run: NUXT_APP_BASE_URL="/${GITHUB_REPOSITORY##*/}/" npx nuxt build --preset github_pages
         env:
-          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ secrets.CONTENTFUL_ENVIRONMENT }}
+          CONTENTFUL_SPACE_ID: ${{ vars.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_ACCESS_TOKEN: ${{ vars.CONTENTFUL_ACCESS_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ vars.CONTENTFUL_ENVIRONMENT }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
