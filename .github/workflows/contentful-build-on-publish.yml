@@ -23,10 +23,10 @@ jobs:
       # - run: npx nuxt build --preset github_pages
       # - run: NUXT_APP_BASE_URL=/arhwerk/ npx nuxt build --preset github_pages
         env:
-          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ secrets.CONTENTFUL_ENVIRONMENT }}
-      - run: NUXT_APP_BASE_URL="/${GITHUB_REPOSITORY##*/}/" npx nuxt build --preset github_pages
+          NUXT_PUBLIC_CONTENTFUL_SPACE_ID: ${{ vars.CONTENTFUL_SPACE_ID }}
+          NUXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN: ${{ vars.CONTENTFUL_ACCESS_TOKEN }}
+          NUXT_PUBLIC_CONTENTFUL_ENVIRONMENT: ${{ vars.CONTENTFUL_ENVIRONMENT }}
+      - run: NUXT_APP_BASE_URL="/${GITHUB_REPOSITORY##*/}/" npx nuxt generate --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
