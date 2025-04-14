@@ -3,16 +3,14 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  ssr: false,
+  ssr: true,
 
   runtimeConfig: {
     public: {
-      app: {
-        contentful: {
-          spaceId: process.env.CONTENTFUL_SPACE_ID,
-          accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-          environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
-        },
+      contentful: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
       },
     },
   },
