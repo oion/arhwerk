@@ -3,7 +3,9 @@ name: Contentful - Build on Publish
 on:
   repository_dispatch:
     types: [publish-event]
-    branch: contentful
+  push:
+    branches:
+      - contentful
 jobs:
   build:
     runs-on: ubuntu-latest
