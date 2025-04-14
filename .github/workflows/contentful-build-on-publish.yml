@@ -36,6 +36,6 @@ jobs:
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Contentful - Build on Publish
         id: deployment
         uses: actions/deploy-pages@v4
