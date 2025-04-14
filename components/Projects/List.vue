@@ -40,6 +40,10 @@ import type { Project, ProjectType } from "~/types/projects";
 
 import projectsData from "~/content/projects";
 
+defineProps<{
+  projects: Project[];
+}>();
+
 const selectedType = ref<ProjectType>("Toate");
 
 const _computedTypes = computed(() => {

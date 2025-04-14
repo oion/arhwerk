@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Project } from "~/types/projects";
+import type { TypeProject } from "~/types/contentful";
 
 interface Props {
-  project: Project;
+  project: TypeProject;
 }
 
 defineProps<Props>();
@@ -11,33 +11,33 @@ defineProps<Props>();
 <template>
   <aside class="shrink-0 md:w-80">
     <div class="space-y-4 pr-8">
-      <h1 class="text-4xl font-bold">{{ project.title }}</h1>
+      <h1 class="text-4xl font-bold">{{ project.fields.title }}</h1>
 
-      <p v-if="project.meta?.location">
-        {{ project.meta.location }}
+      <p v-if="project.fields.location">
+        {{ project.fields.location }}
       </p>
-      <p v-if="project.meta?.function">
+      <p v-if="project.fields.function">
         <strong>Funcțiune</strong><br />
 
         <template
-          v-for="projectFunction in project.meta.function"
+          v-for="projectFunction in project.fields.function"
           :key="projectFunction"
         >
           {{ projectFunction }}<br />
         </template>
       </p>
-      <p v-if="project.meta?.year">
+      <p v-if="project.fields.year">
         <strong>An</strong><br />
-        {{ project.meta.year }}
+        {{ project.fields.year }}
       </p>
 
-      <p v-if="project.meta?.technical_data?.sd">
+      <!-- <p v-if="project.meta?.technical_data?.sd">
         <strong>Sd</strong><br />
         {{ project.meta.technical_data.sd }}
-      </p>
+      </p> -->
 
-      <div v-if="project.description">
-        {{ project.description }}
+      <div v-if="project.fields.description">
+        {{ project.fields.description }}
       </div>
 
       <div
