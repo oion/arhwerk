@@ -19,7 +19,7 @@
       <div class="absolute inset-0 z-10 flex flex-col justify-end gap-4 p-4">
         <div
           v-if="Array.isArray(props.project.fields.type)"
-          class="absolute top-0 left-0"
+          class="absolute left-0 top-0"
         >
           <Icon
             v-if="props.project.fields.type.includes('Construcție nouă')"
