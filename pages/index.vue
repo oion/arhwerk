@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Project } from "~/types/projects";
+import type { TypeProject } from "~/types/contentful";
 import { useProjects } from "~/composables/useProjects";
 
 const { fetchProjects } = useProjects();
@@ -8,7 +8,7 @@ useHead({
   title: "Arhwerk",
 });
 
-const projects = ref<Project[]>([]);
+const projects = ref<TypeProject[]>([]);
 
 onMounted(async () => {
   //load projects from contentful
@@ -19,7 +19,7 @@ onMounted(async () => {
 <template>
   <main>
     <!-- <SectionHero id="hero" /> -->
-    <pre>{{ projects }}</pre>
+
     <ProjectsList id="proiecte" :projects />
 
     <SectionAbout id="despre" />

@@ -25,7 +25,7 @@
     >
       <ProjectsCard
         v-for="(project, index) in filteredProjects"
-        :key="project.title"
+        :key="JSON.stringify(project.fields.slug)"
         v-motion-appear
         :project
         :index
@@ -36,18 +36,17 @@
 x
 
 <script setup lang="ts">
-import type { Project, ProjectType } from "~/types/projects";
+import type { ProjectType } from "~/types/projects";
+import type { TypeProject } from "~/types/contentful";
 
-import projectsData from "~/content/projects";
-
-defineProps<{
-  projects: Project[];
+const props = defineProps<{
+  projects: TypeProject[];
 }>();
 
 const selectedType = ref<ProjectType>("Toate");
 
 const _computedTypes = computed(() => {
-  return projects.value.reduce((acc, project) => {
+  return props.projects.reduce((acc, project) => {
     if (project.type) {
       project.type.forEach((type) => {
         acc.add(type);
@@ -56,10 +55,6 @@ const _computedTypes = computed(() => {
     return acc;
   }, new Set<ProjectType>());
 });
-
-const projects = computed<Project[]>(() =>
-  projectsData.filter((project) => !project.hidden)
-);
 
 const allTypes = ref<ProjectType[]>([
   "Toate",
@@ -70,11 +65,13 @@ const allTypes = ref<ProjectType[]>([
 ]);
 
 const filteredProjects = computed(() => {
-  if (selectedType.value === "Toate") return projects.value;
+  return props.projects;
 
-  return projects.value.filter((project) => {
-    return project.type?.includes(selectedType.value);
-  });
+  // if (selectedType.value === "Toate") return props.projects;
+
+  // return props.projects.filter((project) => {
+  //   return project.fields.type?.includes(selectedType.value);
+  // });
 });
 
 const isSelected = (type: string) => {
