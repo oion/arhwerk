@@ -1,6 +1,7 @@
 # https://github.com/actions/deploy-pages#usage
 name: Contentful - Build on Publish
 on:
+  workflow_dispatch:
   repository_dispatch:
     types: [publish-event]
   push:
