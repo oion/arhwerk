@@ -6,12 +6,11 @@ export default defineNuxtPlugin(() => {
   const config = useRuntimeConfig();
 
   console.log("Initializing Contentful client...");
-  console.log("Contentful config:", config.app.contentful);
 
   client = createClient({
-    space: config.app.contentful.spaceId,
-    accessToken: config.app.contentful.accessToken,
-    environment: config.app.contentful.environment,
+    space: config.public.app.contentful.spaceId,
+    accessToken: config.public.app.contentful.accessToken,
+    environment: config.public.app.contentful.environment,
   });
 
   return {

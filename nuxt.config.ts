@@ -6,11 +6,13 @@ export default defineNuxtConfig({
   ssr: false,
 
   runtimeConfig: {
-    app: {
-      contentful: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
+    public: {
+      app: {
+        contentful: {
+          spaceId: process.env.CONTENTFUL_SPACE_ID,
+          accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+          environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
+        },
       },
     },
   },
