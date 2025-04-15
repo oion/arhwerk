@@ -31,12 +31,13 @@ const closeModal = () => {
         class="overflow-hidden"
       >
         <NuxtImg
-          :src="image.src"
-          :alt="image.alt"
-          fit="cover"
+          :src="image.fields.file.url"
+          :alt="image.fields.title"
+          fit="contain"
           format="webp"
           width="400"
           height="600"
+          provider="contentful"
           class="h-auto w-full object-cover transition duration-700 hover:scale-110 hover:cursor-pointer"
           @click="openModal(image)"
         />
@@ -45,11 +46,12 @@ const closeModal = () => {
     <AppModal :is-open="isModalOpen" @close="closeModal">
       <NuxtImg
         v-if="selectedImage"
-        :src="selectedImage.src"
-        :alt="selectedImage.alt"
+        :src="selectedImage.fields.file.url"
+        :alt="selectedImage.fields.title"
         width="1600"
         height="1200"
         format="webp"
+        provider="contentful"
         class="max-h-[90vh] max-w-[90vw] object-contain"
       />
     </AppModal>

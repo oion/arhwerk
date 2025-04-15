@@ -16,7 +16,7 @@
             @click="handleClick(type)"
           >
             <span
-              class="w-0 opacity-0 group-hover:w-10 group-hover:opacity-100 transition-all overflow-hidden duration-500"
+              class="w-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:w-10 group-hover:opacity-100"
             >
               <IconsGGBorderBottom
                 v-if="type === 'Restaurare'"

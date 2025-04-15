@@ -1,8 +1,10 @@
+import type { TypePage } from "~/types/contentful";
+
 export const usePages = () => {
   const { $contentful } = useNuxtApp();
 
   // fetch page by slug
-  const fetchPageBySlug = async (slug: string): Promise<any | null> => {
+  const fetchPageBySlug = async (slug: string): Promise<TypePage | null> => {
     if (!slug) {
       console.error("Slug is required to fetch a page.");
       return null;

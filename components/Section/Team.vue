@@ -14,9 +14,9 @@
           class="flex flex-col gap-2"
         >
           <NuxtImg
-            v-if="member.fields.file"
+            v-if="member.fields.file?.url"
             :key="member.sys.id"
-            :src="member.fields.file.url"
+            :src="member.fields.file?.url"
             :alt="member.fields.title"
             fit="contain"
             format="webp"
@@ -35,9 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import type { TypeTeamMember } from "~/types/contentful";
+import type { Asset } from "contentful";
 
 defineProps<{
-  team: TypeTeamMember[];
+  team: Asset[];
 }>();
 </script>

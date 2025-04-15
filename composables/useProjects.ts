@@ -1,9 +1,9 @@
-import type { IProject } from "~/types/contentful";
+import type { TypeProject, TypeProjectSkeleton } from "~/types/contentful";
 
 export const useProjects = () => {
   const { $contentful } = useNuxtApp();
 
-  const fetchProjects = async (): Promise<IProject[]> => {
+  const fetchProjects = async (): Promise<TypeProject[]> => {
     try {
       const response = await $contentful.getEntries<IProject>({
         content_type: "project",
@@ -16,14 +16,16 @@ export const useProjects = () => {
     }
   };
 
-  const fetchProjectBySlug = async (slug: string): Promise<IProject | null> => {
+  const fetchProjectBySlug = async (
+    slug: string
+  ): Promise<TypeProject | null> => {
     if (!slug) {
       console.error("Slug is required to fetch a project.");
       return null;
     }
 
     try {
-      const response = await $contentful.getEntries<IProject>({
+      const response = await $contentful.getEntries<TypeProjectSkeleton>({
         content_type: "project",
         "fields.slug": slug,
         limit: 1, // Limit to 1 since we only need one entry

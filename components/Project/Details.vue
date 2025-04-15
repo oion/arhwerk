@@ -31,25 +31,18 @@ defineProps<Props>();
         {{ project.fields.year }}
       </p>
 
-      <!-- <p v-if="project.meta?.technical_data?.sd">
-        <strong>Sd</strong><br />
-        {{ project.meta.technical_data.sd }}
-      </p> -->
-
       <div v-if="project.fields.description">
         {{ project.fields.description }}
       </div>
 
-      <div
-        v-if="project.meta?.colaborators && project.meta.colaborators.length"
-      >
+      <div v-if="project.fields.collaborators?.length">
         <strong>Colaboratori</strong>
         <ul>
           <li
-            v-for="colaborator in project.meta.colaborators"
-            :key="colaborator"
+            v-for="collaborator in project.fields.collaborators"
+            :key="collaborator.sys.id"
           >
-            {{ colaborator }}
+            {{ collaborator.fields.name }}
           </li>
         </ul>
       </div>
@@ -57,7 +50,10 @@ defineProps<Props>();
   </aside>
 
   <div class="flex-1">
-    <ProjectGallery v-if="project.gallery" :images="project.gallery" />
+    <ProjectGallery
+      v-if="project.fields.gallery"
+      :images="project.fields.gallery"
+    />
   </div>
 </template>
 
