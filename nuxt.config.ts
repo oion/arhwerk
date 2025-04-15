@@ -23,7 +23,6 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/mdc",
     "@nuxt/eslint",
-    "@nuxt/icon",
   ],
 
   app: {

@@ -12,15 +12,12 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.2.0",
-    "@nuxt/icon": "1.11.0",
     "contentful": "^11.5.13",
     "nuxt": "^3.16.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@iconify-json/gg": "^1.2.2",
     "@nuxt/eslint": "^1.1.0",
     "@nuxt/fonts": "0.11.0",
     "@nuxt/image": "1.9.0",
