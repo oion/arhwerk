@@ -20,3 +20,15 @@ export interface TypeProjectSkeleton extends EntrySkeletonType {
 }
 
 export type TypeProject = Entry<TypeProjectSkeleton>;
+
+export interface TypeTeamMemberFields {
+  title: EntryFieldTypes.Symbol;
+  description?: EntryFieldTypes.Symbol;
+  file: EntryFieldTypes.AssetLink;
+}
+
+export interface TypeTeamMemberSkeleton extends EntrySkeletonType {
+  fields: TypeTeamMemberFields;
+}
+
+export type TypeTeamMember = Entry<TypeTeamMemberSkeleton>;

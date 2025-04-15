@@ -6,13 +6,7 @@
 
     <div class="flex flex-col gap-4 lg:flex-row">
       <div v-motion-appear class="max-w-80 pr-20 text-sm font-light leading-6">
-        Studioul a fost înființat în 2018, în Brașov, având ca activitate
-        principală atât restaurarea clădirilor de patrimoniu, cât și
-        reabilitarea fondului construit istoric și proiectarea de construcții
-        noi. În practica noastră, integrăm utilizarea software-ului BIM,
-        scanarea laser, Lidar, precum și alte instrumente dedicate analizei
-        clădirilor istorice (testarea materialelor, dendrocronologie, studiul
-        paramentului, cameră termică si multe alte instrumente dedicate).
+        <slot />
       </div>
 
       <div v-motion-appear class="grid grid-cols-2 gap-4" :delay="200">

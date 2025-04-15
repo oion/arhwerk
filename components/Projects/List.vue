@@ -45,17 +45,6 @@ const props = defineProps<{
 
 const selectedType = ref<ProjectType>("Toate");
 
-const _computedTypes = computed(() => {
-  return props.projects.reduce((acc, project) => {
-    if (project.type) {
-      project.type.forEach((type) => {
-        acc.add(type);
-      });
-    }
-    return acc;
-  }, new Set<ProjectType>());
-});
-
 const allTypes = ref<ProjectType[]>([
   "Toate",
   "Restaurare",
@@ -65,13 +54,14 @@ const allTypes = ref<ProjectType[]>([
 ]);
 
 const filteredProjects = computed(() => {
-  return props.projects;
+  if (selectedType.value === "Toate") return props.projects;
 
-  // if (selectedType.value === "Toate") return props.projects;
-
-  // return props.projects.filter((project) => {
-  //   return project.fields.type?.includes(selectedType.value);
-  // });
+  return props.projects.filter((project) => {
+    return (
+      Array.isArray(project.fields?.type) &&
+      project.fields.type.includes(selectedType.value)
+    );
+  });
 });
 
 const isSelected = (type: string) => {

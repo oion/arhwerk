@@ -1,30 +1,26 @@
 <script setup lang="ts">
-import type { TypeProject } from "~/types/contentful";
-import { useProjects } from "~/composables/useProjects";
+import { usePages } from "~/composables/usePages";
 
-const { fetchProjects } = useProjects();
+const { fetchPageBySlug } = usePages();
 
 useHead({
   title: "Arhwerk",
 });
 
-const projects = ref<TypeProject[]>([]);
+const page = ref();
 
 onMounted(async () => {
-  //load projects from contentful
-  projects.value = await fetchProjects();
+  page.value = await fetchPageBySlug("homepage");
 });
 </script>
 
 <template>
-  <main>
-    <!-- <SectionHero id="hero" /> -->
+  <main v-if="page">
+    <ProjectsList id="proiecte" :projects="page.fields.projects" />
 
-    <ProjectsList id="proiecte" :projects />
+    <SectionAbout id="despre">{{ page.fields.about }}</SectionAbout>
 
-    <SectionAbout id="despre" />
-
-    <SectionTeam id="echipa" />
+    <SectionTeam id="echipa" :team="page.fields.team" />
 
     <SectionServices id="servicii" />
 

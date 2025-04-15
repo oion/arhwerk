@@ -62,6 +62,11 @@ export default defineNuxtConfig({
 
   image: {
     quality: 75,
+    contentful: {
+      // baseURL: process.env.CONTENTFUL_BASE_URL,
+      preset: "contentful",
+      defaultImageLoader: "contentful",
+    },
   },
 
   motion: {
