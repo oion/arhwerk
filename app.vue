@@ -23,3 +23,15 @@ useSeoMeta({
   twitterCard: "summary",
 });
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+</style>
