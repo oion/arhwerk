@@ -8,14 +8,16 @@
           <li
             v-for="type in allTypes"
             :key="type"
-            class="group flex items-center gap-2"
+            class="group flex items-center"
             :class="[
               isSelected(type) ? 'font-bold text-primary' : 'text-primary/50',
               'transition hover:cursor-pointer hover:text-primary-dark',
             ]"
             @click="handleClick(type)"
           >
-            <span class="w-0 group-hover:w-8 transition-all overflow-hidden">
+            <span
+              class="w-0 opacity-0 group-hover:w-10 group-hover:opacity-100 transition-all overflow-hidden duration-500"
+            >
               <IconsGGBorderBottom
                 v-if="type === 'Restaurare'"
                 class="size-8 text-primary-dark"
