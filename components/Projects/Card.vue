@@ -15,6 +15,7 @@
         alt=""
         width="400"
         height="400"
+        sizes="100vw sm:50vw md:400px"
         provider="contentful"
         preload
         class="h-auto w-full object-cover opacity-50 saturate-0 transition-all duration-700 group-hover/item:scale-110"
