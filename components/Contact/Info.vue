@@ -3,14 +3,17 @@
     <p>
       <IconsLogo class="h-4 text-white" />
     </p>
-    <p>
+
+    <address class="not-italic">
       <a
         href="https://maps.app.goo.gl/amM3oNeszfjgSahR9"
         target="_blank"
         rel="noopener noreferrer"
-        >Str. 27 Mureșenilor, Brașov</a
+        aria-label="Adresa Arhwerk"
       >
-    </p>
+        Str. 27 Mureșenilor, Brașov
+      </a>
+    </address>
 
     <p class="flex flex-col gap-2">
       <a href="tel:+40744331261">+40 744 331 261</a>
@@ -19,7 +22,11 @@
     </p>
 
     <p class="flex gap-4">
-      <a href="https://www.facebook.com/arhwerk" target="_blank">
+      <a
+        href="https://www.facebook.com/arhwerk"
+        target="_blank"
+        aria-label="Facebook ARHWERK"
+      >
         <svg
           width="32"
           height="32"
@@ -46,7 +53,11 @@
         </svg>
       </a>
 
-      <a href="https://www.instagram.com/arhwerk" target="_blank">
+      <a
+        href="https://www.instagram.com/arhwerk"
+        target="_blank"
+        aria-label="Instagram ARHWERK"
+      >
         <svg
           width="32"
           height="32"
