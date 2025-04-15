@@ -8,12 +8,39 @@
           <li
             v-for="type in allTypes"
             :key="type"
+            class="group flex items-center gap-2"
             :class="[
               isSelected(type) ? 'font-bold text-primary' : 'text-primary/50',
               'transition hover:cursor-pointer hover:text-primary-dark',
             ]"
-            @click="selectedType = type"
+            @click="handleClick(type)"
           >
+            <span class="w-0 group-hover:w-8 transition-all overflow-hidden">
+              <IconsGGBorderBottom
+                v-if="type === 'Restaurare'"
+                class="size-8 text-primary-dark"
+                name="gg:border-bottom"
+                title="Restaurare"
+              />
+              <IconsGGBorderAll
+                v-if="type === 'Construcție nouă'"
+                class="size-8 text-primary-dark"
+                title="Construcție nouă"
+              />
+              <IconsGGBorderLeft
+                v-if="type === 'Extindere'"
+                class="size-8 text-primary-dark"
+                name="gg:border-left"
+                title="Extindere"
+              />
+
+              <IconsGGBorderTop
+                v-if="type === 'Design interior'"
+                class="size-8 text-primary-dark"
+                name="gg:border-top"
+                title="Design interior"
+              />
+            </span>
             {{ type }}
           </li>
         </ul>
@@ -36,29 +63,28 @@
 x
 
 <script setup lang="ts">
-import type { ProjectType } from "~/types/projects";
 import type { TypeProject } from "~/types/contentful";
 
 const props = defineProps<{
   projects: TypeProject[];
 }>();
 
-const selectedType = ref<ProjectType>("Toate");
+const selectedType = ref<string | null>(null);
 
-const allTypes = ref<ProjectType[]>([
-  "Toate",
-  "Restaurare",
-  "Design interior",
+const allTypes = ref([
   "Construcție nouă",
+  "Design interior",
+  "Restaurare",
   "Extindere",
 ]);
 
 const filteredProjects = computed(() => {
-  if (selectedType.value === "Toate") return props.projects;
+  if (!selectedType.value) return props.projects;
 
   return props.projects.filter((project) => {
     return (
       Array.isArray(project.fields?.type) &&
+      selectedType.value &&
       project.fields.type.includes(selectedType.value)
     );
   });
@@ -66,6 +92,10 @@ const filteredProjects = computed(() => {
 
 const isSelected = (type: string) => {
   return type === selectedType.value;
+};
+
+const handleClick = (type: string) => {
+  selectedType.value = type === selectedType.value ? null : type;
 };
 
 watch(

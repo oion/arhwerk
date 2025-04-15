@@ -13,7 +13,6 @@ export type ProjectFunction =
   | "Cultural-educativa";
 
 export const projectTypes = [
-  "Toate",
   "Construcție nouă",
   "Design interior",
   "Restaurare",

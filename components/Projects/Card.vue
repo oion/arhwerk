@@ -8,12 +8,15 @@
       class="relative aspect-square w-full overflow-hidden bg-primary-dark transition-all after:absolute after:-bottom-4 after:-right-4 after:block after:size-4 after:rounded-xl after:bg-black after:transition-all after:duration-500 after:content-[''] group-hover/item:after:scale-[10000%] group-hover/item:after:bg-black/90"
     >
       <NuxtImg
+        v-if="image"
         :src="image"
-        fit="cover"
+        fit="contain"
         format="webp"
+        alt=""
         width="400"
         height="400"
         provider="contentful"
+        preload
         class="h-auto w-full object-cover opacity-50 saturate-0 transition-all duration-700 group-hover/item:scale-110"
       />
 
@@ -22,25 +25,24 @@
           v-if="Array.isArray(props.project.fields.type)"
           class="absolute left-0 top-0"
         >
-          <Icon
+          <IconsGGBorderAll
             v-if="props.project.fields.type.includes('Construcție nouă')"
             class="size-8 text-white"
-            name="gg:border-all"
             title="Construcție nouă"
           />
-          <Icon
+          <IconsGGBorderLeft
             v-if="props.project.fields.type?.includes('Extindere')"
             class="size-8 text-white"
             name="gg:border-left"
             title="Extindere"
           />
-          <Icon
+          <IconsGGBorderBottom
             v-if="props.project.fields.type?.includes('Restaurare')"
             class="size-8 text-white"
             name="gg:border-bottom"
             title="Restaurare"
           />
-          <Icon
+          <IconsGGBorderTop
             v-if="props.project.fields.type?.includes('Design interior')"
             class="size-8 text-white"
             name="gg:border-top"
