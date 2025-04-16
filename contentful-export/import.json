@@ -1,0 +1,2862 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2025-04-10T12:12:13.151Z",
+        "updatedAt": "2025-04-15T13:49:58.892Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 33,
+        "publishedAt": "2025-04-15T13:49:58.892Z",
+        "firstPublishedAt": "2025-04-10T12:12:13.524Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "publishedCounter": 17,
+        "version": 34,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ct85ru0jlwkr/environments/master/content_types/project"
+      },
+      "displayField": "title",
+      "name": "Project",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Construcție nouă",
+                  "Design interior",
+                  "Restaurare",
+                  "Extindere"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "function",
+          "name": "Function",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Rezidențial (Unifamilial)",
+                  "Rezidențial (Colectiv)",
+                  "Lacaş de cult",
+                  "Comerciala",
+                  "Administativa",
+                  "Cultural-educativa"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "status",
+          "name": "Status",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": ["Finalizat", "In Executie"]
+              }
+            ]
+          }
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": ["image"]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": ["image"]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "location",
+          "name": "Location",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "geoLocation",
+          "name": "Geo Location",
+          "type": "Location",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "year",
+          "name": "Year",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "collaborators",
+          "name": "Collaborators",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": ["collaborator"]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2025-04-15T07:02:15.135Z",
+        "updatedAt": "2025-04-15T10:01:30.104Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2025-04-15T10:01:30.104Z",
+        "firstPublishedAt": "2025-04-15T07:02:15.794Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "publishedCounter": 14,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ct85ru0jlwkr/environments/master/content_types/page"
+      },
+      "displayField": "name",
+      "name": "Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": ["project"]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "about",
+          "name": "About",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": ["image"]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "services",
+          "name": "Services",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": ["services"]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "services",
+        "type": "ContentType",
+        "createdAt": "2025-04-15T10:00:45.368Z",
+        "updatedAt": "2025-04-15T10:00:45.991Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-04-15T10:00:45.991Z",
+        "firstPublishedAt": "2025-04-15T10:00:45.991Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ct85ru0jlwkr/environments/master/content_types/services"
+      },
+      "displayField": "title",
+      "name": "Services",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "collaborator",
+        "type": "ContentType",
+        "createdAt": "2025-04-15T12:29:56.413Z",
+        "updatedAt": "2025-04-15T12:29:56.763Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-04-15T12:29:56.763Z",
+        "firstPublishedAt": "2025-04-15T12:29:56.763Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ct85ru0jlwkr/environments/master/content_types/collaborator"
+      },
+      "displayField": "name",
+      "name": "Collaborator",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ct85ru0jlwkr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 34,
+        "createdAt": "2025-04-10T12:12:13.611Z",
+        "createdBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-04-15T13:49:59.723Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "settings": {
+            "trackingFieldId": "title"
+          },
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "checkbox",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "function",
+          "widgetId": "checkbox",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "status",
+          "widgetId": "checkbox",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "gallery",
+          "widgetId": "assetGalleryEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "location",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "geoLocation",
+          "widgetId": "locationEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "year",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "collaborators",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ct85ru0jlwkr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 28,
+        "createdAt": "2025-04-15T07:02:15.910Z",
+        "createdBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-04-15T10:01:30.820Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "settings": {
+            "trackingFieldId": "name"
+          },
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "projects",
+          "settings": {
+            "bulkEditing": false,
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "about",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "team",
+          "widgetId": "assetGalleryEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "services",
+          "settings": {
+            "bulkEditing": true,
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ct85ru0jlwkr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-04-15T10:00:46.082Z",
+        "createdBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-04-15T10:00:46.750Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "services",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ct85ru0jlwkr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-04-15T12:29:56.862Z",
+        "createdBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-04-15T12:29:57.445Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6yw6hVHtgKDOmrSpQ2i76k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "collaborator",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "4olNdLCCuOfiBo9USEZguW",
+        "type": "Entry",
+        "createdAt": "2025-04-10T12:12:26.936Z",
+        "updatedAt": "2025-04-15T14:49:38.396Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 52,
+        "revision": 20,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Casa Boierului Comaniciu"
+        },
+        "slug": {
+          "en-US": "casa-boierului-comaniciu"
+        },
+        "type": {
+          "en-US": ["Restaurare"]
+        },
+        "function": {
+          "en-US": ["Cultural-educativa"]
+        },
+        "description": {
+          "en-US": "Proiectul a inclus restaurarea casei Comănici, monument istoric din 2019, și extinderea cu un nou corp pe locul fostei șuri. Clădirea, afectată de tasări, umiditate și zidărie defectuoasă, a fost consolidată prin refacerea tencuielilor, zidăriei, pardoselilor și șarpantei. Analizele au datat elementele de lemn în jurul anului 1830.\n\nTesting"
+        },
+        "status": {
+          "en-US": ["Finalizat"]
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "pYn4euvWqJvsSr1s7kHCd"
+            }
+          }
+        },
+        "gallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "pYn4euvWqJvsSr1s7kHCd"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1UauMB8VzV5ccChUhtpksX"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": "Veneția de Jos, Brașov"
+        },
+        "geoLocation": {
+          "en-US": {
+            "lon": 25.20625,
+            "lat": 45.87583
+          }
+        },
+        "year": {
+          "en-US": "2020-2023"
+        },
+        "collaborators": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5NRzjBYjc0QzDwHwWFWph1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7ovGO8wx5iaoZ3yphRJJPh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6naoudYPgVzp8C0x9hC0P0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6qaWAReM7Sjx6w5LHeyUpi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "1obGKEYh4dDTX4RM4YsV1v",
+        "type": "Entry",
+        "createdAt": "2025-04-10T13:55:11.280Z",
+        "updatedAt": "2025-04-15T08:21:33.659Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Alma Vii 106"
+        },
+        "slug": {
+          "en-US": "alma-vii-106"
+        },
+        "type": {
+          "en-US": ["Restaurare", "Design interior"]
+        },
+        "status": {
+          "en-US": ["Finalizat"]
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "c2Mq2IAhBoNnsP4Jq7XuP"
+            }
+          }
+        },
+        "gallery": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "c2Mq2IAhBoNnsP4Jq7XuP"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "92OZ0JzratOoE75rwLCLu",
+        "type": "Entry",
+        "createdAt": "2025-04-10T13:56:31.194Z",
+        "updatedAt": "2025-04-15T08:21:54.018Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Alma Vii nr.77"
+        },
+        "slug": {
+          "en-US": "alma-vii-nr-77"
+        },
+        "type": {
+          "en-US": ["Restaurare"]
+        },
+        "status": {
+          "en-US": ["Finalizat"]
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1UauMB8VzV5ccChUhtpksX"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "2bhiai9eguyrUbzR9FVPEm",
+        "type": "Entry",
+        "createdAt": "2025-04-14T05:43:22.895Z",
+        "updatedAt": "2025-04-14T06:50:28.481Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 34,
+        "revision": 15,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "My Test Sample"
+        },
+        "slug": {
+          "en-US": "my-test"
+        },
+        "type": {
+          "en-US": [
+            "Restaurare",
+            "Design interior",
+            "Extindere",
+            "Construcție nouă"
+          ]
+        },
+        "function": {
+          "en-US": ["Rezidențial (Colectiv)"]
+        },
+        "description": {
+          "en-US": "qwe\nqweqwe"
+        },
+        "status": {
+          "en-US": ["Finalizat"]
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1UauMB8VzV5ccChUhtpksX"
+            }
+          }
+        },
+        "year": {
+          "en-US": "2023"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "1IO2MN7m5lJhVVaSkjSVYj",
+        "type": "Entry",
+        "createdAt": "2025-04-15T07:03:45.337Z",
+        "updatedAt": "2025-04-15T10:07:34.432Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 45,
+        "revision": 16,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Homepage"
+        },
+        "slug": {
+          "en-US": "homepage"
+        },
+        "projects": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4olNdLCCuOfiBo9USEZguW"
+              }
+            }
+          ]
+        },
+        "about": {
+          "en-US": "Studioul a fost înființat în 2018, în Brașov, având ca activitate principală atât restaurarea clădirilor de patrimoniu, cât și reabilitarea fondului construit istoric și proiectarea de construcții noi. În practica noastră, integrăm utilizarea software-ului BIM, scanarea laser, Lidar, precum și alte instrumente dedicate analizei clădirilor istorice (testarea materialelor, dendrocronologie, studiul paramentului, cameră termică si multe alte instrumente dedicate)."
+        },
+        "team": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4dELS5jkCIXB5IGIiS2MNN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2bniU1sJQpaXW3eSf11yd1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5KC44aSWTnRpAHqRqeRDOV"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2XPQUzNXgLAP4br4SlmT3T"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7kxDAJszHAqwMyntiUuH1N"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7ib2TZHgIUg1aomtJl8Bv0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "57bnmf5VCNevFKyUGJomvK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5xx17BFy2N4ItKTe735HJh"
+              }
+            }
+          ]
+        },
+        "services": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "19Wgwsx2V1uI5MXJe1t3Sx"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2zYAJIaRJ1UGoCOBYYlSFG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "38Z9LMtNU9nwqcVz74qiFo"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3qFQtbFhkPzzkeZIDouBDz"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2UfPucx1sV0xXqTufKQ7lA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4YVMi4bk7Yqba9n29AnYdY"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3Xe2rnX5Z99Me6wruiMIme"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1nHl3xuP8cXIEFZyOa8OXY"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "19Wgwsx2V1uI5MXJe1t3Sx",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:02:19.278Z",
+        "updatedAt": "2025-04-15T10:02:19.278Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Consultanță și concept"
+        },
+        "description": {
+          "en-US": "- Consultanță inițială și studii de fezabilitate\n- Analiza locației și a reglementărilor urbanistice\n- Crearea conceptului arhitectural"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "2zYAJIaRJ1UGoCOBYYlSFG",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:03:08.930Z",
+        "updatedAt": "2025-04-15T10:03:08.930Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Proiectare arhitecturală"
+        },
+        "description": {
+          "en-US": "- Proiectare de arhitectură pentru construcții noi\n- Proiecte de reabilitare și modernizare\n- Proiecte de extindere și supraetajare\n- Design interior și amenajări personalizate"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "38Z9LMtNU9nwqcVz74qiFo",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:03:37.057Z",
+        "updatedAt": "2025-04-15T10:03:37.057Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Proiecte tehnice și documentație"
+        },
+        "description": {
+          "en-US": "- Proiect tehnic pentru autorizația de construire (DTAC)\n- Proiecte pentru execuție (PTh, DE)\n- Documentație pentru avize și autorizații\n- Detalii de execuție și soluții tehnice"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "3qFQtbFhkPzzkeZIDouBDz",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:04:03.170Z",
+        "updatedAt": "2025-04-15T10:04:03.170Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Restaurare și reabilitare"
+        },
+        "description": {
+          "en-US": "- Restaurare și reabilitare Restaurare și consolidare clădiri istorice\n- Reabilitarea fațadelor și a elementelor arhitecturale valoroase\n- Documentare și analiză istorică"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "2UfPucx1sV0xXqTufKQ7lA",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:04:29.996Z",
+        "updatedAt": "2025-04-15T10:04:29.996Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tehnologie și analiză avansată"
+        },
+        "description": {
+          "en-US": "- Scanare laser și modelare 3D (BIM)\n- Analiza materialelor și studii structurale\n- Dendrocronologie, studiu de parament și inspecție termică"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "4YVMi4bk7Yqba9n29AnYdY",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:04:57.279Z",
+        "updatedAt": "2025-04-15T10:04:57.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Proiectare specializată"
+        },
+        "description": {
+          "en-US": "- Locuințe unifamiliale și colective\n- Clădiri comerciale și industriale\n- Spații publice și culturale\n- Hoteluri, pensiuni, spații de cazare"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "3Xe2rnX5Z99Me6wruiMIme",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:05:25.066Z",
+        "updatedAt": "2025-04-15T10:05:25.066Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Management de proiect și asistență în execuție"
+        },
+        "description": {
+          "en-US": "- Coordonarea echipei de specialiști (structură, instalații etc.)\n- Urmărirea șantierului și asistență tehnică\n- Optimizare costuri și soluții sustenabile"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "1nHl3xuP8cXIEFZyOa8OXY",
+        "type": "Entry",
+        "createdAt": "2025-04-15T10:05:50.843Z",
+        "updatedAt": "2025-04-15T10:05:50.843Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "services"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Proiecte sustenabile și eficiente energetic"
+        },
+        "description": {
+          "en-US": "- Soluții de eficientizare energetică\n- Design pasiv și integrarea energiei regenerabile\n- Materiale ecologice și tehnologii verzi"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "5NRzjBYjc0QzDwHwWFWph1",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:36:06.325Z",
+        "updatedAt": "2025-04-15T12:36:06.325Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Arh. M. Iliescu - specialist MC"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "6naoudYPgVzp8C0x9hC0P0",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:36:32.473Z",
+        "updatedAt": "2025-04-15T12:36:32.473Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Arh. Raluca Maria Olaru"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "7ovGO8wx5iaoZ3yphRJJPh",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:36:52.777Z",
+        "updatedAt": "2025-04-15T12:36:52.777Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Ing. Bodor Csaba - expert MC"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "6qaWAReM7Sjx6w5LHeyUpi",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:37:11.609Z",
+        "updatedAt": "2025-04-15T12:37:11.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "rest. Ioana Cristina Munteanu-Zărnescu - expert MC"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "3DtYJZSHa10VTKbAK1p5l6",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:37:37.078Z",
+        "updatedAt": "2025-04-15T12:37:37.078Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "S.C. ArenaCAD S.R.L.- scanare Laser"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "1zoy2qDqk6T7n2CIjDG4Yk",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:38:09.975Z",
+        "updatedAt": "2025-04-15T12:38:09.975Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "rest. Maria Dumbrăvician - specialist MC"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "74PkmAAfh3XH2WOG3GMMER",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:38:31.338Z",
+        "updatedAt": "2025-04-15T12:38:31.338Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Ist. artă Ileana Burnichioiu - specialist MC"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "43ndRcxMhCimbwC2WNLicr",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:38:47.954Z",
+        "updatedAt": "2025-04-15T12:38:47.954Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Arh. Ioana-Mădălina Bârsășteanu"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "4JfCkVMDniTFiAb9VxVLo4",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:39:06.778Z",
+        "updatedAt": "2025-04-15T12:39:06.778Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Arh. Alexandra Stoica - specialist MC"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "4fBfentPgXQYBqj8JO0oWi",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:39:19.076Z",
+        "updatedAt": "2025-04-15T12:39:19.076Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Arh. Silvia Creoșteanu"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "1BNaU62vYUGRj8b47J8sT1",
+        "type": "Entry",
+        "createdAt": "2025-04-15T12:39:47.932Z",
+        "updatedAt": "2025-04-15T12:39:47.932Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "collaborator"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Arh. Eleonora Diosan"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "pYn4euvWqJvsSr1s7kHCd",
+        "type": "Asset",
+        "createdAt": "2025-04-10T13:52:25.540Z",
+        "updatedAt": "2025-04-10T13:52:25.540Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "venetia-1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/pYn4euvWqJvsSr1s7kHCd/86da795840cd8fdf0b20e0865cc35807/venetia-1.jpg",
+            "details": {
+              "size": 84203,
+              "image": {
+                "width": 474,
+                "height": 800
+              }
+            },
+            "fileName": "venetia-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "1UauMB8VzV5ccChUhtpksX",
+        "type": "Asset",
+        "createdAt": "2025-04-10T13:52:48.560Z",
+        "updatedAt": "2025-04-10T13:52:48.560Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "venetia-2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/1UauMB8VzV5ccChUhtpksX/3f75504d006967851d3acb583a52f0b0/venetia-2.jpg",
+            "details": {
+              "size": 105145,
+              "image": {
+                "width": 800,
+                "height": 507
+              }
+            },
+            "fileName": "venetia-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "c2Mq2IAhBoNnsP4Jq7XuP",
+        "type": "Asset",
+        "createdAt": "2025-04-15T06:52:12.656Z",
+        "updatedAt": "2025-04-15T06:52:12.656Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "castelului-53-1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/c2Mq2IAhBoNnsP4Jq7XuP/dfd470f1cc29c709779455d04bd6484d/castelului-53-1.jpg",
+            "details": {
+              "size": 733770,
+              "image": {
+                "width": 1600,
+                "height": 1600
+              }
+            },
+            "fileName": "castelului-53-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "4dELS5jkCIXB5IGIiS2MNN",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:36:59.572Z",
+        "updatedAt": "2025-04-15T08:07:10.854Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "revision": 3
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arh. Horatiu Vasilescu"
+        },
+        "description": {
+          "en-US": "Arhitect"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/4dELS5jkCIXB5IGIiS2MNN/d2aa24ae390b2dfece010165792f9a07/horatiu-1.jpg",
+            "details": {
+              "size": 332324,
+              "image": {
+                "width": 1600,
+                "height": 1600
+              }
+            },
+            "fileName": "horatiu-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "2bniU1sJQpaXW3eSf11yd1",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:37:41.442Z",
+        "updatedAt": "2025-04-15T07:37:41.442Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arh. Silvia Creoșteanu"
+        },
+        "description": {
+          "en-US": "Arhitect"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/2bniU1sJQpaXW3eSf11yd1/67a027bdb1e0ebdfc3209ea2f1d425cc/silvia-1.jpg",
+            "details": {
+              "size": 175238,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "silvia-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "5KC44aSWTnRpAHqRqeRDOV",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:38:37.443Z",
+        "updatedAt": "2025-04-15T07:38:37.443Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arh. Mara Catargiu"
+        },
+        "description": {
+          "en-US": "Arhitect"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/5KC44aSWTnRpAHqRqeRDOV/d3c9a95cb428c47688c2cb5baa782ee0/mara-1.jpg",
+            "details": {
+              "size": 241399,
+              "image": {
+                "width": 1600,
+                "height": 1600
+              }
+            },
+            "fileName": "mara-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "2XPQUzNXgLAP4br4SlmT3T",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:39:18.043Z",
+        "updatedAt": "2025-04-15T07:39:18.043Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Otto"
+        },
+        "description": {
+          "en-US": "Caine mare"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/2XPQUzNXgLAP4br4SlmT3T/396be66a4e81bcab1c0533234ea0e5ec/otto-1.jpg",
+            "details": {
+              "size": 198517,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "otto-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "7kxDAJszHAqwMyntiUuH1N",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:39:48.815Z",
+        "updatedAt": "2025-04-15T08:06:44.717Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arh. Raluca Olaru"
+        },
+        "description": {
+          "en-US": "Arhitect"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/7kxDAJszHAqwMyntiUuH1N/2be55e42d61042353efc7a777cd59ae3/raluca-1.jpg",
+            "details": {
+              "size": 176024,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "raluca-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "7ib2TZHgIUg1aomtJl8Bv0",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:41:33.318Z",
+        "updatedAt": "2025-04-15T07:41:33.318Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arh. Ana Mărgăritescu"
+        },
+        "description": {
+          "en-US": "Arhitect"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/7ib2TZHgIUg1aomtJl8Bv0/baac93998dba5d58adb4765e684f9c36/ana-1.jpg",
+            "details": {
+              "size": 135229,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "ana-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "57bnmf5VCNevFKyUGJomvK",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:42:01.420Z",
+        "updatedAt": "2025-04-15T07:42:01.420Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arh. Victor Gogiu"
+        },
+        "description": {
+          "en-US": "Intern"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/57bnmf5VCNevFKyUGJomvK/735e92e0d91eea434f48a8c8409eb887/victor-1.jpg",
+            "details": {
+              "size": 243532,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "victor-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "id": "5xx17BFy2N4ItKTe735HJh",
+        "type": "Asset",
+        "createdAt": "2025-04-15T07:42:35.291Z",
+        "updatedAt": "2025-04-15T07:42:35.291Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Freddy"
+        },
+        "description": {
+          "en-US": "Caine Mediu"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ct85ru0jlwkr/5xx17BFy2N4ItKTe735HJh/749dcde13adef973063017748b2a982b/freddy-1.jpg",
+            "details": {
+              "size": 214785,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "freddy-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "6D7iezcKTEh9RiUqQErKzj",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "c83b48d2-b36a-4943-868d-a20d9f2d2e73"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "createdAt": "2025-04-10T12:11:26Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedAt": "2025-04-10T12:11:26Z"
+      }
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "Build on Github Pages",
+      "url": "https://api.github.com/repos/oion/arhwerk/dispatches",
+      "httpBasicUsername": null,
+      "topics": ["Entry.publish", "Entry.unpublish"],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.environment.sys.id"
+            },
+            "master"
+          ]
+        }
+      ],
+      "transformation": {
+        "contentType": "application/json",
+        "body": {
+          "event_type": "publish-event"
+        }
+      },
+      "active": true,
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "5c9El30bTXAfRx0YwcZr4v",
+        "version": 15,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "createdAt": "2025-04-14T05:31:40Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedAt": "2025-04-14T06:17:04Z"
+      },
+      "headers": [
+        {
+          "key": "USER-AGENT",
+          "value": "Contentful"
+        },
+        {
+          "key": "Accept",
+          "value": "application/vnd.github.mercy-preview+json"
+        },
+        {
+          "key": "Authorization",
+          "secret": true
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "6DvczTZ3cbhbRGupTw2vO5",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ct85ru0jlwkr"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "createdAt": "2025-04-10T12:11:27Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yw6hVHtgKDOmrSpQ2i76k"
+          }
+        },
+        "updatedAt": "2025-04-10T12:11:27Z"
+      }
+    }
+  ]
+}

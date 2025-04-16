@@ -1,5 +1,3 @@
-import type { Project } from "~/types/projects";
-
 export default [
   {
     id: "1",
