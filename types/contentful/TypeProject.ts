@@ -1,4 +1,4 @@
-import type { Asset, Entry, EntryFields } from "contentful";
+import type { Asset, Entry, EntryFields, EntrySkeletonType } from "contentful";
 import type { TypeCollaborator } from "./TypeCollaborator";
 
 export interface TypeProjectFields {
@@ -27,3 +27,8 @@ export type TypeProject = Entry<{
   fields: TypeProjectFields;
   contentTypeId: string;
 }>;
+
+export interface TypeProjectSkeleton extends EntrySkeletonType {
+  contentTypeId: "project";
+  fields: TypeProjectFields;
+}
