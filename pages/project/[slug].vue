@@ -1,19 +1,11 @@
 <script setup lang="ts">
-import type { TypeProject } from "~/types/contentful";
-
 const slug = useRoute().params.slug as string;
 
-const project = ref<TypeProject | null>(null);
-
-//get project from contentful
 const { fetchProjectBySlug } = useProjects();
 
-onMounted(async () => {
-  project.value = await fetchProjectBySlug(slug);
-  if (!project.value) {
-    console.error(`Project with slug "${slug}" not found.`);
-  }
-});
+const { data: project } = await useAsyncData("project", () =>
+  fetchProjectBySlug(slug)
+);
 
 useSeoMeta({
   description: "qweq",

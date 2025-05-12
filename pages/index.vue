@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { TypePage } from "~/types/contentful";
 import { usePages } from "~/composables/usePages";
 
 const { fetchPageBySlug } = usePages();
@@ -8,11 +7,9 @@ useHead({
   title: "Arhwerk",
 });
 
-const page = ref<TypePage | null>(null);
-
-onMounted(async () => {
-  page.value = await fetchPageBySlug("homepage");
-});
+const { data: page } = await useAsyncData("page-home", () =>
+  fetchPageBySlug("homepage")
+);
 </script>
 
 <template>
