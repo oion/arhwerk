@@ -11,15 +11,13 @@ useHead({
   },
 });
 
+// Site-wide defaults; pages override title, description and images
 useSeoMeta({
-  description: "[description]",
-  ogTitle: "[og:title]",
-  ogDescription: "[og:description]",
-  ogImage: "[og:image]",
-  ogUrl: "[og:url]",
-  twitterTitle: "[twitter:title]",
-  twitterDescription: "[twitter:description]",
-  twitterImage: "[twitter:image]",
+  description:
+    "Studio de arhitectură din Brașov, specializat în restaurarea clădirilor de patrimoniu, reabilitarea fondului construit istoric și proiectarea de construcții noi.",
+  ogSiteName: "Arhwerk",
+  ogLocale: "ro_RO",
+  ogType: "website",
   twitterCard: "summary",
 });
 </script>
