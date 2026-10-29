@@ -10,7 +10,7 @@ Production: https://www.arhwerk.ro
 
 ## Deployment
 
-- **Hosting: Vercel**, project `ovidiu-ions-projects/arhwerk` on the Vercel account ovidiu.ion@extendio.ro. Deployed through Vercel's GitHub integration (no `vercel.json` in the repo; Nuxt is auto-detected): every push to the `contentful` branch goes to production. Runs as SSR on a serverless function, so content is fetched from Contentful at request time. Env vars are set in the Vercel dashboard.
+- **Hosting: Vercel**, project `ovidiu-ions-projects/arhwerk` on the Vercel account ovidiu.ion@extendio.ro. Deployed through Vercel's GitHub integration (no `vercel.json` in the repo; Nuxt is auto-detected): every push to `main` goes to production (Settings → Environments → Production → Branch Tracking); other branches get preview deploys. Runs as SSR on a serverless function, so content is fetched from Contentful at request time. Env vars are set in the Vercel dashboard.
 - **DNS: Cloudflare.** `arhwerk.ro` points at Vercel and redirects to `www.arhwerk.ro`, which is proxied through Cloudflare to Vercel.
 - **Content updates** need no rebuild: pages are rendered on request, so anything published in Contentful shows up on the next page load.
 - Until April 2025 the site was on GitHub Pages via GitHub Actions; those workflows have been removed.
