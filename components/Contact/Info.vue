@@ -11,7 +11,7 @@
         rel="noopener noreferrer"
         aria-label="Adresa Arhwerk"
       >
-        Str. 27 Mureșenilor, Brașov
+        Strada Mureșenilor nr. 27, Brașov
       </a>
     </address>
 
