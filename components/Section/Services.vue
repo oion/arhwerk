@@ -16,7 +16,7 @@
             <h3 class="my-4 text-sm font-bold">{{ service.fields.title }}</h3>
             <div
               class="text-sm"
-              v-html="md.render(service.fields.description)"
+              v-html="md.render(service.fields.description ?? '')"
             />
           </div>
         </div>
@@ -29,7 +29,7 @@
             <h3 class="my-4 text-sm font-bold">{{ service.fields.title }}</h3>
             <div
               class="text-sm"
-              v-html="md.render(service.fields.description)"
+              v-html="md.render(service.fields.description ?? '')"
             />
           </div>
         </div>

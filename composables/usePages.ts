@@ -1,4 +1,4 @@
-import type { TypePage } from "~/types/contentful";
+import type { TypePage, TypePageSkeleton } from "~/types/contentful";
 
 export const usePages = () => {
   const { $contentful } = useNuxtApp();
@@ -10,7 +10,7 @@ export const usePages = () => {
       return null;
     }
     try {
-      const response = await $contentful.getEntries({
+      const response = await $contentful.getEntries<TypePageSkeleton>({
         content_type: "page",
         "fields.slug": slug,
         limit: 1, // Limit to 1 since we only need one entry

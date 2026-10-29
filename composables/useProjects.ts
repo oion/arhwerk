@@ -5,7 +5,7 @@ export const useProjects = () => {
 
   const fetchProjects = async (): Promise<TypeProject[]> => {
     try {
-      const response = await $contentful.getEntries<IProject>({
+      const response = await $contentful.getEntries<TypeProjectSkeleton>({
         content_type: "project",
         order: ["fields.title"],
       });

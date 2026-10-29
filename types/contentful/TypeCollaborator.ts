@@ -1,10 +1,13 @@
-import type { Entry, EntryFields } from "contentful";
+import type { Entry, EntryFieldTypes, EntrySkeletonType } from "contentful";
+import type { Modifiers } from "./modifiers";
 
 export interface TypeCollaboratorFields {
-  name?: EntryFields.Symbol;
+  name?: EntryFieldTypes.Symbol;
 }
 
-export type TypeCollaborator = Entry<{
-  fields: TypeCollaboratorFields;
-  contentTypeId: string;
-}>;
+export type TypeCollaboratorSkeleton = EntrySkeletonType<
+  TypeCollaboratorFields,
+  "collaborator"
+>;
+
+export type TypeCollaborator = Entry<TypeCollaboratorSkeleton, Modifiers, string>;

@@ -76,9 +76,11 @@ const props = defineProps<{
   projects: TypeProject[];
 }>();
 
-const selectedType = ref<string | null>(null);
+type ProjectType = TypeProject["fields"]["type"][number];
 
-const allTypes = ref([
+const selectedType = ref<ProjectType | null>(null);
+
+const allTypes = ref<ProjectType[]>([
   "Construcție nouă",
   "Design interior",
   "Restaurare",
@@ -98,11 +100,11 @@ const filteredProjects = computed(() => {
   });
 });
 
-const isSelected = (type: string) => {
+const isSelected = (type: ProjectType) => {
   return type === selectedType.value;
 };
 
-const handleClick = (type: string) => {
+const handleClick = (type: ProjectType) => {
   selectedType.value = type === selectedType.value ? null : type;
 };
 

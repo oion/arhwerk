@@ -1,40 +1,46 @@
-import type { Asset, Entry, EntryFields, EntrySkeletonType } from "contentful";
-import type { TypeCollaborator } from "./TypeCollaborator";
+import type { Entry, EntryFieldTypes, EntrySkeletonType } from "contentful";
+import type { TypeCollaboratorSkeleton } from "./TypeCollaborator";
+import type { Modifiers } from "./modifiers";
 
 export interface TypeProjectFields {
-  title?: EntryFields.Symbol;
-  slug?: EntryFields.Symbol;
-  type: (
-    | "Construcție nouă"
-    | "Design interior"
-    | "Extindere"
-    | "Restaurare"
-    | "Instalații / Temporare"
-  )[];
-  function?: (
-    | "Administativa"
-    | "Comerciala"
-    | "Cultural-educativa"
-    | "Lacaş de cult"
-    | "Rezidențial (Colectiv)"
-    | "Rezidențial (Unifamilial)"
-  )[];
-  description?: EntryFields.Text;
-  status?: ("Finalizat" | "In Executie")[];
-  image?: Asset;
-  gallery?: Asset[];
-  location?: EntryFields.Symbol;
-  geoLocation?: EntryFields.Location;
-  year?: EntryFields.Symbol;
-  collaborators?: TypeCollaborator[];
+  title?: EntryFieldTypes.Symbol;
+  slug?: EntryFieldTypes.Symbol;
+  type: EntryFieldTypes.Array<
+    EntryFieldTypes.Symbol<
+      | "Construcție nouă"
+      | "Design interior"
+      | "Extindere"
+      | "Restaurare"
+      | "Instalații / Temporare"
+    >
+  >;
+  function?: EntryFieldTypes.Array<
+    EntryFieldTypes.Symbol<
+      | "Administativa"
+      | "Comerciala"
+      | "Cultural-educativa"
+      | "Lacaş de cult"
+      | "Rezidențial (Colectiv)"
+      | "Rezidențial (Unifamilial)"
+    >
+  >;
+  description?: EntryFieldTypes.Text;
+  status?: EntryFieldTypes.Array<
+    EntryFieldTypes.Symbol<"Finalizat" | "In Executie">
+  >;
+  image?: EntryFieldTypes.AssetLink;
+  gallery?: EntryFieldTypes.Array<EntryFieldTypes.AssetLink>;
+  location?: EntryFieldTypes.Symbol;
+  geoLocation?: EntryFieldTypes.Location;
+  year?: EntryFieldTypes.Symbol;
+  collaborators?: EntryFieldTypes.Array<
+    EntryFieldTypes.EntryLink<TypeCollaboratorSkeleton>
+  >;
 }
 
-export type TypeProject = Entry<{
-  fields: TypeProjectFields;
-  contentTypeId: string;
-}>;
+export type TypeProjectSkeleton = EntrySkeletonType<
+  TypeProjectFields,
+  "project"
+>;
 
-export interface TypeProjectSkeleton extends EntrySkeletonType {
-  contentTypeId: "project";
-  fields: TypeProjectFields;
-}
+export type TypeProject = Entry<TypeProjectSkeleton, Modifiers, string>;

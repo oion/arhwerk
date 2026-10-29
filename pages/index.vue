@@ -11,12 +11,22 @@ const title = "Arhwerk | Arhitectură și restaurare în Brașov";
 const description =
   "Studio de arhitectură din Brașov, specializat în restaurarea clădirilor de patrimoniu, reabilitarea fondului construit istoric și proiectarea de construcții noi.";
 
+// Contentful types linked entries as possibly undefined
+const projects = computed(
+  () => page.value?.fields.projects?.filter((p) => p !== undefined) ?? []
+);
+const team = computed(
+  () => page.value?.fields.team?.filter((a) => a !== undefined) ?? []
+);
+const services = computed(
+  () => page.value?.fields.services?.filter((s) => s !== undefined) ?? []
+);
+
 const { siteUrl } = useRuntimeConfig().public;
 
 // Share image comes from the first featured project, so it follows Contentful
 const image = computed(() => {
-  const projects = page.value?.fields.projects;
-  const first = Array.isArray(projects) ? projects[0] : undefined;
+  const first = projects.value[0];
   const url = first?.fields.image?.fields.file?.url as string | undefined;
   return url ? `https:${url}?w=1200&h=630&fit=fill&fm=jpg&q=80` : undefined;
 });
@@ -70,26 +80,18 @@ useHead({
 
 <template>
   <main v-if="page">
-    <ProjectsList
-      v-if="page.fields.projects?.length"
-      id="proiecte"
-      :projects="
-        Array.isArray(page.fields.projects) ? page.fields.projects : []
-      "
-    />
+    <ProjectsList v-if="projects.length" id="proiecte" :projects />
 
     <SectionAbout id="despre">{{ page.fields.about }}</SectionAbout>
 
     <SectionTeam
       id="echipa"
-      :team="Array.isArray(page.fields.team) ? page.fields.team : []"
+      :team
     />
 
     <SectionServices
       id="servicii"
-      :services="
-        Array.isArray(page.fields.services) ? page.fields.services : []
-      "
+      :services
     />
 
     <SectionContact id="contact" />

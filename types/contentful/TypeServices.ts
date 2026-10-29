@@ -1,11 +1,14 @@
-import type { Entry, EntryFields } from "contentful";
+import type { Entry, EntryFieldTypes, EntrySkeletonType } from "contentful";
+import type { Modifiers } from "./modifiers";
 
 export interface TypeServicesFields {
-  title?: EntryFields.Symbol;
-  description?: EntryFields.Text;
+  title?: EntryFieldTypes.Symbol;
+  description?: EntryFieldTypes.Text;
 }
 
-export type TypeServices = Entry<{
-  fields: TypeServicesFields;
-  contentTypeId: string;
-}>;
+export type TypeServicesSkeleton = EntrySkeletonType<
+  TypeServicesFields,
+  "services"
+>;
+
+export type TypeServices = Entry<TypeServicesSkeleton, Modifiers, string>;

@@ -35,9 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Asset } from "contentful";
+import type { ContentfulAsset } from "~/types/contentful";
 
 defineProps<{
-  team: Asset[];
+  team: ContentfulAsset[];
 }>();
 </script>

@@ -5,7 +5,15 @@ interface Props {
   project: TypeProject;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+// Contentful types linked entries as possibly undefined
+const collaborators = computed(
+  () => props.project.fields.collaborators?.filter((c) => c !== undefined) ?? []
+);
+const gallery = computed(
+  () => props.project.fields.gallery?.filter((a) => a !== undefined) ?? []
+);
 </script>
 
 <template>
@@ -35,11 +43,11 @@ defineProps<Props>();
         {{ project.fields.description }}
       </div>
 
-      <div v-if="project.fields.collaborators?.length">
+      <div v-if="collaborators.length">
         <strong>Colaboratori</strong>
         <ul>
           <li
-            v-for="collaborator in project.fields.collaborators"
+            v-for="collaborator in collaborators"
             :key="collaborator.sys.id"
           >
             {{ collaborator.fields.name }}
@@ -50,10 +58,7 @@ defineProps<Props>();
   </aside>
 
   <div class="flex-1">
-    <ProjectGallery
-      v-if="project.fields.gallery"
-      :images="project.fields.gallery"
-    />
+    <ProjectGallery v-if="gallery.length" :images="gallery" />
   </div>
 </template>
 

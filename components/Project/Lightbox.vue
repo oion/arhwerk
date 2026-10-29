@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Asset } from "contentful";
+import type { ContentfulAsset } from "~/types/contentful";
 
 interface Props {
-  images: Asset[];
+  images: ContentfulAsset[];
 }
 
 const { images } = defineProps<Props>();
@@ -72,7 +72,7 @@ const { direction } = useSwipe(stage, {
 
 // Preload neighbours so swiping doesn't show a blank frame on slow connections
 const img = useImage();
-const preload = (image: Asset | undefined) => {
+const preload = (image: ContentfulAsset | undefined) => {
   const src = image?.fields.file?.url as string | undefined;
   if (!src) return;
   const { srcset, sizes } = img.getSizes(src, {

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Asset } from "contentful";
+import type { ContentfulAsset } from "~/types/contentful";
 
 interface Props {
-  images: Asset[];
+  images: ContentfulAsset[];
 }
 
 const { images } = defineProps<Props>();
@@ -46,7 +46,7 @@ const markLoaded = (id: string) => {
   loaded.value.add(id);
 };
 
-const aspectRatio = (image: Asset) => {
+const aspectRatio = (image: ContentfulAsset) => {
   const size = image.fields.file?.details.image;
   return size ? `${size.width} / ${size.height}` : undefined;
 };
