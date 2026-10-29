@@ -14,8 +14,8 @@ const isNotFound = computed(() => statusCode.value === 404);
 const copy = computed(() =>
   isNotFound.value
     ? {
-        title: "Această pagină nu a fost construită.",
-        text: "Adresa pe care ai urmat-o nu duce nicăieri. Poate a fost mutată, sau poate n-a existat niciodată.",
+        title: "Această pagină nu a fost construită... încă.",
+        text: "",
       }
     : {
         title: "Ceva a cedat pe parcurs.",
@@ -23,14 +23,8 @@ const copy = computed(() =>
       }
 );
 
-const links = [
-  { name: "Pagina principală", to: "/" },
-  { name: "Proiecte", to: "/#proiecte" },
-  { name: "Contact", to: "/#contact" },
-];
-
 // clearError resets Nuxt's error state; a plain link would keep showing this page
-const go = (to: string) => clearError({ redirect: to });
+const goHome = () => clearError({ redirect: "/" });
 
 useHead({
   title: () => `${statusCode.value} | Arhwerk`,
@@ -41,7 +35,9 @@ useHead({
 <template>
   <NuxtLayout>
     <main class="flex min-h-dvh items-center px-8 pb-16 pt-32">
-      <div class="mx-auto w-full max-w-screen-xl">
+      <div
+        class="mx-auto flex w-full max-w-screen-xl flex-col items-center text-center"
+      >
         <div class="w-fit">
           <p
             class="text-[38vw] font-light leading-none tracking-tighter motion-safe:animate-[rise_0.6s_ease-out_0.1s_both] md:text-[16rem]"
@@ -67,24 +63,17 @@ useHead({
           class="mt-12 max-w-md space-y-4 motion-safe:animate-[rise_0.6s_ease-out_0.3s_both]"
         >
           <h1 class="text-heading-xl">{{ copy.title }}</h1>
-          <p class="text-base leading-relaxed">{{ copy.text }}</p>
+          <p v-if="copy.text" class="text-base leading-relaxed">
+            {{ copy.text }}
+          </p>
         </div>
 
-        <nav
-          class="mt-12 motion-safe:animate-[rise_0.6s_ease-out_0.4s_both]"
-          aria-label="Navigare"
+        <a
+          href="/"
+          class="uline mt-12 inline-block py-3 font-bold motion-safe:animate-[rise_0.6s_ease-out_0.4s_both]"
+          @click.prevent="goHome"
+          >Pagina principală</a
         >
-          <ul class="flex flex-wrap gap-x-8 gap-y-2">
-            <li v-for="link in links" :key="link.to">
-              <a
-                :href="link.to"
-                class="uline inline-block py-3 font-bold"
-                @click.prevent="go(link.to)"
-                >{{ link.name }}</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
     </main>
   </NuxtLayout>
