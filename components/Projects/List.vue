@@ -42,6 +42,12 @@
                 name="gg:border-top"
                 title="Design interior"
               />
+              <IconsGGBorderRight
+                v-if="type === 'Instalații / Temporare'"
+                class="size-8 text-primary-dark"
+                name="gg:border-right"
+                title="Instalații / Temporare"
+              />
             </span>
             {{ type }}
           </li>
@@ -62,7 +68,6 @@
     </div>
   </SectionBase>
 </template>
-x
 
 <script setup lang="ts">
 import type { TypeProject } from "~/types/contentful";
@@ -78,6 +83,7 @@ const allTypes = ref([
   "Design interior",
   "Restaurare",
   "Extindere",
+  "Instalatii / Temporare",
 ]);
 
 const filteredProjects = computed(() => {
@@ -111,6 +117,6 @@ watch(
       });
     }
   },
-  { immediate: false }
+  { immediate: false },
 );
 </script>

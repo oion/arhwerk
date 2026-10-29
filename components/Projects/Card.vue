@@ -49,6 +49,12 @@
             name="gg:border-top"
             title="Design interior"
           />
+          <IconsGGBorderRight
+            v-if="props.project.fields.type?.includes('Instalații / Temporare')"
+            class="size-8 text-white"
+            name="gg:border-right"
+            title="Instalații / Temporare"
+          />
         </div>
 
         <h3

@@ -4,7 +4,13 @@ import type { TypeCollaborator } from "./TypeCollaborator";
 export interface TypeProjectFields {
   title?: EntryFields.Symbol;
   slug?: EntryFields.Symbol;
-  type: ("Construcție nouă" | "Design interior" | "Extindere" | "Restaurare")[];
+  type: (
+    | "Construcție nouă"
+    | "Design interior"
+    | "Extindere"
+    | "Restaurare"
+    | "Instalații / Temporare"
+  )[];
   function?: (
     | "Administativa"
     | "Comerciala"
