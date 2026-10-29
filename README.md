@@ -1,4 +1,18 @@
-https://oion.github.io/arhwerk/
+# Arhwerk website
+
+Production: https://www.arhwerk.ro
+
+## Stack
+
+- **Nuxt 3** (Vue 3) with SSR, Tailwind, `@nuxt/image`, `@vueuse/motion`
+- **Contentful** as the CMS — needs `NUXT_PUBLIC_CONTENTFUL_SPACE_ID`, `NUXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN`, `NUXT_PUBLIC_CONTENTFUL_ENVIRONMENT` (see `.env`)
+- **Web3Forms** for the contact form — the browser posts directly to `api.web3forms.com` (`components/Contact/Form.vue`)
+
+## Deployment
+
+- **Hosting: Vercel**, deployed through Vercel's GitHub integration (no `vercel.json` in the repo; Nuxt is auto-detected). Runs as SSR on a serverless function, so content is fetched from Contentful at request time. The production branch and env vars are set in the Vercel dashboard.
+- **DNS: Cloudflare.** `arhwerk.ro` points at Vercel and redirects to `www.arhwerk.ro`, which is proxied through Cloudflare to Vercel.
+- **GitHub Actions (`.github/workflows/`)** build to GitHub Pages at https://oion.github.io/arhwerk/ (`main` → `deploy.yml`, `contentful` branch or Contentful webhook → `contentful-build-on-publish.yml`). This is a separate copy, not production.
 
 # Nuxt Minimal Starter
 

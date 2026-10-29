@@ -14,15 +14,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: contentful
-      - run: corepack enable
+      # Version comes from "packageManager" in package.json
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      # Pick your own package manager and build script
-      - run: npm install
-        # - run: npx nuxt build --preset github_pages
-      # - run: NUXT_APP_BASE_URL="/${GITHUB_REPOSITORY##*/}/" npx nuxt build --preset github_pages
-      - run: NUXT_APP_BASE_URL="/${GITHUB_REPOSITORY##*/}/" npx nuxt generate --preset github_pages
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: NUXT_APP_BASE_URL="/${GITHUB_REPOSITORY##*/}/" pnpm exec nuxt generate --preset github_pages
         env:
           NUXT_PUBLIC_CONTENTFUL_SPACE_ID: ${{ vars.CONTENTFUL_SPACE_ID }}
           NUXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN: ${{ vars.CONTENTFUL_ACCESS_TOKEN }}
