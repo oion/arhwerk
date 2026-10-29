@@ -8,6 +8,10 @@ const { data: project } = await useAsyncData(`project-${slug}`, () =>
   fetchProjectBySlug(slug)
 );
 
+if (!project.value) {
+  throw createError({ statusCode: 404, statusMessage: "Project not found", fatal: true });
+}
+
 const truncate = (text: string, max = 160) => {
   const clean = text.replace(/\s+/g, " ").trim();
   if (clean.length <= max) return clean;
