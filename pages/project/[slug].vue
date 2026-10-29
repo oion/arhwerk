@@ -44,7 +44,7 @@ const image = computed(() => {
   return url ? `https:${url}?w=1200&h=630&fit=fill&fm=jpg&q=80` : undefined;
 });
 
-const pageUrl = `${useRequestURL().origin}${route.path}`;
+const pageUrl = `${useRuntimeConfig().public.siteUrl}${route.path}`;
 
 useSeoMeta({
   title,

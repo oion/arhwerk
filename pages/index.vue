@@ -11,6 +11,8 @@ const title = "Arhwerk | Arhitectură și restaurare în Brașov";
 const description =
   "Studio de arhitectură din Brașov, specializat în restaurarea clădirilor de patrimoniu, reabilitarea fondului construit istoric și proiectarea de construcții noi.";
 
+const { siteUrl } = useRuntimeConfig().public;
+
 // Share image comes from the first featured project, so it follows Contentful
 const image = computed(() => {
   const projects = page.value?.fields.projects;
@@ -26,11 +28,43 @@ useSeoMeta({
   ogDescription: description,
   ogImage: image,
   ogImageAlt: "Arhwerk — proiect de arhitectură",
-  ogUrl: `${useRequestURL().origin}/`,
+  ogUrl: `${siteUrl}/`,
   twitterTitle: title,
   twitterDescription: description,
   twitterImage: image,
   twitterCard: () => (image.value ? "summary_large_image" : "summary"),
+});
+
+// Structured data so search engines can show the studio as a local business
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: () =>
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: "Arhwerk",
+          description,
+          url: `${siteUrl}/`,
+          image: image.value,
+          foundingDate: "2018",
+          telephone: "+40744331261",
+          email: "arhwerk.contact@gmail.com",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Str. 27 Mureșenilor",
+            addressLocality: "Brașov",
+            addressCountry: "RO",
+          },
+          areaServed: "RO",
+          sameAs: [
+            "https://www.facebook.com/arhwerk",
+            "https://www.instagram.com/arhwerk",
+          ],
+        }),
+    },
+  ],
 });
 </script>
 

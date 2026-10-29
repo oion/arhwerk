@@ -7,6 +7,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      // Canonical origin for share links and the sitemap; override with
+      // NUXT_PUBLIC_SITE_URL, e.g. on preview deployments
+      siteUrl: "https://arhwerk.ro",
       contentful: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
