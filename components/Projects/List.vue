@@ -83,7 +83,7 @@ const allTypes = ref([
   "Design interior",
   "Restaurare",
   "Extindere",
-  "Instalatii / Temporare",
+  "Instalații / Temporare",
 ]);
 
 const filteredProjects = computed(() => {
