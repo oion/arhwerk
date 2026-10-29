@@ -53,7 +53,7 @@ useHead({
           email: "arhwerk.contact@gmail.com",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Str. 27 Mureșenilor",
+            streetAddress: "Strada Mureșenilor nr. 27",
             addressLocality: "Brașov",
             addressCountry: "RO",
           },
