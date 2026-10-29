@@ -1,3 +1,5 @@
 <template>
-  <footer>&copy; 2025 - Arhwerk. Toate drepturile rezervate.</footer>
+  <footer>
+    &copy; {{ new Date().getFullYear() }} - Arhwerk. Toate drepturile rezervate.
+  </footer>
 </template>
