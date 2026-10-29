@@ -8,10 +8,19 @@ const props = defineProps({
     type: String,
     default: "text",
   },
+  name: {
+    type: String,
+    required: true,
+  },
+  autocomplete: {
+    type: String,
+    default: undefined,
+  },
 });
 
 const model = defineModel<string>({ required: true });
 
+const id = useId();
 const isBlurred = ref(false);
 
 const labelClasses = computed(() => {
@@ -31,21 +40,18 @@ const isFilled = computed(() => model.value.length > 0);
 
 <template>
   <div class="relative flex flex-col gap-8">
-    <label
-      ref="my-label"
-      for="name"
-      class="absolute left-0 transition-all"
-      :class="labelClasses"
-      >{{ label }}</label
-    >
+    <label :for="id" class="absolute left-0 transition-all" :class="labelClasses">{{ label }}</label>
 
     <component
       :is="component"
-      id="name"
-      type="text"
+      :id="id"
+      :name="name"
+      :type="component === 'input' ? type : undefined"
+      :autocomplete="autocomplete"
+      required
       class="border-0 border-b border-primary bg-transparent p-0 py-2 placeholder:text-gray-900 focus:border-primary-dark focus:outline-none"
       :value="model"
-      @input="model = $event.target.value"
+      @input="model = ($event.target as HTMLInputElement).value"
       @focus="isBlurred = true"
       @blur="isBlurred = false"
     />
