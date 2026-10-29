@@ -12,25 +12,25 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "contentful": "^11.5.13",
-    "markdown-it": "^14.1.0",
-    "nuxt": "^3.16.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "contentful": "^11.12.10",
+    "markdown-it": "^14.3.3",
+    "nuxt": "^3.21.11",
+    "vue": "^3.5.44",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.1.0",
-    "@nuxt/fonts": "0.11.0",
-    "@nuxt/image": "1.9.0",
-    "@nuxtjs/mdc": "0.16.1",
-    "@nuxtjs/tailwindcss": "^6.13.2",
-    "@types/markdown-it": "^14.1.2",
-    "@vueuse/core": "^13.0.0",
+    "@nuxt/eslint": "^1.17.0",
+    "@nuxt/fonts": "0.14.0",
+    "@nuxt/image": "1.11.0",
+    "@nuxtjs/mdc": "0.23.2",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/markdown-it": "^14.2.0",
+    "@vueuse/core": "^13.9.0",
     "@vueuse/motion": "^3.0.3",
-    "@vueuse/nuxt": "^13.0.0",
-    "eslint": "^9.22.0",
-    "eslint-plugin-tailwindcss": "^3.18.0",
-    "typescript": "^5.7.3"
+    "@vueuse/nuxt": "^13.9.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-tailwindcss": "^3.18.3",
+    "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }
