@@ -46,11 +46,6 @@ const markLoaded = (id: string) => {
   loaded.value.add(id);
 };
 
-const aspectRatio = (image: ContentfulAsset) => {
-  const size = image.fields.file?.details.image;
-  return size ? `${size.width} / ${size.height}` : undefined;
-};
-
 // Images rendered on the server may finish loading before hydration,
 // so their load event is never seen by Vue
 const grid = ref<HTMLElement | null>(null);
@@ -72,9 +67,8 @@ onMounted(() => {
       <button
         v-for="(image, index) in images"
         :key="image.sys.id"
-        class="overflow-hidden bg-neutral-100"
+        class="aspect-[4/5] overflow-hidden bg-neutral-100"
         :class="{ 'animate-pulse': !loaded.has(image.sys.id) }"
-        :style="{ aspectRatio: aspectRatio(image) }"
         :aria-label="`Deschide imaginea ${index + 1}`"
         @click="activeIndex = index"
       >
