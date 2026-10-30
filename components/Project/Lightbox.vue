@@ -8,7 +8,26 @@ interface Props {
 const { images } = defineProps<Props>();
 const index = defineModel<number | null>({ default: null });
 
-const IMAGE_SIZES = "100vw lg:1600px";
+const IMAGE_WIDTHS = [800, 1200, 1600, 2400, 3200];
+
+// Offers each photo up to its original size, so large originals stay sharp
+// when zoomed to fill the screen and phones still get a lighter file
+const imageSource = (image: ContentfulAsset) => {
+  const file = image.fields.file;
+  const url = `https:${file?.url}`;
+  const size = file?.details.image;
+  if (!size) return { src: url };
+
+  const original = Math.min(size.width, 3200);
+  const widths = [...IMAGE_WIDTHS.filter((w) => w < original), original];
+  const variant = (w: number) => `${url}?w=${w}&fm=webp&q=80`;
+
+  return {
+    src: variant(original),
+    srcset: widths.map((w) => `${variant(w)} ${w}w`).join(", "),
+    sizes: `min(100vw, ${(size.width / size.height) * 100}vh)`,
+  };
+};
 
 const isLoading = ref(true);
 
@@ -16,6 +35,18 @@ const isOpen = computed(() => index.value !== null);
 const current = computed(() =>
   index.value === null ? null : images[index.value]
 );
+
+// Sized from the asset's dimensions so small originals still fill the stage
+// and the dark area around the photo stays clickable
+const imageStyle = computed(() => {
+  const size = current.value?.fields.file?.details.image;
+  if (!size) return undefined;
+  const ratio = size.width / size.height;
+  return {
+    aspectRatio: `${size.width} / ${size.height}`,
+    width: `min(100cqw, calc(100cqh * ${ratio}))`,
+  };
+});
 
 const close = () => {
   index.value = null;
@@ -71,18 +102,13 @@ const { direction } = useSwipe(stage, {
 });
 
 // Preload neighbours so swiping doesn't show a blank frame on slow connections
-const img = useImage();
 const preload = (image: ContentfulAsset | undefined) => {
-  const src = image?.fields.file?.url as string | undefined;
-  if (!src) return;
-  const { srcset, sizes } = img.getSizes(src, {
-    sizes: IMAGE_SIZES,
-    modifiers: { format: "webp" },
-    provider: "contentful",
-  });
+  if (!image) return;
+  const { src, srcset, sizes } = imageSource(image);
   const preloader = new Image();
   preloader.sizes = sizes ?? "";
-  preloader.srcset = srcset;
+  preloader.srcset = srcset ?? "";
+  preloader.src = src;
 };
 
 const thumbs = ref<HTMLElement | null>(null);
@@ -104,13 +130,13 @@ watch(index, async (i) => {
     <Transition name="lightbox">
       <div
         v-if="isOpen && current"
-        class="fixed inset-0 z-50 flex h-dvh flex-col overscroll-contain bg-black/95 text-white"
+        class="fixed inset-0 z-50 flex h-dvh flex-col overscroll-contain bg-black text-white"
         role="dialog"
         aria-modal="true"
         :aria-label="current.fields.title as string"
       >
         <div
-          class="flex items-center justify-between px-4 pb-2 pt-[max(0.5rem,env(safe-area-inset-top))] text-sm md:p-4"
+          class="flex items-center justify-between px-4 pb-1 pt-[max(0.25rem,env(safe-area-inset-top))] text-sm md:py-1"
         >
           <span class="tabular-nums">
             {{ (index ?? 0) + 1 }} / {{ images.length }}
@@ -140,7 +166,7 @@ watch(index, async (i) => {
 
         <div
           ref="stage"
-          class="relative flex min-h-0 flex-1 items-center justify-center md:px-20"
+          class="relative flex min-h-0 flex-1 items-center justify-center [container-type:size] md:mx-16"
           @click.self="close"
         >
           <div
@@ -153,14 +179,12 @@ watch(index, async (i) => {
               class="size-8 animate-spin rounded-full border-2 border-white/20 border-t-white"
             />
           </div>
-          <NuxtImg
+          <img
             :key="current.sys.id"
-            :src="current.fields.file?.url as string"
+            v-bind="imageSource(current)"
             :alt="current.fields.title as string"
-            :sizes="IMAGE_SIZES"
-            format="webp"
-            provider="contentful"
             class="max-h-full max-w-full select-none object-contain transition-opacity duration-300"
+            :style="imageStyle"
             :class="isLoading ? 'opacity-0' : 'opacity-100'"
             draggable="false"
             @load="isLoading = false"
@@ -169,7 +193,7 @@ watch(index, async (i) => {
 
           <template v-if="images.length > 1">
             <button
-              class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 transition hover:bg-white/10 md:bg-transparent md:p-3"
+              class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 transition hover:bg-white/10 md:-left-14 md:bg-transparent md:p-3"
               aria-label="Imaginea anterioară"
               @click="go(-1)"
             >
@@ -189,7 +213,7 @@ watch(index, async (i) => {
               </svg>
             </button>
             <button
-              class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 transition hover:bg-white/10 md:bg-transparent md:p-3"
+              class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 transition hover:bg-white/10 md:-right-14 md:bg-transparent md:p-3"
               aria-label="Imaginea următoare"
               @click="go(1)"
             >
@@ -214,7 +238,7 @@ watch(index, async (i) => {
         <div
           v-if="images.length > 1"
           ref="thumbs"
-          class="overflow-x-auto px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 [scrollbar-width:none] md:p-4"
+          class="overflow-x-auto px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-2 [scrollbar-width:none] md:px-4 md:py-2"
         >
           <div class="mx-auto flex w-max gap-2">
             <button
@@ -237,7 +261,7 @@ watch(index, async (i) => {
                 format="webp"
                 provider="contentful"
                 loading="lazy"
-                class="h-10 w-14 object-cover md:h-16 md:w-24"
+                class="h-10 w-14 object-cover md:h-12 md:w-16"
               />
             </button>
           </div>
